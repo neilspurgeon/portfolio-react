@@ -4,7 +4,7 @@
   grid-gap: 20px;
   grid-template-columns: repeat(10, [col-start] 1fr);
   background: #FAF8F8;
-  padding: 150px 0 50px;
+  padding: 150px 0 25px;
   margin-top: 100px;
 }
 
@@ -49,4 +49,10 @@
 
 .footerLink:hover:before {
   opacity: 1;
+}
+
+.copyright {
+  grid-column: 3 / 9;
+  padding-top: 50px;
+  font-size: 1.2rem;
 }

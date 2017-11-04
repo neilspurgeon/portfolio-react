@@ -17,6 +17,7 @@ const Footer = () => {
           <li><a className={styles.footerLink} href="tel:1-805-748-3201">805 748 3201</a></li>
           <li><a className={styles.footerLink} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></li>
         </ul>
+        <p className={styles.copyright}>©2017 Neil Spurgeon. All Rights Reserved.</p>
       </footer>
     </Grid>
   );
