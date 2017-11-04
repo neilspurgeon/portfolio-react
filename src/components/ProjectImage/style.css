@@ -1,21 +1,9 @@
 .imageWrapper {
   grid-column: 1 / span 12  ;
   padding: 25px 0;
-  transform: scale(.95);
-  clip-path: inset(5% 5% 5% 5% round 15% 15% 15% 15%);
-  border-radius: 100%;
-  transition: 1.5s ease clip-path, 1s ease opacity;
-  opacity: 0;
 
   @media screen and (min-width: 768px) {
     grid-column: 3 / 11;
     padding: 50px 0;
   }
-}
-
-.imageWrapper.inView {
-  opacity: 1;
-  transform: scale(1);
-  border-radius: 0;
-  clip-path: inset(0 0 0 0 round 0 0 0 0);
 }
