@@ -37,7 +37,7 @@ class NextProject extends React.Component {
           <Waypoint onEnter={this.handleEnter} bottomOffset="300px">
             <img
               className={this.state.imageClasses.join(' ')}
-              src={props.img || "http://neilspurgeon.com/assets/images/resized/2800/juniper-ridge-hero.jpg"}
+              src={props.image}
               alt={props.altText}
             />
           </Waypoint>

@@ -1,8 +1,12 @@
 import React from 'react';
+import projects from 'projects';
 
 const Home = () => {
+  console.log(projects);
   return (
-    <h1>Home Page</h1>
+    <div>
+      <h1>Home Page</h1>
+    </div>
   );
 };
 

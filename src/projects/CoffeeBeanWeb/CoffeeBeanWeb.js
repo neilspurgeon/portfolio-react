@@ -1,4 +1,5 @@
 import React from 'react';
+import data from './data';
 import Nav from 'components/Nav/Nav.js';
 import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
 import ProjectHero from 'components/ProjectHero/ProjectHero.js';
@@ -6,14 +7,15 @@ import heroImage from './images/coffeebean-web-hero.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 import NextProject from 'components/NextProject/NextProject.js';
+import nextImage from './images/juniper-ridge-card.jpg';
 import Footer from 'components/Footer/Footer.js';
 
-const CoffeBeanEcomerce = () => {
+const CoffeeBeanWeb = () => {
   return (
     <div>
       <Nav />
       <ProjectHeader
-        title={'Coffee Bean Ecommerce'}
+        title={data.title}
         byLine={'— Website Design, UX Design'}
       />
 
@@ -41,7 +43,10 @@ const CoffeBeanEcomerce = () => {
         altText="Coffe Bean and Tea Leaf Homepages."
       />
 
-      <NextProject />
+      <NextProject
+        image={nextImage}
+        altText="Juniper Ridge Colognes"
+      />
 
     <Footer />
 
@@ -49,4 +54,4 @@ const CoffeBeanEcomerce = () => {
   );
 };
 
-export default CoffeBeanEcomerce;
+export default CoffeeBeanWeb;
