@@ -1,0 +1,12 @@
+.clipReveal {
+  transition: 1.5s ease clip-path, 1s ease opacity;
+  clip-path: inset(5% 5% 5% 5% round 15% 15% 15% 15%);
+  transform: scale(.95);
+  opacity: 0;
+}
+
+.clipReveal.inView {
+  clip-path: inset(0 0 0 0 round 0 0 0 0);
+  transform: scale(1);
+  opacity: 1;
+}
