@@ -1,28 +1,12 @@
 import React from 'react';
-import data from './data';
-import Nav from 'components/Nav/Nav.js';
-import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
-import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import heroImage from './images/coffeebean-web-hero.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
-import NextProject from 'components/NextProject/NextProject.js';
-import nextImage from './images/juniper-ridge-card.jpg';
-import Footer from 'components/Footer/Footer.js';
+
 
 const CoffeeBeanWeb = () => {
   return (
     <div>
-      <Nav />
-      <ProjectHeader
-        title={data.title}
-        byLine={'— Website Design, UX Design'}
-      />
-
-    <ProjectHero
-        image={heroImage}
-        altText="Coffe Bean and Tea Leaf Homepages."
-      />
 
       <ProjectText>
         <p>After succesfully launching their mobile app, Hathway was overhaul The Coffee Bean & Tea Leaf’s ecommerce website experirence. This included a complete redesign of their existing shopping pages, aswell as additional storytelling, marketing, and company information pages.</p>
@@ -42,13 +26,6 @@ const CoffeeBeanWeb = () => {
         image={heroImage}
         altText="Coffe Bean and Tea Leaf Homepages."
       />
-
-      <NextProject
-        image={nextImage}
-        altText="Juniper Ridge Colognes"
-      />
-
-    <Footer />
 
     </div>
   );
