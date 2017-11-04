@@ -15,8 +15,9 @@ const NextProject = (props) => {
           alt={props.altText}
         />
 
-        <div className={styles.nextLink}>
-          NextProject
+      <div className={styles.nextTextWrapper}>
+          <h2 className={styles.nextText}><span class={styles.label}>Next Project</span> <br />
+          <a className={styles.nextLink} href="www.google.com">{props.nextLink || 'Project Name'}</a></h2>
         </div>
 
       </div>
