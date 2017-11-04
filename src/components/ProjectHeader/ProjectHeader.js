@@ -7,7 +7,7 @@ const ProjectHeader = (props) => {
     <Grid>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>{props.title}</h1>
-        <p className={styles.byLine}>{props.byLine}</p>
+        <p className={styles.subTitle}>{props.subTitle}</p>
       </div>
     </Grid>
   );
