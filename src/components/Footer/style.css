@@ -5,6 +5,7 @@
   grid-template-columns: repeat(10, [col-start] 1fr);
   background: #FAF8F8;
   padding: 150px 0 50px;
+  margin-top: 100px;
 }
 
 .list {
@@ -32,7 +33,7 @@
 }
 
 .footerLink:hover {
-  transition-delay: .25s; 
+  transition-delay: .25s;
   transform: translateX(1.2em);
 }
 

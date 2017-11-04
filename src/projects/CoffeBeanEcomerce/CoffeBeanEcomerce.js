@@ -4,6 +4,7 @@ import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import heroImage from './images/coffeebean-web-hero.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
+import NextProject from 'components/NextProject/NextProject.js';
 import Footer from 'components/Footer/Footer.js';
 
 const CoffeBeanEcomerce = () => {
@@ -37,6 +38,8 @@ const CoffeBeanEcomerce = () => {
         image={heroImage}
         altText="Coffe Bean and Tea Leaf Homepages."
       />
+
+      <NextProject />
 
     <Footer />
 
