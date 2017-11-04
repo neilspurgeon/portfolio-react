@@ -1,6 +1,6 @@
 .wrapper {
   grid-column: 1 / 13;
-  padding: 50px 5%;
+  padding: 25px 5%;
 
   @media screen and (min-width: 500px) {
     /*padding: 50px 7.5%;*/
