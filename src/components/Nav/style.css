@@ -1,6 +1,7 @@
 .navWrapper,
 .aside {
   position: fixed;
+  z-index: 999;
   right: calc(16.6% - 60px);
 }
 
