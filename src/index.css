@@ -66,8 +66,10 @@ h3,
 
 p,
 .p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #3E3E3E;
   @media screen and (min-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }

@@ -1,0 +1,17 @@
+.wrapper {
+  grid-column: 1 / 13;
+  padding: 50px 5%;
+
+  @media screen and (min-width: 500px) {
+    /*padding: 50px 7.5%;*/
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 0;
+    grid-column: 2 / 12;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-column: 4 / 10;
+  }
+}
