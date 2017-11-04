@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from 'components/Nav/Nav.js';
 import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
 import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import heroImage from './images/coffeebean-web-hero.jpg';
@@ -10,6 +11,7 @@ import Footer from 'components/Footer/Footer.js';
 const CoffeBeanEcomerce = () => {
   return (
     <div>
+      <Nav />
       <ProjectHeader
         title={'Coffee Bean Ecommerce'}
         byLine={'— Website Design, UX Design'}

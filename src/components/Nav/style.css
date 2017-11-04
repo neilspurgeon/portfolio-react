@@ -1,0 +1,32 @@
+.navWrapper,
+.aside {
+  position: fixed;
+  right: calc(16.6% - 60px);
+}
+
+.navWrapper {
+  top: 30px;
+}
+
+.navLink {
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #000;
+  text-decoration: none;
+  padding-right: 1.5em;
+}
+
+.navLink:last-child {
+  padding-right: 0;
+}
+
+.aside {
+  transform: rotate(90deg);
+  transform-origin: right center;
+  bottom: 30px;
+  font-size: 1.2rem;
+  height: 0;
+  overflow: visible;
+}
