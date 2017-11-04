@@ -1,3 +1,4 @@
 .wrapper {
   grid-column: 1 / 11;
+  padding-bottom: 50px;
 }
