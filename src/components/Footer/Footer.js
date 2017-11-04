@@ -23,7 +23,7 @@ class Footer extends React.Component {
     // let classes = ClassNames(styles.footer, {[styles.inView] : this.state.inView});
     return (
       <Grid>
-        <Waypoint onEnter={this.handleEnter}>
+        <Waypoint bottomOffset="300px" onEnter={this.handleEnter}>
           <footer className={ClassNames(styles.footer, {[styles.inView] : this.state.inView === true})}>
             <ul className={[styles.contact, styles.list].join(' ')}>
               <span className={globalStyles.label}>Contact</span>
