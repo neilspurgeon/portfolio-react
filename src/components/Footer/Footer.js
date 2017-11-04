@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
-import globalStyles from 'index.css';
+import globalStyles from 'sharedStyles/index.css';
 import Waypoint from 'react-waypoint';
 import ClassNames from 'classnames';
 
@@ -19,8 +19,8 @@ class Footer extends React.Component {
       inView: true
     });
   };
+
   render() {
-    // let classes = ClassNames(styles.footer, {[styles.inView] : this.state.inView});
     return (
       <Grid>
         <Waypoint bottomOffset="300px" onEnter={this.handleEnter}>
