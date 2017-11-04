@@ -66,10 +66,16 @@ h3,
 
 p,
 .p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2;
   color: #3E3E3E;
   @media screen and (min-width: 768px) {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
+}
+
+.label,
+p.label {
+  color: #8E8E8E;
+  margin-bottom: 0;
 }

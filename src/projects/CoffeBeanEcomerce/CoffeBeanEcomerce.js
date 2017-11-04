@@ -4,6 +4,7 @@ import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import heroImage from './images/coffeebean-web-hero.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
+import Footer from 'components/Footer/Footer.js';
 
 const CoffeBeanEcomerce = () => {
   return (
@@ -27,6 +28,18 @@ const CoffeBeanEcomerce = () => {
         image={heroImage}
         altText="Coffe Bean and Tea Leaf Homepages."
       />
+
+      <ProjectText>
+        <p>Designed a set of  icons to be userd on shop page as navigation. Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand. Redesigned.</p>
+      </ProjectText>
+
+      <ProjectImage
+        image={heroImage}
+        altText="Coffe Bean and Tea Leaf Homepages."
+      />
+
+    <Footer />
+
     </div>
   );
 };
