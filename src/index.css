@@ -23,4 +23,49 @@
 }
 
 * { box-sizing: border-box; }
-body { font-family: 'maison neue' }
+
+/*62.5% * 16px = 10px base font size*/
+html { font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "maison neue", sans-serif;
+  font-weight: 300;
+  color: #000;
+
+  /*@media screen and (max-width: 480px) {
+    font-size: 1.4rem;
+  }*/
+}
+
+h1,
+.h1 {
+  font-size: 3.2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4.2rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2.2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 3.2rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 1.6rem;
+  @media screen and (min-width: 768px) {
+    font-size: 3.2rem;
+  }
+}
+
+p,
+.p {
+  font-size: 1.4rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.6rem;
+  }
+}
