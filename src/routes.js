@@ -13,6 +13,7 @@ const ProjectRoute = ({ component: Component, ...rest }) => (
       hero={rest.hero}
       nextProjectTitle={rest.nextProjectTitle}
       nextProjectImage={rest.nextProjectImage}
+      nextProjectAltText={rest.nextProjectAltText}
       nextProjectPath={rest.nextProjectPath}
       >
       <Component {...props}/>
@@ -37,6 +38,7 @@ const Routes = (props) => (
             hero={project.data.hero}
             nextProjectTitle={nextProject.data.title}
             nextProjectImage={nextProject.data.card}
+            nextProjectAltText={nextProject.data.altText}
             nextProjectPath={nextProject.data.path}
             key={i} />
         );

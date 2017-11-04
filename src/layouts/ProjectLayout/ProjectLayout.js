@@ -18,14 +18,15 @@ const ProjectLayout = (props) => {
 
         <ProjectHero
           image={props.hero}
-          altText="Coffee Bean and Tea Leaf Homepages."
+          altText={props.altText}
         />
 
         {props.children}
 
         <NextProject
           image={props.nextProjectImage}
-          altText="alt text"
+          title={props.nextProjectTitle}
+          path={props.nextProjectPath}
         />
 
       <Footer />

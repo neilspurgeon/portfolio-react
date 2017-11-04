@@ -27,7 +27,6 @@ class NextProject extends React.Component {
   }
 
   render() {
-    let props = this.props;
     return (
       <Grid>
         <div className={styles.wrapper}>
@@ -37,14 +36,14 @@ class NextProject extends React.Component {
           <Waypoint onEnter={this.handleEnter} bottomOffset="300px">
             <img
               className={this.state.imageClasses.join(' ')}
-              src={props.image}
-              alt={props.altText}
+              src={this.props.image}
+              alt={this.props.altText}
             />
           </Waypoint>
 
           <div className={styles.nextTextWrapper}>
             <h2 className={styles.nextText}><span className={styles.label}>Next Project</span> <br />
-            <a className={styles.nextLink} href="www.google.com">{props.nextLink || 'Project Name'}</a></h2>
+            <a className={styles.nextLink} href={this.props.path}>{this.props.title}</a></h2>
           </div>
 
         </div>
