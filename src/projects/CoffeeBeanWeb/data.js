@@ -6,8 +6,7 @@ const data = {
   subTitle: '— Website Design, UX Design',
   hero: heroImage,
   card: cardImage,
-  path: '/coffee-bean-web',
-  component: 'CoffeBeanWeb'
+  path: '/coffee-bean-web'
 };
 
 export default data;
