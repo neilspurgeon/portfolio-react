@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
 import transitions from 'sharedStyles/transitions.css';
@@ -26,12 +27,33 @@ class NextProject extends React.Component {
     });
   }
 
+  handleDividerEnter = (e) => {
+    window.addEventListener('scroll', this.handleScroll);
+  };
+
+  handleScroll = (e) => {
+    const el = ReactDOM.findDOMNode(this.divider);
+    const scrollPos = el.getBoundingClientRect().top - 100;
+    const scrollPercentage = 1 -(scrollPos / window.innerHeight);
+    el.style.transform = 'rotate(' + scrollPercentage * 45 + 'deg)';
+  }
+
+  handleDividerLeave = (e) => {
+    window.removeEventListener('scroll', this.handleScroll);
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
   render() {
     return (
       <Grid>
         <div className={styles.wrapper}>
 
-          <span className={styles.divider} />
+          <Waypoint topOffset="20%" onEnter={this.handleDividerEnter} onLeave={this.handleDividerLeave}>
+            <span  className={styles.divider} ref={(divider) => { this.divider = divider; }} />
+          </Waypoint>
 
           <Waypoint onEnter={this.handleEnter} bottomOffset="300px">
             <img
