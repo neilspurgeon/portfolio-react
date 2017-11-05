@@ -21,6 +21,7 @@
 
 .textRevealText {
   display: block;
+  transition-property: transform;
   transition-delay: .2s;
   transition-duration: 2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
