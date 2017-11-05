@@ -1,3 +1,7 @@
 :root {
   --dark-text-color: #000;
+  --mob-edge-width: 7.5%;
 }
+
+@custom-media --viewport-mob-only (width <= 440px);
+@custom-media --viewport-large (width >= 1200px);

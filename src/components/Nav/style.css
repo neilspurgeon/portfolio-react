@@ -1,8 +1,14 @@
+@import '../../sharedStyles/variables.css';
+
 .navWrapper,
 .aside {
   position: fixed;
   z-index: 999;
-  right: calc(16.6% - 60px);
+  right: var(--mob-edge-width);
+
+  @media (--viewport-large) {
+    right: calc(16.6% - 60px);
+  }
 }
 
 .navWrapper {
@@ -29,5 +35,13 @@
   bottom: 30px;
   font-size: 1.2rem;
   height: 0;
-  overflow: visible;
+  right: calc(3.75% + -4px);
+  
+  @media (--viewport-mob-only) {
+    font-size: 10px;
+  }
+
+  @media (--viewport-large) {
+    right: calc(16.6% - 60px);
+  }
 }
