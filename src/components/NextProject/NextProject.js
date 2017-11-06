@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
@@ -65,7 +66,7 @@ class NextProject extends React.Component {
 
           <div className={styles.nextTextWrapper}>
             <h2 className={styles.nextText}><span className={styles.label}>Next Project</span> <br />
-            <a className={styles.nextLink} href={this.props.path}>{this.props.title}</a></h2>
+            <Link className={styles.nextLink} to={this.props.path}>{this.props.title}</Link></h2>
           </div>
 
         </div>

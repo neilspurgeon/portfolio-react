@@ -21,8 +21,14 @@ const ProjectRoute = ({ component: Component, ...rest }) => (
   )}/>
 );
 
+const ScrollToTop = () => {
+  window.scrollTo(0, 0);
+  return null;
+};
+
 const Routes = (props) => (
   <div>
+    <Route path="/" component={ScrollToTop} />
     <Switch>
       <Route exact path="/" component={Home} />
 
