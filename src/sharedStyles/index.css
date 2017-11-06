@@ -24,7 +24,10 @@
 
 * { box-sizing: border-box; }
 
-img { width: 100%; }
+img {
+  display: block;
+  width: 100%;
+}
 
 /*62.5% * 16px = 10px base font size*/
 html { font-size: 62.5%; }

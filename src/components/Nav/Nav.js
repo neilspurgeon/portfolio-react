@@ -1,5 +1,4 @@
 import React from 'react';
-import Grid from 'components/Grid/Grid.js';
 import {NavLink } from 'react-router-dom';
 import styles from './style.css';
 
@@ -20,7 +19,7 @@ const Nav = () => {
           exact
           activeStyle={{textDecoration: 'underline'}}
           className={styles.navLink}
-          to={'/'}>
+          to={'/about'}>
           About
         </NavLink>
 
