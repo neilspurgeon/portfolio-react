@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from 'pages/Home/Home.js';
+import About from 'pages/About/About.js';
 import projects from 'projects';
 import ProjectLayout from 'layouts/ProjectLayout/ProjectLayout';
 import NotFound from 'pages/NotFound/NotFound.js';
@@ -31,6 +32,7 @@ const Routes = (props) => (
     <Route path="/" component={ScrollToTop} />
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
 
       {projects.map((project, i, arr) => {
         // if last project, start back at the begining
