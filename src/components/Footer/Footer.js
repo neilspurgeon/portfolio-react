@@ -26,7 +26,7 @@ class Footer extends React.Component {
   render() {
     return (
       <Grid>
-        <Waypoint bottomOffset="300px" onEnter={this.handleEnter}>
+        <Waypoint bottomOffset="20%" onEnter={this.handleEnter}>
           <footer className={this.state.footerClasses.join(' ')}>
 
             <ul className={[styles.contact, styles.list].join(' ')}>
