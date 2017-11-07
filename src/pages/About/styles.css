@@ -10,7 +10,7 @@
   @media (--viewport-large) {
     grid-column: 6 / 11;
     padding: 0;
-    margin: 25vh 0 100px;
+    margin: 30vh 0 100px;
   }
 }
 
@@ -27,7 +27,7 @@
 
 .sectionLabel {
   color: var(--light-text-color);
-  margin-top: 3em;
+  margin: 3em 0 0;
 }
 
 .sectionLabel:first-child {
