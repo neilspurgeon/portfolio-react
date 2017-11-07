@@ -1,24 +1,27 @@
 import React from 'react';
 import {NavLink } from 'react-router-dom';
 import styles from './style.css';
+import { withRouter } from 'react-router-dom';
 
 const Nav = () => {
+  let workActiveClass = (window.location.href.indexOf("work") > -1) ? styles.isActive : null;
+
   return (
     <div>
       <nav className={styles.navWrapper}>
 
         <NavLink
           exact
-          activeStyle={{textDecoration: 'underline'}}
-          className={styles.navLink}
+          className={[styles.navLink, workActiveClass].join(' ')}
+          activeClassName={styles.isActive}
           to={'/'}>
-          Home
+          Work
         </NavLink>
 
         <NavLink
           exact
-          activeStyle={{textDecoration: 'underline'}}
           className={styles.navLink}
+          activeClassName={styles.isActive}
           to={'/about'}>
           About
         </NavLink>
@@ -34,4 +37,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default withRouter(Nav);

@@ -6,7 +6,7 @@ const data = {
   subTitle: '— Packaging, Print, Branding',
   hero: heroImage,
   card: cardImage,
-  path: '/juniper-ridge'
+  path: '/work/juniper-ridge'
 };
 
 export default data;

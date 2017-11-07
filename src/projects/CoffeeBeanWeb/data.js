@@ -6,7 +6,7 @@ const data = {
   subTitle: '— Website Design, UX Design',
   hero: heroImage,
   card: cardImage,
-  path: '/coffee-bean-web'
+  path: '/work/coffee-bean-web'
 };
 
 export default data;
