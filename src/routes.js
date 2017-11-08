@@ -36,7 +36,7 @@ const Routes = (props) => (
 
       {projects.map((project, i, arr) => {
         // if last project, start back at the begining
-        let nextProject = ([i] + 1)  <= arr.length ? arr[i + 1] : arr[0];
+        let nextProject = (i+1 < arr.length) ? arr[i+1] : arr[0];
         return (
           <ProjectRoute
             exact path={project.data.path}
