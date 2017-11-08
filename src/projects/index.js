@@ -4,6 +4,8 @@ import JuniperRidgeData from './JuniperRidge/data.js';
 import JuniperRidge from './JuniperRidge/JuniperRidge.js';
 import IngearData from './Ingear/data.js';
 import Ingear from './Ingear/Ingear.js';
+import FreshStepData from './FreshStep/data.js';
+import FreshStep from './FreshStep/FreshStep.js';
 
 const projects = [
   {
@@ -17,6 +19,10 @@ const projects = [
   {
     data: IngearData,
     component: Ingear
+  },
+  {
+    data: FreshStepData,
+    component: FreshStep
   }
 ];
 
