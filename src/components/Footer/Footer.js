@@ -37,8 +37,8 @@ class Footer extends React.Component {
 
             <ul className={[styles.links, styles.list].join(' ')}>
               <span className={globalStyles.label}>Elsewhere</span>
-              <li><a className={styles.footerLink} href="tel:1-805-748-3201">805 748 3201</a></li>
-              <li><a className={styles.footerLink} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></li>
+              <li><a className={styles.footerLink} target="_blank" rel='noopener noreferrer' href="https://www.linkedin.com/in/neilspurgeon/">LinkedIn</a></li>
+              <li><a className={styles.footerLink} target="_blank" rel='noopener noreferrer' href="https://github.com/neilspurgeon/">GitHub</a><br/ ></li>
             </ul>
 
             <p className={styles.copyright}>©2017 Neil Spurgeon. All Rights Reserved.</p>
