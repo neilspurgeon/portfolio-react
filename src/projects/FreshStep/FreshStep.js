@@ -1,7 +1,10 @@
 import React from 'react';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
-import image1 from './images/fresh-step-home.jpg';
+import image1 from './images/fresh-step-product-detail.jpg';
+import image2 from './images/fresh-step-home.jpg';
+import image3 from './images/fresh-step-mmm.jpg';
+import image4 from './images/fresh-step-reward-detail.jpg';
 
 const FreshStep = () => {
   return (
@@ -13,7 +16,21 @@ const FreshStep = () => {
 
       <ProjectImage
         image={image1}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        altText="Fresh Step product detail."
+      />
+
+      <ProjectImage
+        image={image2}
+        altText="Fresh Step home page."
+      />
+
+      <ProjectImage
+        image={image3}
+        altText="Fresh Step Million Meow Mission."
+      />
+      <ProjectImage
+        image={image4}
+        altText="Fresh Step reward detail."
       />
 
     </div>
