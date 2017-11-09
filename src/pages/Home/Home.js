@@ -4,6 +4,7 @@ import Grid from 'components/Grid/Grid.js';
 import Nav from 'components/Nav/Nav.js';
 import Footer from 'components/Footer/Footer.js';
 import styles from './styles.css';
+import sharedStyles from 'sharedStyles/index.css';
 import projects from 'projects';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Grid>
         <header className={styles.intro}>
           <h1 className={styles.introText}>I’m Neil, a digital product  designer & frontend developer.</h1>
+          <Link className={sharedStyles.arrowLink} to='/about'>Learn More</Link>
         </header>
 
         <section className={styles.projects}>
