@@ -52,9 +52,7 @@ const Home = () => {
             })}
           </div>
 
-
         </section>
-
       </Grid>
       <Footer />
     </div>
