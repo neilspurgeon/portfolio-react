@@ -25,7 +25,6 @@
   grid-template-columns: repeat(1, 100%);
   grid-gap: 30px;
 
-
   @media (--viewport-large) {
     grid-column: 1 / 11;
     margin: 0 30px;
@@ -34,19 +33,22 @@
   }
 }
 
-@media (--viewport-large) {
-  .card:nth-child(2n - 1) {
-    margin-top: 50%;
-  }
+.leftCol {
+  margin-top: 25vh;
 }
 
 .card {
   text-decoration: none;
   color: var(--dark-text-color);
-  height: 100%;
   pointer-events: none;
   cursor: pointer;
   text-align: center;
+  display: inline-block;
+  margin-bottom: 60px;
+
+  @media (--viewport-large) {
+    margin-bottom: 100px;
+  }
 }
 
 .imageWrapper {
@@ -77,7 +79,7 @@
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
-  padding: 1em 0 0;
+  padding: .5em 0 0;
 }
 
 .subTitle {
