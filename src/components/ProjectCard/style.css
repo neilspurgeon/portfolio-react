@@ -1,0 +1,52 @@
+@import '../../sharedStyles/variables.css';
+
+.card {
+  text-decoration: none;
+  color: var(--dark-text-color);
+  pointer-events: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 60px;
+
+  @media (--viewport-large) {
+    margin-bottom: 100px;
+  }
+}
+
+.imageWrapper {
+  clip-path: inset(0);
+  transition: clip-path 1s cubic-bezier(.2,.96,.34,1);
+  overflow: hidden;
+}
+
+.card:hover .imageWrapper {
+  clip-path: inset(1.5% 1.5% 1.5% 1.5%);
+}
+
+.card:hover .image {
+  transform: scale(1.07);
+}
+
+.image {
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 5s cubic-bezier(.2,.96,.34,1);
+  background: #FAF8F8;
+}
+
+.title {
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: .5em 0 0;
+}
+
+.subTitle {
+  color: var(--light-text-color);
+  font-size: 1.4rem;
+  margin: 0;
+}
