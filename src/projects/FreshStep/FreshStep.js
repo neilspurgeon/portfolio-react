@@ -5,6 +5,7 @@ import image1 from './images/fresh-step-product-detail.jpg';
 import image2 from './images/fresh-step-home.jpg';
 import image3 from './images/fresh-step-mmm.jpg';
 import image4 from './images/fresh-step-reward-detail.jpg';
+import sharedStyles from 'sharedStyles/index.css';
 
 const FreshStep = () => {
   return (
@@ -12,6 +13,9 @@ const FreshStep = () => {
 
       <ProjectText>
         <p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>
+        <p className={sharedStyles.pSmall}><span className={sharedStyles.label}>Credits</span><br />
+        Designed at Hathway<br />
+        Creative Director: Garrett Deiter</p>
       </ProjectText>
 
       <ProjectImage
