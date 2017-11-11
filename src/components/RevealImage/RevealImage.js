@@ -25,7 +25,7 @@ class RevealImage extends React.Component {
 
   render() {
     return (
-      <Waypoint bottomOffset="200px" onEnter={this.handleEnter}>
+      <Waypoint bottomOffset={this.props.bottomOffset || '200px'} onEnter={this.handleEnter}>
         <span className={this.state.classes.join(' ')}>
           {this.props.children}
         </span>
