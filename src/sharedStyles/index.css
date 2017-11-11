@@ -83,6 +83,10 @@ p,
   }
 }
 
+p.pSmall {
+  font-size: 1.4rem;
+}
+
 .label,
 p.label {
   color: var(--light-text-color);
