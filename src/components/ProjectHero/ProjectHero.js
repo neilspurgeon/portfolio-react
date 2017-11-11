@@ -6,7 +6,7 @@ import styles from './style.css';
 const ProjectHero = (props) => {
   return (
     <Grid>
-      <RevealImage className={styles.wrapper}>
+      <RevealImage className={styles.wrapper} revealClass={styles.reveal} inViewClass={styles.inView}>
         <img className={styles.image} src={props.image} alt={props.altText} />
       </RevealImage>
     </Grid>

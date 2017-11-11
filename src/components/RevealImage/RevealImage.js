@@ -7,7 +7,7 @@ class RevealImage extends React.Component {
     super(props);
     this.state = {
       classes: [
-        styles.clipReveal,
+        props.revealClass || styles.clipReveal,
         props.className
       ]
     };
@@ -16,8 +16,8 @@ class RevealImage extends React.Component {
   handleEnter = () => {
     this.setState({
       classes: [
-        styles.clipReveal,
-        styles.inView,
+        this.props.revealClass || styles.clipReveal,
+        this.props.inViewClass || styles.inView,
         this.props.className
       ]
     });
