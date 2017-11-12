@@ -11,8 +11,7 @@ class NextProject extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageClasses: [
-        styles.nextImage,
+      revealImageClasses: [
         transitions.clipReveal
       ]
     };
@@ -20,8 +19,7 @@ class NextProject extends React.Component {
 
   handleEnter = () => {
     this.setState({
-      imageClasses: [
-        styles.nextImage,
+      revealImageClasses: [
         transitions.clipReveal,
         transitions.inView
       ]
@@ -49,29 +47,36 @@ class NextProject extends React.Component {
 
   render() {
     return (
-      <Grid>
-        <div className={styles.wrapper}>
+      <div>
+        <Waypoint topOffset="20%" onEnter={this.handleDividerEnter} onLeave={this.handleDividerLeave}>
+          <span  className={styles.divider} ref={(divider) => { this.divider = divider; }} />
+        </Waypoint>
+        <Grid>
+          <div className={styles.wrapper}>
 
-          <Waypoint topOffset="20%" onEnter={this.handleDividerEnter} onLeave={this.handleDividerLeave}>
-            <span  className={styles.divider} ref={(divider) => { this.divider = divider; }} />
-          </Waypoint>
+            <Waypoint onEnter={this.handleEnter} bottomOffset="300px">
 
-          <Waypoint onEnter={this.handleEnter} bottomOffset="300px">
-            <img
-              className={this.state.imageClasses.join(' ')}
-              src={this.props.image}
-              alt={this.props.altText}
-            />
-          </Waypoint>
+              <Link to={this.props.path} className={styles.nextLink}>
+                <div className={styles.imageWrapper}>
+                  <div className={this.state.revealImageClasses.join(' ')}>
+                    <img
+                      className={styles.nextImage}
+                      src={this.props.image}
+                      alt={this.props.altText}
+                    />
+                  </div>
+                </div>
+                <div className={styles.nextTextWrapper}>
+                  <h2 className={styles.nextText}><span className={styles.label}>Next Project</span> <br />
+                  <span className={styles.nextTitle}>{this.props.title}</span></h2>
+                </div>
+              </Link>
 
-          <div className={styles.nextTextWrapper}>
-            <h2 className={styles.nextText}><span className={styles.label}>Next Project</span> <br />
-            <Link className={styles.nextLink} to={this.props.path}>{this.props.title}</Link></h2>
+            </Waypoint>
           </div>
+        </Grid>
+      </div>
 
-        </div>
-
-      </Grid>
     );
   }
 };
