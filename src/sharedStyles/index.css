@@ -137,6 +137,12 @@ p.label {
   border: 1px solid #000;
   padding: 1em 4em .9em 1em;
   margin-right: -100px;
+  transition: padding .3s cubic-bezier(.34,.15,.31,.92);
+  will-change: padding;
+}
+
+.arrowLink:hover {
+  padding-right: 5em;
 }
 
 .arrowLink:before,
@@ -148,7 +154,7 @@ p.label {
   right: 3em;
   opacity: 0;
   transition: .3s cubic-bezier(.34,.15,.31,.92);
-  transition-delay: .1s;
+  transition-delay: 0s;
   background-image: url(../assets/images/link-arrow-dark.svg);
   background-position: center right;
   background-repeat: no-repeat;
@@ -165,6 +171,7 @@ p.label {
 .arrowLink:hover:before {
     transform: translate(2em, 0);
     opacity: 1;
+    right: 4em
 }
 .arrowLink:hover:after {
     transform: translate(2em, 0);
