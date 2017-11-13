@@ -17,7 +17,8 @@
 }
 
 .twoUpLeftBleed,
-.twoUpBleedBottom {
+.twoUpBleedBottom,
+.threeUpMobile {
   display: flex;
   padding: 0 5vw;
   justify-content: space-between;
@@ -41,4 +42,14 @@
 
 .twoUpRight {
   box-shadow: -3vw 3vw 3vw -3vw rgba(0,0,0,.15);
+}
+
+.threeUpMobile {
+  padding: 5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.threeUpMobileImage {
+  width: 29%;
 }

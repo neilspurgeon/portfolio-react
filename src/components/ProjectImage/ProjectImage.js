@@ -38,6 +38,18 @@ const ProjectImage = (props) => {
     </Grid>
   );
 
+  if (props.layout === 'threeUpMobile') return (
+    <Grid>
+      <RevealImage className={styles.imageWrapper}>
+        <div className={styles.threeUpMobile} style={props.backgroundStyle}>
+          { props.images.map((project) => {
+            return <Image className={styles.threeUpMobileImage} image={project.image} altText={project.altText} />;
+          })}
+        </div>
+      </RevealImage>
+    </Grid>
+  );
+
   return (
     <Grid>
       <RevealImage className={styles.imageWrapper} style={props.backgroundStyle}>

@@ -51,7 +51,7 @@ const Ingear = () => {
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="threeUpMobile"
         images={[
           {
             image: mobile1,

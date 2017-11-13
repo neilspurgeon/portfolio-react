@@ -16,7 +16,7 @@ const JuniperRidge = () => {
       </ProjectText>
 
       <ProjectImage
-        layout="bleedBottom"
+        layout="fullBleed"
         images={[
           {
             image: image1,
