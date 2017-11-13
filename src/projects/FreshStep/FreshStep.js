@@ -2,7 +2,8 @@ import React from 'react';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 import image1 from './images/fresh-step-product-detail.jpg';
-import image2 from './images/fresh-step-home.jpg';
+import homeTop from './images/fresh-step-home-top.jpg';
+import homeBottom from './images/fresh-step-home-bottom.jpg';
 import image3 from './images/fresh-step-mmm.jpg';
 import image4 from './images/fresh-step-reward-detail.jpg';
 import sharedStyles from 'sharedStyles/index.css';
@@ -19,22 +20,46 @@ const FreshStep = () => {
       </ProjectText>
 
       <ProjectImage
-        image={image1}
-        altText="Fresh Step product detail."
+        layout="bleedBottom"
+        images={[
+          {
+            image: image1,
+            altText: "Fresh Step product detail."
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image2}
-        altText="Fresh Step home page."
+        layout="twoUpLeftBleed"
+        images={[
+          {
+            image: homeBottom,
+            altText: "Fresh Step home page."
+          }, {
+            image: homeTop,
+            altText: "Fresh Step home page."
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image3}
-        altText="Fresh Step Million Meow Mission."
+        layout="bleedBottom"
+        images={[
+          {
+            image: image3,
+            altText: "Fresh Step Million Meow Mission."
+          }
+        ]}
       />
+
       <ProjectImage
-        image={image4}
-        altText="Fresh Step reward detail."
+        layout="bleedBottom"
+        images={[
+          {
+            image: image4,
+            altText: "Fresh Step reward detail."
+          }
+        ]}
       />
 
     </div>

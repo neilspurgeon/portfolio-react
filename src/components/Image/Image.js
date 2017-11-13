@@ -25,7 +25,7 @@ class Image extends React.Component {
   render() {
 
     return (
-        <div className={styles.wrapper}>
+        <div className={[styles.wrapper, this.props.className].join(' ')}>
           <img
             className={this.state.classes.join(' ')}
             onLoad={this.handleLoad.bind(null, this)}
