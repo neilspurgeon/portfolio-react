@@ -16,13 +16,18 @@
   padding: 5vw 5vw 0 5vw;
 }
 
-.twoUpLeftBleed {
+.twoUpLeftBleed,
+.twoUpBleedBottom {
   display: flex;
   padding: 0 5vw;
   justify-content: space-between;
   align-items: flex-end;
   background: #F1ECEC;
   overflow: hidden;
+}
+
+.twoUpBleedBottom {
+  padding-top: 5vw;
 }
 
 .twoUpLeft,

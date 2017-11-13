@@ -5,6 +5,10 @@ import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 
 
 const CoffeeBeanWeb = () => {
+  const bgStyle = {
+    backgroundImage: 'linear-gradient(-135deg, #F6F4F8 0%, #F6F4F8 100%)'
+  };
+
   return (
     <div>
 
@@ -14,8 +18,14 @@ const CoffeeBeanWeb = () => {
       </ProjectText>
 
       <ProjectImage
-        image={heroImage}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="bleedBottom"
+        images={[
+          {
+            image: heroImage,
+            altText: "Coffee Bean and Tea Leaf Homepages."
+          }
+        ]}
       />
 
       <ProjectText>
@@ -23,8 +33,25 @@ const CoffeeBeanWeb = () => {
       </ProjectText>
 
       <ProjectImage
-        image={heroImage}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="bleedBottom"
+        images={[
+          {
+            image: heroImage,
+            altText: "Coffee Bean and Tea Leaf Homepages."
+          }
+        ]}
+      />
+
+      <ProjectImage
+        backgroundStyle={bgStyle}
+        layout="bleedBottom"
+        images={[
+          {
+            image: heroImage,
+            altText: "Coffee Bean and Tea Leaf Homepages."
+          }
+        ]}
       />
 
     </div>

@@ -1,13 +1,22 @@
 import React from 'react';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
-import image1 from './images/ingear-home-full.jpg';
-import image2 from './images/ingear-product-detail.jpg';
-import image3 from './images/ingear-mobile.jpg';
-import image4 from './images/ingear-product-detail-nav.jpg';
-import image5 from './images/ingear-support.jpg';
+import home from './images/homepage.jpg';
+import productPage1 from './images/product-page-autoxscape.jpg';
+import productPage2 from './images/product-page-autoalert.jpg';
+import mobile1 from './images/ingear-mob-1.jpg';
+import mobile2 from './images/ingear-mob-2.jpg';
+import mobile3 from './images/ingear-mob-3.jpg';
+import scrolledNav from './images/product-page-scrolled-navbar.jpg';
+import contact from './images/contact.jpg';
+import support from './images/support-faqs.jpg';
+
+const bgStyle = {
+  backgroundImage: 'linear-gradient(-135deg, #E9ECF1 0%, #E7E9EC 100%)'
+};
 
 const Ingear = () => {
+
   return (
     <div>
 
@@ -16,33 +25,70 @@ const Ingear = () => {
       </ProjectText>
 
       <ProjectImage
-        image={image1}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="bleedBottom"
+        images={[
+          {
+            image: home,
+            altText: "Ingear homepage design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image2}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="twoUpLeftBleed"
+        images={[
+          {
+            image: productPage1,
+            altText: "Ingear product detail design"
+          }, {
+            image: productPage2,
+            altText: "Ingear product detail design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image2}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="bleedBottom"
+        images={[
+          {
+            image: mobile1,
+            altText: "Ingear mobile web design"
+          }, {
+            image: mobile2,
+            altText: "Ingear mobile web design"
+          }, {
+            image: mobile3,
+            altText: "Ingear mobile web design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image3}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="bleedBottom"
+        images={[
+          {
+            image: scrolledNav,
+            altText: "Ingear website navigation design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image4}
-        altText="Coffe Bean and Tea Leaf Homepages."
-      />
-
-      <ProjectImage
-        image={image5}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        backgroundStyle={bgStyle}
+        layout="twoUpBleedBottom"
+        images={[
+          {
+            image: contact,
+            altText: "Ingear contact design"
+          }, {
+            image: support,
+            altText: "Ingear support design"
+          }
+        ]}
       />
 
     </div>

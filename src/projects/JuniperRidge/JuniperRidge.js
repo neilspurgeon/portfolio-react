@@ -16,28 +16,43 @@ const JuniperRidge = () => {
       </ProjectText>
 
       <ProjectImage
-        image={image1}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        layout="bleedBottom"
+        images={[
+          {
+            image: image1,
+            altText: "Juniper Ridge packaging design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image2}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        layout="fullBleed"
+        images={[
+          {
+            image: image2,
+            altText: "Juniper Ridge packaging design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image2}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        layout="fullBleed"
+        images={[
+          {
+            image: image3,
+            altText: "Juniper Ridge packaging design"
+          }
+        ]}
       />
 
       <ProjectImage
-        image={image3}
-        altText="Coffe Bean and Tea Leaf Homepages."
-      />
-
-      <ProjectImage
-        image={image4}
-        altText="Coffe Bean and Tea Leaf Homepages."
+        layout="fullBleed"
+        images={[
+          {
+            image: image4,
+            altText: "Juniper Ridge packaging design"
+          }
+        ]}
       />
 
     </div>
