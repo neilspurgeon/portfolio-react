@@ -2,14 +2,14 @@
 
 .intro {
   grid-column: 1 / 3;
-  padding: 0 var(--mob-edge-width);
+  padding: 10vh var(--mob-edge-width) 0;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media (--viewport-large) {
-    padding: 0;
+    padding: 10vh 0 0 0;
     grid-column: 3 / 11;
   }
 }
@@ -34,5 +34,7 @@
 }
 
 .leftCol {
-  margin-top: 25vh;
+  @media (--viewport-large) {
+    margin-top: 25vh;
+  }
 }
