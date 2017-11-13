@@ -8,7 +8,6 @@ class Image extends React.Component {
       isLoaded: false,
       classes: [
         styles.image,
-        props.className
       ]
     };
   }
@@ -18,8 +17,7 @@ class Image extends React.Component {
       isLoaded: true,
       classes: [
         styles.image,
-        styles.isLoaded,
-        this.props.className
+        styles.isLoaded
       ]
     });
   }
