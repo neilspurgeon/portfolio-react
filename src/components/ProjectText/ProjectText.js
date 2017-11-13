@@ -11,7 +11,7 @@ const ProjectText = (props) => {
         className={styles.wrapper}
         revealClass={transitions.fadeUpReveal}
         inViewClass={transitions.inView}
-        bottomOffset="50px">
+        >
         {props.children}
       </RevealImage>
     </Grid>
