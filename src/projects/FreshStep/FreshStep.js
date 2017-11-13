@@ -4,11 +4,15 @@ import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 import image1 from './images/fresh-step-product-detail.jpg';
 import homeTop from './images/fresh-step-home-top.jpg';
 import homeBottom from './images/fresh-step-home-bottom.jpg';
-import image3 from './images/fresh-step-mmm.jpg';
-import image4 from './images/fresh-step-reward-detail.jpg';
+import image3 from './images/fresh-step-mmm-landing.jpg';
+import image4 from './images/fresh-step-rewards-detail.jpg';
 import sharedStyles from 'sharedStyles/index.css';
 
 const FreshStep = () => {
+  const bgStyle = {
+    backgroundImage: 'linear-gradient(-135deg, #E0EDF5 0%, #E0EBF4 100%)'
+  };
+
   return (
     <div>
 
@@ -21,6 +25,7 @@ const FreshStep = () => {
 
       <ProjectImage
         layout="bleedBottom"
+        backgroundStyle={bgStyle}
         images={[
           {
             image: image1,
@@ -31,6 +36,7 @@ const FreshStep = () => {
 
       <ProjectImage
         layout="twoUpLeftBleed"
+        backgroundStyle={bgStyle}
         images={[
           {
             image: homeBottom,
@@ -44,6 +50,7 @@ const FreshStep = () => {
 
       <ProjectImage
         layout="bleedBottom"
+        backgroundStyle={bgStyle}
         images={[
           {
             image: image3,
@@ -54,6 +61,7 @@ const FreshStep = () => {
 
       <ProjectImage
         layout="bleedBottom"
+        backgroundStyle={bgStyle}
         images={[
           {
             image: image4,

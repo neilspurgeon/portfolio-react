@@ -9,7 +9,7 @@ const ProjectImage = (props) => {
   if (props.layout === 'twoUpLeftBleed') return (
     <Grid>
       <RevealImage className={styles.imageWrapper}>
-        <div className={styles.twoUpLeftBleed}>
+        <div className={styles.twoUpLeftBleed} style={props.backgroundStyle}>
           <Image className={styles.twoUpLeft} image={props.images[0].image} altText={props.images[0].altText} />
           <Image className={styles.twoUpRight} image={props.images[1].image} altText={props.images[1].altText} />
         </div>
@@ -20,7 +20,7 @@ const ProjectImage = (props) => {
   if (props.layout === 'bleedBottom') return (
     <Grid>
       <RevealImage className={styles.imageWrapper}>
-        <div className={styles.bleedBottom}>
+        <div className={styles.bleedBottom} style={props.backgroundStyle}>
           <Image image={props.images[0].image} altText={props.images[0].altText} />
         </div>
       </RevealImage>
@@ -29,7 +29,7 @@ const ProjectImage = (props) => {
 
   return (
     <Grid>
-      <RevealImage className={styles.imageWrapper}>
+      <RevealImage className={styles.imageWrapper} style={props.backgroundStyle}>
         <Image image={props.images[0].image} altText={props.images[0].altText} />
       </RevealImage>
     </Grid>
