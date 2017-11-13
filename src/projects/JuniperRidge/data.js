@@ -3,7 +3,7 @@ import cardImage from './images/jr-card.jpg';
 
 const data = {
   title: 'Juniper Ridge',
-  subTitle: '— Packaging, Print, Branding',
+  subTitle: 'Packaging, Print, Branding',
   hero: heroImage,
   card: cardImage,
   path: '/work/juniper-ridge'

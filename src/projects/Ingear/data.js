@@ -3,7 +3,7 @@ import cardImage from './images/ingear-card.jpg';
 
 const data = {
   title: 'Ingear',
-  subTitle: '— Packaging, Print, Branding',
+  subTitle: 'Packaging, Print, Branding',
   hero: heroImage,
   card: cardImage,
   path: '/work/ingear'
