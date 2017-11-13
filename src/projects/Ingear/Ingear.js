@@ -26,7 +26,7 @@ const Ingear = () => {
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="pad"
         images={[
           {
             image: home,

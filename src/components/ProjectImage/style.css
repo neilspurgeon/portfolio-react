@@ -18,17 +18,26 @@
 
 .twoUpLeftBleed,
 .twoUpBleedBottom,
-.threeUpMobile {
+.threeUpMobile,
+.fullBleed {
   display: flex;
-  padding: 0 5vw;
+  padding: 5vw;
   justify-content: space-between;
   align-items: flex-end;
   background: #F1ECEC;
   overflow: hidden;
 }
 
+.fullBleed {
+  padding: 0;
+}
+
 .twoUpBleedBottom {
-  padding-top: 5vw;
+  padding: 5vw 5vw 0 5vw;
+}
+
+.twoUpLeftBleed {
+  padding: 0vw 5vw 0;
 }
 
 .twoUpLeft,
@@ -45,7 +54,6 @@
 }
 
 .threeUpMobile {
-  padding: 5vw;
   justify-content: space-between;
   align-items: center;
 }

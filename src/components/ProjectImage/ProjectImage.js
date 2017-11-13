@@ -50,6 +50,15 @@ const ProjectImage = (props) => {
     </Grid>
   );
 
+  if (props.layout === 'fullBleed') return (
+    <Grid>
+      <RevealImage className={styles.fullBleed} style={props.backgroundStyle}>
+        <Image image={props.images[0].image} altText={props.images[0].altText} />
+      </RevealImage>
+    </Grid>
+  );
+
+
   return (
     <Grid>
       <RevealImage className={styles.imageWrapper} style={props.backgroundStyle}>
