@@ -7,7 +7,8 @@ class Image extends React.Component {
     this.state = {
       isLoaded: false,
       classes: [
-        styles.image
+        styles.image,
+        props.className
       ]
     };
   }
@@ -17,7 +18,8 @@ class Image extends React.Component {
       isLoaded: true,
       classes: [
         styles.image,
-        styles.isLoaded
+        styles.isLoaded,
+        this.props.className
       ]
     });
   }
@@ -29,7 +31,8 @@ class Image extends React.Component {
           <img
             className={this.state.classes.join(' ')}
             onLoad={this.handleLoad.bind(null, this)}
-            src={this.props.image}
+            srcSet={this.props.image.srcSet}
+            src={this.props.image.src}
             alt={this.props.altText}
             ref={(img) => { this.img = img; }}
           />

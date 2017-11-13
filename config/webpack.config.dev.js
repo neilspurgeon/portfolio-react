@@ -154,10 +154,15 @@ module.exports = {
       // A missing `test` is equivalent to a match.
       {
         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        loader: require.resolve('url-loader'),
+        // loader: require.resolve('url-loader'),
+        loader: 'responsive-loader',
         options: {
+          adapter: require('responsive-loader/sharp'),
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]',
+          sizes: [300, 600, 1200, 2000],
+          placeholder: true,
+          placeholderSize: 50,
         },
       },
       // Process JS with Babel.
