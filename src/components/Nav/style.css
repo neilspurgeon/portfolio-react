@@ -1,7 +1,8 @@
 @import '../../sharedStyles/variables.css';
 
 .navWrapper,
-.aside {
+.aside,
+.projectAside {
   position: fixed;
   z-index: 999;
   right: var(--mob-edge-width);
@@ -42,12 +43,15 @@
   transform: scaleX(1);
 }
 
-.aside {
+.aside,
+.projectAside {
   transform: rotate(90deg);
   transform-origin: right center;
   bottom: 30px;
   font-size: 1.2rem;
   height: 0;
+  opacity: 0;
+  transition: .6s ease opacity;
   right: calc(3.75% + -4px);
 
   @media (--viewport-mob-only) {
@@ -58,3 +62,22 @@
     right: calc(16.6% - 60px);
   }
 }
+
+.aside {
+  transition-delay: 0s;
+}
+
+.aside.isVisible {
+  transition-delay: .6s;
+  opacity: 1;
+}
+
+.projectAside {
+  transition-delay: 0s;
+}
+
+.projectAside.isVisible {
+  opacity: 1;
+  transition-delay: .6s;
+}
+

@@ -4,35 +4,61 @@ import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
 import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import NextProject from 'components/NextProject/NextProject.js';
 import Footer from 'components/Footer/Footer.js';
+import Waypoint from 'react-waypoint';
 
-const ProjectLayout = (props) => {
-  return (
-    <div>
+class ProjectLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showProjectAside: false
+    };
+  }
 
-      <Nav />
+  handleEnter = () => {
+    this.setState({
+      showProjectAside: true
+    });
+  }
 
-        <ProjectHeader
-          title={props.title}
-          subTitle={props.subTitle}
-        />
+  handleLeave = () => {
+    this.setState({
+      showProjectAside: false
+    });
+  }
 
-        <ProjectHero
-          image={props.hero}
-          altText={props.altText}
-        />
+  render() {
+    return (
+      <div>
 
-        {props.children}
+        <Nav showScrolledAside={this.state.showProjectAside} asideText={this.props.title} />
 
-        <NextProject
-          image={props.nextProjectImage}
-          title={props.nextProjectTitle}
-          path={props.nextProjectPath}
-        />
+          <ProjectHeader
+            title={this.props.title}
+            subTitle={this.props.subTitle}
+          />
 
-      <Footer />
+          <ProjectHero
+            image={this.props.hero}
+            altText={this.props.altText}
+          />
 
-    </div>
-  );
+          <Waypoint onEnter={this.handleEnter} onLeave={this.handleLeave}>
+            <div>
+            {this.props.children}
+            </div>
+          </Waypoint>
+
+          <NextProject
+            image={this.props.nextProjectImage}
+            title={this.props.nextProjectTitle}
+            path={this.props.nextProjectPath}
+          />
+
+        <Footer />
+
+      </div>
+    );
+  }
 };
 
 export default ProjectLayout;

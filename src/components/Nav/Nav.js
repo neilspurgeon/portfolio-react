@@ -3,8 +3,10 @@ import {NavLink } from 'react-router-dom';
 import styles from './style.css';
 import { withRouter } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = (props) => {
   let workActiveClass = (window.location.href.indexOf("work") > -1) ? styles.isActive : null;
+  let defaultAsideClass = !props.showScrolledAside ? [styles.aside, styles.isVisible] : [styles.aside];
+  let scrolledAsideClass = props.showScrolledAside ? [styles.projectAside, styles.isVisible] : [styles.projectAside];
 
   return (
     <div>
@@ -27,11 +29,14 @@ const Nav = () => {
         </NavLink>
 
       </nav>
-      <div className={styles.aside}>
-        <span>
-          — Neil Spurgeon
-        </span>
+      <div className={defaultAsideClass.join(' ')}>
+        — Neil Spurgeon
       </div>
+
+      <div className={scrolledAsideClass.join(' ')}>
+        — {props.asideText}
+      </div>
+
     </div>
 
   );
