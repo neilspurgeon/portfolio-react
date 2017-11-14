@@ -64,7 +64,9 @@ const ProjectImage = (props) => {
   return (
     <Grid>
       <RevealImage className={styles.imageWrapper} style={props.backgroundStyle}>
-        <Image image={props.images[0].image} altText={props.images[0].altText} />
+        <div className={styles.pad} style={props.backgroundStyle}>
+          <Image image={props.images[0].image} altText={props.images[0].altText} />
+        </div>
       </RevealImage>
     </Grid>
   );

@@ -19,6 +19,7 @@
 .twoUpLeftBleed,
 .twoUpBleedBottom,
 .threeUpMobile,
+.pad,
 .fullBleed {
   display: flex;
   padding: 5vw;
