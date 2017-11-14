@@ -51,7 +51,7 @@
   font-size: 1.2rem;
   height: 0;
   opacity: 0;
-  transition: .6s ease opacity;
+  transition: .8s ease opacity;
   right: calc(3.75% + -4px);
 
   @media (--viewport-mob-only) {
@@ -68,7 +68,7 @@
 }
 
 .aside.isVisible {
-  transition-delay: .6s;
+  transition-delay: .8s;
   opacity: 1;
 }
 
@@ -78,6 +78,6 @@
 
 .projectAside.isVisible {
   opacity: 1;
-  transition-delay: .6s;
+  transition-delay: .8s;
 }
 

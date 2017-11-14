@@ -32,7 +32,7 @@ class ProjectHeader extends React.Component {
 
           <p className={[styles.subTitle, styles.textRevealWrapper].join(' ')}>
             <span className={this.state.revealClasses.join(' ')}>
-              — {this.props.subTitle}
+              {this.props.subTitle}
             </span>
           </p>
 
