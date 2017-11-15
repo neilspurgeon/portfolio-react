@@ -1,6 +1,6 @@
 @import '../../sharedStyles/variables.css';
 
-.loaderBody {
+.loaderBody.isLoading {
   overflow: hidden;
   height: 100vh;
   background-color: blue;
@@ -58,6 +58,9 @@
   display: grid;
   grid-template-columns: repeat(1, 100%);
   grid-gap: 30px;
+  opacity: 0;
+  animation: projectsKeyframes .8s forwards;
+  animation-delay: .3s;
 
   @media (--viewport-large) {
     grid-column: 1 / 11;
@@ -67,8 +70,23 @@
   }
 }
 
+.loaderBody .projects {
+  animation-delay: 1.6s;
+}
+
 .leftCol {
   @media (--viewport-large) {
     margin-top: 25vh;
+  }
+}
+
+@keyframes projectsKeyframes {
+  0% {
+    transform: translate3d(0, 10vh, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }

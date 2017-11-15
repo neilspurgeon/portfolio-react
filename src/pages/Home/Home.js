@@ -32,7 +32,6 @@ class Home extends React.Component {
       document.body.classList.toggle(styles.isLoading);
 
       window.setTimeout(() => {
-        document.body.classList.toggle(styles.loaderBody);
         document.body.classList.toggle(styles.isLoading);
         this.setState({
           isLoaded: true
