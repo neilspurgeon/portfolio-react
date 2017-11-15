@@ -50,6 +50,7 @@ body {
 h1,
 .h1 {
   font-size: 3.2rem;
+  
   @media screen and (min-width: 768px) {
     font-size: 4.2rem;
   }
@@ -129,6 +130,7 @@ p.label {
 
 .arrowLink {
   position: relative;
+  display: inline-block;
   letter-spacing: 0;
   font-size: 1.4rem;
   color: var(--dark-text-color);
