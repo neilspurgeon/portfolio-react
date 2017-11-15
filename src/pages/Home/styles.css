@@ -6,12 +6,6 @@
   background-color: blue;
 }
 
-.loaderBody.isLoading {
-  /*overflow: auto;*/
-  /*height: auto;*/
-  /*background-color: #FFF;*/
-}
-
 .loader .introText {
   color: #C3C3C3;
 }
@@ -27,7 +21,6 @@
   width: 100vw;
   height: 100vh;
   background: #131313;
-  /*clip-path: inset(0 0 0 0);*/
   clip-path: inset(0 0 100% 0);
   transition: .8s cubic-bezier(.34,.15,.31,.92) clip-path;
 }
@@ -38,7 +31,6 @@
   width: 100vw;
   height: 100vh;
   background: #131313;
-  /*clip-path: inset(0 0 100% 0);*/
   clip-path: inset(0 0 0 0);
 }
 
