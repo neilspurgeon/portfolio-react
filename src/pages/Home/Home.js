@@ -8,6 +8,8 @@ import sharedStyles from 'sharedStyles/index.css';
 import projects from 'projects';
 import ProjectCard from 'components/ProjectCard/ProjectCard.js';
 
+const introDuration = 1500;
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -35,11 +37,18 @@ class Home extends React.Component {
         document.body.classList.toggle(styles.isLoading);
         this.setState({
           isLoaded: true
-          });
-      }, 1500);
+        });
+        this.removeLoader();
+      }, introDuration);
 
       window.sessionStorage.setItem('hasViewedIntro', true);
     }
+  }
+
+  removeLoader = () => {
+    window.setTimeout(() => {
+      this.refs.loader.remove();
+    }, introDuration);
   }
 
   render() {
@@ -47,6 +56,7 @@ class Home extends React.Component {
     const header = (<header className={styles.intro}>
       <h1 className={styles.introText}>I’m Neil, a digital product  designer & frontend developer.</h1>
       <Link className={[sharedStyles.arrowLink, styles.introLink].join(' ')} to='/about'>Learn More</Link>
+
     </header>);
 
     return (
@@ -59,7 +69,7 @@ class Home extends React.Component {
 
           { this.state.showLoader &&
             // Only render intro if it hasn't been viewed
-            <div className={this.state.isLoaded ? styles.loader : [styles.loader, styles.isLoading].join(' ')}>
+            <div ref='loader' className={this.state.isLoaded ? styles.loader : [styles.loader, styles.isLoading].join(' ')}>
               <Grid>
                 {header}
               </Grid>
