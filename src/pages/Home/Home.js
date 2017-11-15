@@ -12,19 +12,35 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      showLoader: true,
       isLoaded: false
     };
   }
 
-  componentDidMount = () => {
-    document.body.classList.toggle(styles.loaderBody);
-
-    window.setTimeout(() => {
-      document.body.classList.toggle(styles.loaderBody);
+  componentWillMount() {
+    if (window.sessionStorage.getItem('hasViewedIntro')) {
       this.setState({
-        isLoaded: true
-        });
-    }, 1500);
+        showLoader: false
+      });
+    }
+  }
+
+  componentDidMount = () => {
+
+    if (this.state.showLoader) {
+      document.body.classList.toggle(styles.loaderBody);
+      document.body.classList.toggle(styles.isLoading);
+
+      window.setTimeout(() => {
+        document.body.classList.toggle(styles.loaderBody);
+        document.body.classList.toggle(styles.isLoading);
+        this.setState({
+          isLoaded: true
+          });
+      }, 1500);
+
+      window.sessionStorage.setItem('hasViewedIntro', true);
+    }
   }
 
   render() {
@@ -42,11 +58,14 @@ class Home extends React.Component {
 
           {header}
 
-          <div className={this.state.isLoaded ? [styles.loader, styles.isLoaded].join(' ') : styles.loader}>
-            <Grid>
-              {header}
-            </Grid>
-          </div>
+          { this.state.showLoader &&
+            // Only render intro if it hasn't been viewed
+            <div className={this.state.isLoaded ? styles.loader : [styles.loader, styles.isLoading].join(' ')}>
+              <Grid>
+                {header}
+              </Grid>
+            </div>
+          }
 
           <section className={styles.projects}>
             <div className={styles.leftCol}>
