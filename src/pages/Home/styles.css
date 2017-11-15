@@ -1,5 +1,40 @@
 @import '../../sharedStyles/variables.css';
 
+.loaderBody {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #000;
+}
+
+.loaderBody.isLoaded {
+  overflow: auto;
+  height: auto;
+  background-color: #FFF;
+}
+
+.loader .introText {
+  color: #C3C3C3;
+}
+
+.loader .introLink {
+  /* keep the link for alignment but hide */
+  visibility: hidden;
+}
+
+.loader {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: #131313;
+  clip-path: inset(0 0 0 0);
+  transition: .8s cubic-bezier(.34,.15,.31,.92) clip-path;
+}
+
+.loader.isLoaded {
+  clip-path: inset(0 0 100% 0);
+}
+
 .intro {
   grid-column: 1 / 3;
   padding: 10vh var(--mob-edge-width) 0;
