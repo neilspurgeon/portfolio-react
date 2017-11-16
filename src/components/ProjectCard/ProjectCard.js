@@ -9,8 +9,17 @@ const ProjectCard = (props) => {
       <div className={styles.imageWrapper}>
         <Image className={styles.image} image={props.image} altText={props.altText} />
       </div>
-      <h2 className={styles.title}>{props.title}</h2>
-      <p className={styles.subTitle}>{props.subTitle}</p>
+      <div className={styles.info}>
+
+        <div className={styles.titleWrapper}>
+          <h2 className={styles.title}>{props.title}</h2>
+        </div>
+
+        <div className={styles.subTitleWrapper}>
+          <p className={styles.subTitle}>{props.subTitle}</p>
+        </div>
+
+      </div>
     </Link>
   );
 };

@@ -35,6 +35,56 @@
   background: #FAF8F8;
 }
 
+.info {
+  padding-top: 1em;
+  margin-top: -1em;
+}
+
+.card:hover .info {
+  visibility: visible;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.titleWrapper,
+.subTitleWrapper {
+  overflow: hidden;
+}
+
+.title,
+.subTitle {
+  display: block;
+  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(150%);
+  will-change: transform;
+}
+
+.card:hover .title,
+.card:hover .subTitle {
+  transform: translateY(0);
+}
+
+/* animate in */
+.card:hover .title {
+  transition-delay: 0s;
+}
+
+.card:hover .subTtitle {
+  transition-delay: .2s;
+}
+
+/* animate out */
+.title {
+  /*transition-delay: .05s;*/
+  transition-duration: 1s;
+}
+
+.subTtitle {
+  transition-delay: 0s;
+  transition-duration: 1s;
+}
+
+
 .title {
   cursor: pointer;
   pointer-events: auto;
