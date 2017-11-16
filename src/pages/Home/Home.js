@@ -46,6 +46,7 @@ class Home extends React.Component {
         this.removeLoader();
       }, introDuration);
 
+      document.body.classList.remove(styles.loaderBody);
       window.sessionStorage.setItem('hasViewedIntro', true);
     }
 
