@@ -129,37 +129,21 @@ class Home extends React.Component {
           }
 
           <section className={styles.projects}>
-            <div className={styles.leftCol}>
-              {projects.map((project, i) => {
-                if (i % 2 !== 0) {
-                  return (
-                    <ProjectCard
-                      path={project.data.path}
-                      image={project.data.card}
-                      altText={project.data.title}
-                      title={project.data.title}
-                      subTitle={project.data.subTitle}
-                    />
-                  );
-                }
-              })}
-            </div>
 
-            <div className={styles.rightCol}>
-              {projects.map((project, i) => {
-                if (i % 2 === 0) {
-                  return (
-                    <ProjectCard
-                      path={project.data.path}
-                      image={project.data.card}
-                      altText={project.data.title}
-                      title={project.data.title}
-                      subTitle={project.data.subTitle}
-                    />
-                  );
-                }
-              })}
-            </div>
+            {projects.map((project, i) => {
+              return (
+                <div className={styles.projectRow}>
+                  <ProjectCard
+                    className={styles.card}
+                    path={project.data.path}
+                    image={project.data.homeCard}
+                    altText={project.data.title}
+                    title={project.data.title}
+                    subTitle={project.data.subTitle}
+                  />
+                </div>
+              );
+            })}
 
           </section>
         </Grid>
