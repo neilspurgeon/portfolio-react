@@ -18,7 +18,7 @@
 
 .navLink {
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .05em;
   color: #000;
@@ -37,7 +37,7 @@
   left: 0;
   bottom: -.2em;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: #000;
   opacity: 1;
   transform: scaleX(1);
