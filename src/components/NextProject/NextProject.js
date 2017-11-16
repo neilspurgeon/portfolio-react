@@ -5,6 +5,7 @@ import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
 import transitions from 'sharedStyles/transitions.css';
 import Waypoint from 'react-waypoint';
+import Image from 'components/Image/Image.js';
 
 class NextProject extends React.Component {
 
@@ -59,10 +60,10 @@ class NextProject extends React.Component {
               <Link to={this.props.path} className={styles.nextLink}>
                 <div className={styles.imageWrapper}>
                   <div className={this.state.revealImageClasses.join(' ')}>
-                    <img
+                    <Image
                       className={styles.nextImage}
-                      src={this.props.image}
-                      alt={this.props.altText}
+                      image={this.props.image}
+                      altText={this.props.altText}
                     />
                   </div>
                 </div>
