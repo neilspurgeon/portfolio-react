@@ -5,7 +5,7 @@ import Image from 'components/Image/Image.js';
 
 const ProjectCard = (props) => {
   return (
-    <Link className={styles.card} to={props.path}>
+    <Link className={[styles.card, props.className].join(' ')} to={props.path}>
       <div className={styles.imageWrapper}>
         <Image className={styles.image} image={props.image} altText={props.altText} />
       </div>
