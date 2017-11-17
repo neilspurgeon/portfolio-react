@@ -138,6 +138,7 @@ class Home extends React.Component {
                     className={styles.card}
                     path={project.data.path}
                     image={project.data.homeCard}
+                    sizes="(max-width: 751px) 100vw, 40vw"
                     altText={project.data.title}
                     title={project.data.title}
                     subTitle={project.data.subTitle}

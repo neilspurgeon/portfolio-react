@@ -19,6 +19,7 @@
   clip-path: inset(0);
   transition: clip-path 1s cubic-bezier(.2,.96,.34,1);
   overflow: hidden;
+  will-change: clip-path;
 }
 
 .card:hover .imageWrapper {
@@ -92,14 +93,39 @@
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
   padding: .5em 0 0;
+
+  @media (width > 500px) {
+    font-size: 2rem;
+  }
 }
 
 .subTitle {
   color: var(--light-text-color);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0;
+
+  @media (width > 500px) {
+    font-size: 1.4rem;
+  }
+}
+
+/* Show hover states for touch screens */
+@media (hover: none) {
+
+  .info {
+    padding-top: 1em;
+    margin-top: -1em;
+    position: inherit;
+    /*bottom: 0;*/
+    width: 100%;
+  }
+
+  .title,
+  .subTitle {
+    transform: translateY(0);
+  }
 }
