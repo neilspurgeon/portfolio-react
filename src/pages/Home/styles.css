@@ -86,7 +86,7 @@
 .projectRow {
   display: flex;
 
-  @media (width > 750px) {
+  @media (--viewport-large) {
     grid-column: 1 / 13;
   }
 }
