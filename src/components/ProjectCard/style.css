@@ -23,7 +23,7 @@
 }
 
 .card:hover .imageWrapper {
-  clip-path: inset(1.5% 1.5% 4em 1.5%);
+  clip-path: inset(2% 2% 4em 0);
 }
 
 .card:hover .image {
