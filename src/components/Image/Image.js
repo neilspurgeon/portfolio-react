@@ -31,6 +31,7 @@ class Image extends React.Component {
             onLoad={this.handleLoad.bind(null, this)}
             srcSet={this.props.image.srcSet}
             src={this.props.image.src}
+            sizes={this.props.sizes}
             alt={this.props.altText}
             ref={(img) => { this.img = img; }}
           />
