@@ -75,11 +75,9 @@
 
   @media (--viewport-large) {
     grid-column: 1 / 11;
-    /*margin: 0 30px;*/
     margin: 0;
     padding: 0;
     grid-template-columns: repeat(12, 1fr);
-    /*grid-template-rows: repeat(6, 16%);*/
   }
 }
 
@@ -145,11 +143,9 @@
 
 @keyframes fadeIn {
   0% {
-    /*transform: translate3d(0, 10vh, 0);*/
     opacity: 0;
   }
   100% {
-    /*transform: translate3d(0, 0, 0);*/
     opacity: 1;
   }
 }
