@@ -1,7 +1,11 @@
 import React from 'react';
-import heroImage from './images/coffeebean-web-hero.jpg';
+import heroImage from './images/desk-home.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
+import productDetail from './images/desk-product-detail.png';
+import shop from './images/desk-shop-category.png';
+
+
 
 
 const CoffeeBeanWeb = () => {
@@ -34,11 +38,16 @@ const CoffeeBeanWeb = () => {
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="twoUpBleedBottom"
+        width="60%"
         images={[
           {
-            image: heroImage,
-            altText: "Coffee Bean and Tea Leaf Homepages."
+            image: shop,
+            altText: "Coffee Bean and Tea Leaf product detail"
+          },
+          {
+            image: productDetail,
+            altText: "Coffee Bean and Tea Leaf product detail"
           }
         ]}
       />

@@ -1,4 +1,4 @@
-import heroImage from './images/coffeebean-web-hero.jpg';
+import heroImage from './images/cbtl-web-hero.jpg';
 import cardImage from './images/coffeebean-web-hero.jpg';
 import homeCard from './images/coffeebean-web-home-card.jpg';
 
