@@ -27,16 +27,23 @@ const ProjectImage = (props) => {
     </Grid>
   );
 
-  if (props.layout === 'twoUpBleedBottom') return (
-    <Grid>
-      <RevealImage className={styles.imageWrapper}>
-        <div className={styles.twoUpBleedBottom} style={props.backgroundStyle}>
-          <Image className={styles.twoUpLeft} image={props.images[0].image} altText={props.images[0].altText} />
-          <Image className={styles.twoUpRight} image={props.images[1].image} altText={props.images[1].altText} />
-        </div>
-      </RevealImage>
-    </Grid>
-  );
+  if (props.layout === 'twoUpBleedBottom') {
+
+    const widthStyle = props.width && {
+        width: props.width
+    };
+
+    return (
+      <Grid>
+        <RevealImage className={styles.imageWrapper}>
+          <div className={styles.twoUpBleedBottom} style={props.backgroundStyle}>
+            <Image className={styles.twoUpLeft} style={widthStyle} image={props.images[0].image} altText={props.images[0].altText} />
+            <Image className={styles.twoUpRight} style={widthStyle} image={props.images[1].image} altText={props.images[1].altText} />
+          </div>
+        </RevealImage>
+      </Grid>
+    );
+  }
 
   if (props.layout === 'threeUpMobile') return (
     <Grid>
