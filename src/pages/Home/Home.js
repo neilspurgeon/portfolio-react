@@ -87,7 +87,7 @@ class Home extends React.Component {
           className={styles.introText}
           tag={'h1'}
           text={[
-            'I’m Neil, a digital ',
+            'Hi. I’m Neil, a digital ',
             'product designer & ',
             'frontend developer.'
           ]}
@@ -103,7 +103,7 @@ class Home extends React.Component {
             className={styles.introText}
             tag={'h1'}
             text={[
-              'I’m Neil, a digital product ',
+              'Hi. I’m Neil, a digital product ',
               'designer & frontend developer.'
             ]}
           />

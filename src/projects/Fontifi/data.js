@@ -1,4 +1,4 @@
-import heroImage from './images/placeholder-hero.jpg';
+import heroImage from './images/fontifi-hero.jpg';
 import cardImage from './images/fontifi-home-card.jpg';
 import homeCard from './images/fontifi-home-card.jpg';
 
