@@ -46,6 +46,7 @@ class Home extends React.Component {
         this.removeLoader();
       }, introDuration);
 
+      document.body.classList.remove(styles.loaderBody);
       window.sessionStorage.setItem('hasViewedIntro', true);
     }
 
@@ -86,7 +87,7 @@ class Home extends React.Component {
           className={styles.introText}
           tag={'h1'}
           text={[
-            'I’m Neil, a digital ',
+            'Hi. I’m Neil, a digital ',
             'product designer & ',
             'frontend developer.'
           ]}
@@ -102,7 +103,7 @@ class Home extends React.Component {
             className={styles.introText}
             tag={'h1'}
             text={[
-              'I’m Neil, a digital product ',
+              'Hi. I’m Neil, a digital product ',
               'designer & frontend developer.'
             ]}
           />
@@ -129,37 +130,22 @@ class Home extends React.Component {
           }
 
           <section className={styles.projects}>
-            <div className={styles.leftCol}>
-              {projects.map((project, i) => {
-                if (i % 2 !== 0) {
-                  return (
-                    <ProjectCard
-                      path={project.data.path}
-                      image={project.data.card}
-                      altText={project.data.title}
-                      title={project.data.title}
-                      subTitle={project.data.subTitle}
-                    />
-                  );
-                }
-              })}
-            </div>
 
-            <div className={styles.rightCol}>
-              {projects.map((project, i) => {
-                if (i % 2 === 0) {
-                  return (
-                    <ProjectCard
-                      path={project.data.path}
-                      image={project.data.card}
-                      altText={project.data.title}
-                      title={project.data.title}
-                      subTitle={project.data.subTitle}
-                    />
-                  );
-                }
-              })}
-            </div>
+            {projects.map((project, i) => {
+              return (
+                <div className={styles.projectRow}>
+                  <ProjectCard
+                    className={styles.card}
+                    path={project.data.path}
+                    image={project.data.homeCard}
+                    sizes="(max-width: 751px) 100vw, 40vw"
+                    altText={project.data.title}
+                    title={project.data.title}
+                    subTitle={project.data.subTitle}
+                  />
+                </div>
+              );
+            })}
 
           </section>
         </Grid>

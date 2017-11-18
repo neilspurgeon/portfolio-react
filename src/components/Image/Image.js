@@ -25,12 +25,13 @@ class Image extends React.Component {
   render() {
 
     return (
-        <div className={[styles.wrapper, this.props.className].join(' ')}>
+        <div className={[styles.wrapper, this.props.className].join(' ')} style={this.props.style}>
           <img
             className={this.state.classes.join(' ')}
             onLoad={this.handleLoad.bind(null, this)}
             srcSet={this.props.image.srcSet}
             src={this.props.image.src}
+            sizes={this.props.sizes}
             alt={this.props.altText}
             ref={(img) => { this.img = img; }}
           />

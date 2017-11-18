@@ -8,6 +8,7 @@
   text-align: center;
   display: block;
   margin-bottom: 60px;
+  position: relative;
 
   @media (--viewport-large) {
     margin-bottom: 100px;
@@ -18,10 +19,11 @@
   clip-path: inset(0);
   transition: clip-path 1s cubic-bezier(.2,.96,.34,1);
   overflow: hidden;
+  will-change: clip-path;
 }
 
 .card:hover .imageWrapper {
-  clip-path: inset(1.5% 1.5% 1.5% 1.5%);
+  clip-path: inset(2% 2% 4em 0);
 }
 
 .card:hover .image {
@@ -35,18 +37,95 @@
   background: #FAF8F8;
 }
 
+.info {
+  padding-top: 1em;
+  margin-top: -1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card:hover .info {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.titleWrapper,
+.subTitleWrapper {
+  overflow: hidden;
+}
+
+.title,
+.subTitle {
+  display: block;
+  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(150%);
+  will-change: transform;
+}
+
+.card:hover .title,
+.card:hover .subTitle {
+  transform: translateY(0);
+}
+
+/* animate in */
+.card:hover .title {
+  transition-delay: 0s;
+}
+
+.card:hover .subTtitle {
+  transition-delay: .2s;
+}
+
+/* animate out */
+.title {
+  /*transition-delay: .05s;*/
+  transition-duration: 1s;
+}
+
+.subTtitle {
+  transition-delay: 0s;
+  transition-duration: 1s;
+}
+
+
 .title {
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
   padding: .5em 0 0;
+
+  @media (width > 500px) {
+    font-size: 2rem;
+  }
 }
 
 .subTitle {
   color: var(--light-text-color);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0;
+
+  @media (width > 500px) {
+    font-size: 1.4rem;
+  }
+}
+
+/* Show hover states for touch screens */
+@media (hover: none) {
+
+  .info {
+    padding-top: 1em;
+    margin-top: -1em;
+    position: inherit;
+    /*bottom: 0;*/
+    width: 100%;
+  }
+
+  .title,
+  .subTitle {
+    transform: translateY(0);
+  }
 }

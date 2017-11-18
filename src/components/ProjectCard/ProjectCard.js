@@ -5,12 +5,21 @@ import Image from 'components/Image/Image.js';
 
 const ProjectCard = (props) => {
   return (
-    <Link className={styles.card} to={props.path}>
+    <Link className={[styles.card, props.className].join(' ')} to={props.path}>
       <div className={styles.imageWrapper}>
-        <Image className={styles.image} image={props.image} altText={props.altText} />
+        <Image className={styles.image} image={props.image} sizes={props.sizes} altText={props.altText} />
       </div>
-      <h2 className={styles.title}>{props.title}</h2>
-      <p className={styles.subTitle}>{props.subTitle}</p>
+      <div className={styles.info}>
+
+        <div className={styles.titleWrapper}>
+          <h2 className={styles.title}>{props.title}</h2>
+        </div>
+
+        <div className={styles.subTitleWrapper}>
+          <p className={styles.subTitle}>{props.subTitle}</p>
+        </div>
+
+      </div>
     </Link>
   );
 };
