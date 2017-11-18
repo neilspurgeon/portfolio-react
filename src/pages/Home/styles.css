@@ -1,6 +1,6 @@
 @import '../../sharedStyles/variables.css';
 
-.loaderBody.isLoading {
+.isLoading {
   overflow: hidden;
   height: 100vh;
   background-color: blue;
