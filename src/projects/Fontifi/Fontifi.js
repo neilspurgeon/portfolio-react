@@ -1,55 +1,61 @@
 import React from 'react';
-import heroImage from './images/placeholder-hero.jpg';
+import homeImg from './images/home.jpg';
+import collectionImg from './images/collection.jpg';
+import collectionEmptyImg from './images/collection-empty.jpg';
+import signUpImg from './images/sign-up.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
-
+import sharedStyles from 'sharedStyles/index.css';
 
 const Fontifi = () => {
   const bgStyle = {
-    backgroundImage: 'linear-gradient(-135deg, #F6F4F8 0%, #F6F4F8 100%)'
+    backgroundImage: 'linear-gradient(-135deg, #F1F5ED 0%, #EFF2EB 100%)',
   };
 
   return (
     <div>
 
       <ProjectText>
-        <p>After succesfully launching their mobile app, Hathway was overhaul The Coffee Bean & Tea Leaf’s ecommerce website experirence. This included a complete redesign of their existing shopping pages, aswell as additional storytelling, marketing, and company information pages.</p>
-        <p>My role on the project was lead ux and ui design. Our process began with creating a comprehensive site map and then creating low fideltity wireframes of each page type. By doing this we were able to lock down content and overall structure before diving into full fidelty ui.</p>
+        <p>This is an ongoing side project of mine that started as way learn React and to stay up to date on coding skills that weren’t being used at my full-time position. My goal was to create an interactive site that could be used by designers and developers to help find and explore different web font combinations.</p>
+
+        <p className={sharedStyles.pSmall}><span className={sharedStyles.label}>Technology</span><br />
+        React<br />
+        Express<br />
+        MongoDB + mLab</p>
       </ProjectText>
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="pad"
         images={[
           {
-            image: heroImage,
-            altText: "Coffee Bean and Tea Leaf Homepages."
-          }
-        ]}
-      />
-
-      <ProjectText>
-        <p>Designed a set of  icons to be userd on shop page as navigation. Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand. Redesigned.</p>
-      </ProjectText>
-
-      <ProjectImage
-        backgroundStyle={bgStyle}
-        layout="bleedBottom"
-        images={[
-          {
-            image: heroImage,
-            altText: "Coffee Bean and Tea Leaf Homepages."
+            image: homeImg,
+            altText: "Fontifi app"
           }
         ]}
       />
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="twoUpStacked"
         images={[
           {
-            image: heroImage,
-            altText: "Coffee Bean and Tea Leaf Homepages."
+            image: collectionEmptyImg,
+            altText: "Fontifi my collection empty state"
+          }, {
+            image: collectionImg,
+            altText: "Fontifi my collection"
+          }
+        ]}
+      />
+
+      <ProjectImage
+        backgroundStyle={bgStyle}
+        layout="pad"
+        images={[
+          {
+            image: signUpImg,
+            altText: "Fontifi login"
           }
         ]}
       />
