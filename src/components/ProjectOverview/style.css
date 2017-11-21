@@ -1,0 +1,21 @@
+@import '../../sharedStyles/variables.css';
+
+.wrapper {
+  grid-column: 1 / 13;
+  padding:  25px var(--mob-edge-width);
+  max-width: 44em;
+  margin: 0 auto;
+  position: relative;
+
+  @media (--viewport-large) {
+    padding:  50px 0;
+    grid-column: 4 / 10;
+  }
+}
+
+.projectLink {
+  position: absolute;
+  right: 0;
+  bottom: 4.9em;
+}
+
