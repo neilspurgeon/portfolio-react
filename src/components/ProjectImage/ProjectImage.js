@@ -45,6 +45,20 @@ const ProjectImage = (props) => {
     );
   }
 
+  if (props.layout === 'twoUpStacked') {
+
+    return (
+      <Grid>
+        <RevealImage className={styles.imageWrapper}>
+          <div className={styles.twoUpStacked} style={props.backgroundStyle}>
+            <Image className={styles.twoUpStackedTop} image={props.images[0].image} altText={props.images[0].altText} />
+            <Image className={styles.twoUpStackedBottom} image={props.images[1].image} altText={props.images[1].altText} />
+          </div>
+        </RevealImage>
+      </Grid>
+    );
+  }
+
   if (props.layout === 'threeUpMobile') return (
     <Grid>
       <RevealImage className={styles.imageWrapper}>
