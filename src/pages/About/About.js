@@ -5,6 +5,7 @@ import Footer from 'components/Footer/Footer.js';
 import styles from './styles.css';
 import sharedStyles from 'sharedStyles/index.css';
 import portrait from './portrait.jpg';
+import Image from 'components/Image/Image.js';
 
 const About = () => {
   return (
@@ -13,7 +14,12 @@ const About = () => {
 
       <Grid>
 
-        <img src={portrait} alt="portrait of me" className={styles.portrait}/>
+        <Image
+          image={portrait}
+          altText="portrait of me"
+          className={styles.portrait}
+          sizes="(max-width: 751px) 100vw, 25vw"
+        />
 
         <main className={styles.wrapper}>
 
