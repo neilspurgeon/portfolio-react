@@ -6,7 +6,7 @@ const data = {
   title: 'Coffee Bean Ecommerce',
   subTitle: 'Website Design, UX Design',
   hero: heroImage,
-  card: cardImage,
+  card: homeCard,
   homeCard: homeCard,
   path: '/work/coffee-bean-web'
 };
