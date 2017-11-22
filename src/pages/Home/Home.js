@@ -8,6 +8,7 @@ import sharedStyles from 'sharedStyles/index.css';
 import projects from 'projects';
 import ProjectCard from 'components/ProjectCard/ProjectCard.js';
 import RevealText from 'components/RevealText/RevealText.js';
+import { Helmet } from 'react-helmet';
 
 const introDuration = 2000;
 const breakPoint = 560;
@@ -114,6 +115,10 @@ class Home extends React.Component {
 
     return (
       <div>
+
+        <Helmet>
+          <title>Home – Neil Spurgeon. Designer & Developer</title>
+        </Helmet>
 
         <Nav />
         <Grid>

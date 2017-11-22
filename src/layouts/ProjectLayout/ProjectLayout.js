@@ -5,6 +5,7 @@ import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import NextProject from 'components/NextProject/NextProject.js';
 import Footer from 'components/Footer/Footer.js';
 import Waypoint from 'react-waypoint';
+import { Helmet } from 'react-helmet';
 
 class ProjectLayout extends React.Component {
   constructor(props) {
@@ -29,6 +30,10 @@ class ProjectLayout extends React.Component {
   render() {
     return (
       <div>
+
+        <Helmet>
+          <title>{this.props.title} – Neil Spurgeon. Designer & Developer</title>
+        </Helmet>
 
         <Nav showScrolledAside={this.state.showProjectAside} asideText={this.props.title} />
 

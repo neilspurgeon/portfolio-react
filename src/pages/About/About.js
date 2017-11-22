@@ -6,10 +6,15 @@ import styles from './styles.css';
 import sharedStyles from 'sharedStyles/index.css';
 import portrait from './portrait.jpg';
 import Image from 'components/Image/Image.js';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>About – Neil Spurgeon. Designer & Developer</title>
+      </Helmet>
+
       <Nav />
 
       <Grid>
