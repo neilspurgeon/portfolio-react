@@ -9,6 +9,7 @@ import projects from 'projects';
 import ProjectCard from 'components/ProjectCard/ProjectCard.js';
 import RevealText from 'components/RevealText/RevealText.js';
 import { Helmet } from 'react-helmet';
+import Plx from 'react-plx';
 
 const introDuration = 2000;
 const breakPoint = 560;
@@ -100,15 +101,46 @@ class Home extends React.Component {
     if (window.innerWidth > breakPoint) {
       header = (
         <header className={styles.intro}>
-          <RevealText
-            className={styles.introText}
-            tag={'h1'}
-            text={[
-              'Hi. I’m Neil, a digital product ',
-              'designer & frontend developer.'
+
+          <Plx
+            interval={16}
+            className={styles.plxIntro}
+            parallaxData={[
+              {
+                start: 0,
+                duration: window.innerHeight,
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: -100,
+                    // unit: '%',
+                    property: 'translateY',
+                  }
+                ]
+              },
+              {
+                start: 100,
+                duration: window.innerHeight * .66,
+                properties: [
+                  {
+                    startValue: 1,
+                    endValue: 0,
+                    property: 'opacity',
+                  }
+                ]
+              }
             ]}
-          />
-          <Link className={[sharedStyles.arrowLink, styles.introLink].join(' ')} to='/about'>Learn More</Link>
+          >
+            <RevealText
+              className={styles.introText}
+              tag={'h1'}
+              text={[
+                'Hi. I’m Neil, a digital product ',
+                'designer & frontend developer.'
+              ]}
+            />
+            <Link className={[sharedStyles.arrowLink, styles.introLink].join(' ')} to='/about'>Learn More</Link>
+          </Plx>
         </header>
       );
     }

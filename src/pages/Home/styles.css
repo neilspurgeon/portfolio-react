@@ -149,3 +149,10 @@
     opacity: 1;
   }
 }
+
+
+/* Plx Classes */
+.plxIntro {
+  position: fixed;
+  will-change: transform, opacity;
+}
