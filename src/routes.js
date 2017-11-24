@@ -5,6 +5,15 @@ import About from 'pages/About/About.js';
 import projects from 'projects';
 import ProjectLayout from 'layouts/ProjectLayout/ProjectLayout';
 import NotFound from 'pages/NotFound/NotFound.js';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-45097231-1');
+
+const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname + window.location.search });
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  return null;
+};
 
 const ProjectRoute = ({ component: Component, ...rest }) => (
   <Route {...rest} render={props => (
@@ -29,6 +38,7 @@ const ScrollToTop = () => {
 
 const Routes = (props) => (
   <div>
+    <Route path="/" component={logPageView} />
     <Route path="/" component={ScrollToTop} />
     <Switch>
       <Route exact path="/" component={Home} />
