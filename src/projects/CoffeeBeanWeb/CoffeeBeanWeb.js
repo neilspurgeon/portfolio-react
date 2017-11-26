@@ -4,9 +4,12 @@ import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 import productDetail from './images/desk-product-detail.png';
 import shop from './images/desk-shop-category.png';
-
-
-
+import navImg from './images/desk-nav-coffee-1.png';
+import mobHomeImg from './images/mob-home.jpg';
+import mobNav1Img from './images/mob-menu-1.jpg';
+import mobNav2Img from './images/mob-menu-2.jpg';
+import franchiseBttmImg from './images/desk-franchising-bottom.jpg';
+import franchiseTopImg from './images/desk-franchising-top.jpg';
 
 const CoffeeBeanWeb = () => {
   const bgStyle = {
@@ -54,11 +57,45 @@ const CoffeeBeanWeb = () => {
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="pad"
         images={[
           {
-            image: heroImage,
-            altText: "Coffee Bean and Tea Leaf Homepages."
+            image: navImg,
+            altText: "Coffee Bean and Tea Leaf navigation."
+          }
+        ]}
+      />
+
+      <ProjectImage
+        backgroundStyle={bgStyle}
+        layout="threeUpMobile"
+        images={[
+          {
+            image: mobHomeImg,
+            altText: "Coffee Bean and Tea Leaf mobile homepage."
+          },
+          {
+            image: mobNav1Img,
+            altText: "Coffee Bean and Tea Leaf mobile navigation."
+          },
+          {
+            image: mobNav2Img,
+            altText: "Coffee Bean and Tea Leaf mobile navigation."
+          }
+        ]}
+      />
+
+      <ProjectImage
+        backgroundStyle={bgStyle}
+        layout="twoUp"
+        images={[
+          {
+            image: franchiseTopImg,
+            altText: "Coffee Bean and Tea Leaf franchising page."
+          },
+          {
+            image: franchiseBttmImg,
+            altText: "Coffee Bean and Tea Leaf franchising page."
           }
         ]}
       />
