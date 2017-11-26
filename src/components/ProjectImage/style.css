@@ -16,6 +16,7 @@
   padding: 5vw 5vw 0 5vw;
 }
 
+.twoUp,
 .twoUpLeftBleed,
 .twoUpBleedBottom,
 .twoUpStacked,
@@ -36,6 +37,10 @@
 
 .twoUpBleedBottom {
   padding: 5vw 5vw 0 5vw;
+}
+
+.twoUpImg {
+  width: 46.75%;
 }
 
 .twoUpStacked {
