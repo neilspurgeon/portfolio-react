@@ -17,7 +17,7 @@ const Fontifi = () => {
     <div>
 
       <ProjectOverview
-        linkUrl="https://www.fontifi.co"
+        linkUrl="https://fontifi.co/"
         linkText="fontifi.co"
         >
         <p>This is an ongoing side project of mine that started as way learn React and to stay up to date on coding skills that weren’t being used at my full-time position. My goal was to create an interactive site that could be used by designers and developers to help find and explore different web font combinations.</p>
