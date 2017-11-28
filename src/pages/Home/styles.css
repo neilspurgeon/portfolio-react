@@ -1,9 +1,8 @@
 @import '../../sharedStyles/variables.css';
 
-.isLoading {
+body.isLoading {
   overflow: hidden;
   height: 100vh;
-  background-color: blue;
 }
 
 .loader .introText {
@@ -20,7 +19,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  background: #131313;
+  background: #000;
   clip-path: inset(0 0 100% 0);
   transition: .8s cubic-bezier(.34,.15,.31,.92) clip-path;
 }
@@ -30,7 +29,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  background: #131313;
+  background: #000;
   clip-path: inset(0 0 0 0);
 }
 
