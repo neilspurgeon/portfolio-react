@@ -14,8 +14,6 @@
 }
 
 .projectLink {
-  position: absolute;
-  right: 0;
-  bottom: 4.9em;
+  margin-top: 1em;
 }
 
