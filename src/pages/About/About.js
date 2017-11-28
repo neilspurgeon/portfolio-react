@@ -30,9 +30,9 @@ const About = () => {
 
           <section className={styles.textSection}>
             <h1 className={[sharedStyles.p, styles.sectionLabel].join(' ')}>About</h1>
-            <p>I’m a designer and developer based in San Luis Obispo, CA. I have a wide range of experience but specialize in digital product design and front end development.</p>
+            <p>I’m a designer and developer currently based in San Luis Obispo, CA. I have a wide range of experience but am most interested in digital product design and front end development.</p>
             <p>I’m currently available for freelance work and interesting projects.</p>
-            <p>Please get in touch at <a className={sharedStyles.inlineLink}href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></p>
+            <p>Please get in touch at <a className={sharedStyles.inlineLink} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></p>
 
             <h2 className={[sharedStyles.p, styles.sectionLabel].join(' ')}>Experience</h2>
             <p>Hathway — San Luis Obispo, CA<br />
@@ -52,7 +52,7 @@ const About = () => {
             </p>
 
             <h2 className={[sharedStyles.p, styles.sectionLabel].join(' ')}>Colophon</h2>
-            <p>Lorem Ipsum</p>
+            <p>This site is built with Create React App and is hosted on Surge.sh. View the code <a className={sharedStyles.inlineLink} target="_blank" href="https://github.com/neilspurgeon/portfolio-react">here</a></p>
           </section>
 
         </main>
