@@ -3,7 +3,7 @@ import cardImage from './images/fontifi-home-card.jpg';
 
 const data = {
   title: 'Fontifi',
-  subTitle: 'Web App Development + Design',
+  subTitle: 'Web Development + Design',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
