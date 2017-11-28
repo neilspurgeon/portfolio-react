@@ -21,6 +21,7 @@
 .subTitle {
   margin: 0;
   transition-delay: .3s;
+  color: var(--light-text-color);
 }
 
 .textRevealWrapper {

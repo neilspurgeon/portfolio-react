@@ -2,6 +2,7 @@ import React from 'react';
 import heroImage from './images/desk-home.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
+import sharedStyles from 'sharedStyles/index.css';
 import productDetail from './images/desk-product-detail.png';
 import shop from './images/desk-shop-category.png';
 import navImg from './images/desk-nav-coffee-1.png';
@@ -20,8 +21,10 @@ const CoffeeBeanWeb = () => {
     <div>
 
       <ProjectText>
-        <p>After succesfully launching their mobile app, Hathway was overhaul The Coffee Bean & Tea Leaf’s ecommerce website experirence. This included a complete redesign of their existing shopping pages, aswell as additional storytelling, marketing, and company information pages.</p>
-        <p>My role on the project was lead ux and ui design. Our process began with creating a comprehensive site map and then creating low fideltity wireframes of each page type. By doing this we were able to lock down content and overall structure before diving into full fidelty ui.</p>
+        <p>Serving over 1,000 locations worldwide, the Coffee Bean & Tea Leaf wanted their online presence to match their phyisical. To do this, they came to Hathway for a full redesign of their current ecommerce website. My role on the project was to lead both UX and UI design.</p>
+
+        <p className={sharedStyles.pSmall}><span className={sharedStyles.label}>Credits</span><br />
+        Creative Director: Garrett Deiter</p>
       </ProjectText>
 
       <ProjectImage

@@ -17,10 +17,12 @@ const FreshStep = () => {
     <div>
 
       <ProjectText>
-        <p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>
+        <p>Fresh Step is an industry leading cat litter company that focuses on giving back to the cats. To do this, they have a Paw Points program that allows owners to support their local animal shelters by collecting box codes. Our goal was to help Fresh Step bring their Paw Points program online. In doing so, we redesigned their website with a mobile first approach to easily let cat owners help shelters.</p>
         <p className={sharedStyles.pSmall}><span className={sharedStyles.label}>Credits</span><br />
-        Designed at Hathway<br />
-        Creative Director: Garrett Deiter</p>
+          Designed with Thomas Charlet<br />
+          UX Wireframes by Fluid<br />
+          Designed at Hathway
+        </p>
       </ProjectText>
 
       <ProjectImage

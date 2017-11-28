@@ -10,6 +10,7 @@ import mobile3 from './images/ingear-mob-3.jpg';
 import scrolledNav from './images/product-page-scrolled-navbar.jpg';
 import contact from './images/contact.jpg';
 import support from './images/support-faqs.jpg';
+import sharedStyles from 'sharedStyles/index.css';
 
 const bgStyle = {
   backgroundImage: 'linear-gradient(-135deg, #E9ECF1 0%, #E7E9EC 100%)'
@@ -21,7 +22,10 @@ const Ingear = () => {
     <div>
 
       <ProjectText>
-        <p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>
+        <p>Ingear specializes in high end auto safety devices. While there are many other companies that produce similar tools, none match the level of precision, quality, and design that Ingear provides. After testing their product on Amazon, Ingear was ready to invest in a full ecommerce website that matched the quality of their products.</p>
+
+        <p className={sharedStyles.pSmall}><span className={sharedStyles.label}>Credits</span><br />
+        Designed with Kyle Chuises</p>
       </ProjectText>
 
       <ProjectImage
