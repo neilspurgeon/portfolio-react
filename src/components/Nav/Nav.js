@@ -34,7 +34,7 @@ const Nav = (props) => {
       </div>
 
       <div className={scrolledAsideClass.join(' ')}>
-        — {props.asideText}
+        {props.asideText}
       </div>
 
     </div>
