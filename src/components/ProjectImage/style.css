@@ -1,7 +1,7 @@
 @import '../../sharedStyles/variables.css';
 
 .imageWrapper {
-  grid-column: 1 / span 12  ;
+  grid-column: 1 / span 3  ;
   padding: 25px var(--mob-edge-width);
   margin: 0;
 
@@ -9,6 +9,12 @@
     grid-column: 3 / 11;
     padding: 50px 0;
   }
+}
+
+.image {
+  box-shadow: 10px 0 80px -15px rgba(0,0,0,0.1);
+  border-radius: .2vw;
+  overflow: hidden;
 }
 
 .bleedBottom {
