@@ -10,8 +10,8 @@ const ProjectImage = (props) => {
     <Grid>
       <RevealImage className={styles.imageWrapper}>
         <div className={styles.twoUpLeftBleed} style={props.backgroundStyle}>
-          <Image className={styles.twoUpLeft} image={props.images[0].image} altText={props.images[0].altText} />
-          <Image className={styles.twoUpRight} image={props.images[1].image} altText={props.images[1].altText} />
+          <Image className={[styles.twoUpLeft, styles.image].join(' ')} image={props.images[0].image} altText={props.images[0].altText} />
+          <Image className={[styles.twoUpRight, styles.image].join(' ')} image={props.images[1].image} altText={props.images[1].altText} />
         </div>
       </RevealImage>
     </Grid>
@@ -21,8 +21,8 @@ const ProjectImage = (props) => {
     <Grid>
       <RevealImage className={styles.imageWrapper}>
         <div className={styles.twoUp} style={props.backgroundStyle}>
-          <Image className={styles.twoUpImg} image={props.images[0].image} altText={props.images[0].altText} />
-          <Image className={styles.twoUpImg} image={props.images[1].image} altText={props.images[1].altText} />
+          <Image className={[styles.twoUpImg, styles.image].join(' ')} image={props.images[0].image} altText={props.images[0].altText} />
+          <Image className={[styles.twoUpImg, styles.image].join(' ')} image={props.images[1].image} altText={props.images[1].altText} />
         </div>
       </RevealImage>
     </Grid>
@@ -32,7 +32,7 @@ const ProjectImage = (props) => {
     <Grid>
       <RevealImage className={styles.imageWrapper}>
         <div className={styles.bleedBottom} style={props.backgroundStyle}>
-          <Image image={props.images[0].image} altText={props.images[0].altText} />
+          <Image image={[props.images[0].image, styles.image].join(' ')} altText={props.images[0].altText} />
         </div>
       </RevealImage>
     </Grid>
@@ -48,8 +48,8 @@ const ProjectImage = (props) => {
       <Grid>
         <RevealImage className={styles.imageWrapper}>
           <div className={styles.twoUpBleedBottom} style={props.backgroundStyle}>
-            <Image className={styles.twoUpLeft} style={widthStyle} image={props.images[0].image} altText={props.images[0].altText} />
-            <Image className={styles.twoUpRight} style={widthStyle} image={props.images[1].image} altText={props.images[1].altText} />
+            <Image className={[styles.twoUpLeft, styles.image].join(' ')} style={widthStyle} image={props.images[0].image} altText={props.images[0].altText} />
+            <Image className={[styles.twoUpRight, styles.image].join(' ')} style={widthStyle} image={props.images[1].image} altText={props.images[1].altText} />
           </div>
         </RevealImage>
       </Grid>
@@ -62,8 +62,8 @@ const ProjectImage = (props) => {
       <Grid>
         <RevealImage className={styles.imageWrapper}>
           <div className={styles.twoUpStacked} style={props.backgroundStyle}>
-            <Image className={styles.twoUpStackedTop} image={props.images[0].image} altText={props.images[0].altText} />
-            <Image className={styles.twoUpStackedBottom} image={props.images[1].image} altText={props.images[1].altText} />
+            <Image className={[styles.twoUpStackedTop, styles.image].join(' ')} image={props.images[0].image} altText={props.images[0].altText} />
+            <Image className={[styles.twoUpStackedBottom, styles.image].join(' ')} image={props.images[1].image} altText={props.images[1].altText} />
           </div>
         </RevealImage>
       </Grid>
@@ -75,7 +75,7 @@ const ProjectImage = (props) => {
       <RevealImage className={styles.imageWrapper}>
         <div className={styles.threeUpMobile} style={props.backgroundStyle}>
           { props.images.map((project) => {
-            return <Image className={styles.threeUpMobileImage} image={project.image} altText={project.altText} />;
+            return <Image className={[styles.threeUpMobileImage, styles.image].join(' ')} image={project.image} altText={project.altText} />;
           })}
         </div>
       </RevealImage>
@@ -86,7 +86,7 @@ const ProjectImage = (props) => {
     <Grid>
       <RevealImage className={styles.imageWrapper} style={props.backgroundStyle}>
         <div className={styles.fullBleed}>
-          <Image image={props.images[0].image} altText={props.images[0].altText} />
+          <Image className={styles.image} image={props.images[0].image} altText={props.images[0].altText} />
         </div>
       </RevealImage>
     </Grid>
@@ -97,7 +97,7 @@ const ProjectImage = (props) => {
     <Grid>
       <RevealImage className={styles.imageWrapper} style={props.backgroundStyle}>
         <div className={styles.pad} style={props.backgroundStyle}>
-          <Image image={props.images[0].image} altText={props.images[0].altText} />
+          <Image className={styles.image} image={props.images[0].image} altText={props.images[0].altText} />
         </div>
       </RevealImage>
     </Grid>

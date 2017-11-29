@@ -7,10 +7,13 @@ import sharedStyles from 'sharedStyles/index.css';
 import portrait from './portrait.jpg';
 import Image from 'components/Image/Image.js';
 import { Helmet } from 'react-helmet';
+import RevealImage from 'components/RevealImage/RevealImage.js';
+import RevealText from 'components/RevealText/RevealText.js';
 
 const About = () => {
   return (
     <div>
+
       <Helmet>
         <title>About – Neil Spurgeon. Designer & Developer</title>
       </Helmet>
@@ -19,12 +22,12 @@ const About = () => {
 
       <Grid>
 
-        <Image
-          image={portrait}
-          altText="portrait of me"
-          className={styles.portrait}
-          sizes="(max-width: 751px) 100vw, 25vw"
-        />
+          <Image
+            className={styles.portrait}
+            image={portrait}
+            altText="portrait of me"
+            sizes="(max-width: 751px) 100vw, 25vw"
+          />
 
         <main className={styles.wrapper}>
 
