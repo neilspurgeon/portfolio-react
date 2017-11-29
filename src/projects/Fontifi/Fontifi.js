@@ -10,7 +10,7 @@ import sharedStyles from 'sharedStyles/index.css';
 
 const Fontifi = () => {
   const bgStyle = {
-    backgroundImage: 'linear-gradient(-135deg, #F1F5ED 0%, #EFF2EB 100%)',
+    backgroundImage: 'linear-gradient(-135deg, #E8F2FC 0%, #E4EEF7 100%)',
   };
 
   return (
