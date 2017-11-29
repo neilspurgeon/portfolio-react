@@ -138,7 +138,7 @@ class Home extends React.Component {
 
             {projects.map((project, i) => {
               return (
-                <div className={styles.projectRow}>
+                <div className={styles.projectRow} key={project.data.title}>
                   <ProjectCard
                     className={styles.card}
                     path={project.data.path}

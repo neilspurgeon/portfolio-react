@@ -7,8 +7,6 @@ import sharedStyles from 'sharedStyles/index.css';
 import portrait from './portrait.jpg';
 import Image from 'components/Image/Image.js';
 import { Helmet } from 'react-helmet';
-import RevealImage from 'components/RevealImage/RevealImage.js';
-import RevealText from 'components/RevealText/RevealText.js';
 
 const About = () => {
   return (
@@ -55,7 +53,7 @@ const About = () => {
             </p>
 
             <h2 className={[sharedStyles.p, styles.sectionLabel].join(' ')}>Colophon</h2>
-            <p>This site is built with Create React App and is hosted on Surge.sh. View the code <a className={sharedStyles.inlineLink} target="_blank" href="https://github.com/neilspurgeon/portfolio-react">here</a></p>
+            <p>This site is built with Create React App and is hosted on Surge.sh. View the code <a className={sharedStyles.inlineLink} target="_blank" rel="noopener noreferrer" href="https://github.com/neilspurgeon/portfolio-react">here</a></p>
           </section>
 
         </main>

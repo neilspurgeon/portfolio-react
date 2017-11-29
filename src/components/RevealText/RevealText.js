@@ -29,7 +29,7 @@ class RevealImage extends React.Component {
             let elStyle = {transitionDelay: (.15 * i) + 's'};
             let classes = this.state.revealClasses;
             return (
-              <div className={styles.textRevealWrapper}>
+              <div className={styles.textRevealWrapper} key={'line ' + i}>
                 <span className={classes.join(' ')} style={elStyle}>
                   {text}
                 </span>
