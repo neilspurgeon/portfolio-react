@@ -32,7 +32,7 @@ const ProjectImage = (props) => {
     <Grid>
       <RevealImage className={styles.imageWrapper}>
         <div className={styles.bleedBottom} style={props.backgroundStyle}>
-          <Image image={[props.images[0].image, styles.image].join(' ')} altText={props.images[0].altText} />
+          <Image className={styles.image}image={props.images[0].image} altText={props.images[0].altText} />
         </div>
       </RevealImage>
     </Grid>
