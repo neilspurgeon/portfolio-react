@@ -29,7 +29,7 @@ const CoffeeBeanWeb = () => {
 
       <ProjectImage
         backgroundStyle={bgStyle}
-        layout="bleedBottom"
+        layout="pad"
         images={[
           {
             image: heroImage,
@@ -37,10 +37,6 @@ const CoffeeBeanWeb = () => {
           }
         ]}
       />
-
-      <ProjectText>
-        <p>Designed a set of  icons to be userd on shop page as navigation. Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand. Redesigned.</p>
-      </ProjectText>
 
       <ProjectImage
         backgroundStyle={bgStyle}
