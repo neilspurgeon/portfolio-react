@@ -6,9 +6,9 @@ import sharedStyles from 'sharedStyles/index.css';
 import productDetail from './images/desk-product-detail.png';
 import shop from './images/desk-shop-category.png';
 import navImg from './images/desk-nav-coffee-1.png';
-import mobHomeImg from './images/mob-home.jpg';
-import mobNav1Img from './images/mob-menu-1.jpg';
-import mobNav2Img from './images/mob-menu-2.jpg';
+import mobShop from './images/mob-shop-category.png';
+import mobShopFilters from './images/mob-filters.png';
+import mobShopDetail from './images/mob-product-detail.png';
 import franchiseBttmImg from './images/desk-franchising-bottom.jpg';
 import franchiseTopImg from './images/desk-franchising-top.jpg';
 
@@ -70,16 +70,16 @@ const CoffeeBeanWeb = () => {
         layout="threeUpMobile"
         images={[
           {
-            image: mobHomeImg,
-            altText: "Coffee Bean and Tea Leaf mobile homepage."
+            image: mobShop,
+            altText: "Coffee Bean and Tea Leaf mobile shop categories."
           },
           {
-            image: mobNav1Img,
-            altText: "Coffee Bean and Tea Leaf mobile navigation."
+            image: mobShopFilters,
+            altText: "Coffee Bean and Tea Leaf mobile product filtering."
           },
           {
-            image: mobNav2Img,
-            altText: "Coffee Bean and Tea Leaf mobile navigation."
+            image: mobShopDetail,
+            altText: "Coffee Bean and Tea Leaf mobile product detail."
           }
         ]}
       />
