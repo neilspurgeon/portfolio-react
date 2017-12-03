@@ -11,6 +11,7 @@ import RevealText from 'components/RevealText/RevealText.js';
 import { Helmet } from 'react-helmet';
 
 const introDuration = 2000;
+const introTransDuration = 2000;
 const breakPoint = 560;
 
 class Home extends React.Component {
@@ -41,13 +42,15 @@ class Home extends React.Component {
 
       window.setTimeout(() => {
         document.body.classList.toggle(styles.isLoading);
+
         this.setState({
           isLoaded: true
         });
+
         this.removeLoader();
+
       }, introDuration);
 
-      document.body.classList.remove(styles.loaderBody);
       window.sessionStorage.setItem('hasViewedIntro', true);
     }
 
@@ -73,7 +76,8 @@ class Home extends React.Component {
   removeLoader = () => {
     window.setTimeout(() => {
       this.refs.loader.remove();
-    }, introDuration);
+      document.body.classList.remove(styles.loaderBody);
+    }, introTransDuration);
   }
 
   componentWillUnmount() {
