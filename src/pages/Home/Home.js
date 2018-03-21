@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Grid from 'components/Grid/Grid.js';
-import Nav from 'components/Nav/Nav.js';
+import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
 import styles from './styles.css';
 import sharedStyles from 'sharedStyles/index.css';
@@ -124,7 +124,7 @@ class Home extends React.Component {
           <title>Home – Neil Spurgeon. Designer & Developer</title>
         </Helmet>
 
-        <Nav />
+        <Header />
         <Grid>
 
           {header}

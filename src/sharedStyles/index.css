@@ -39,7 +39,7 @@ body {
   font-family: "maison neue", sans-serif;
   font-weight: 300;
   color: var(--medium-text-color);
-  line-height: 1.3;
+  line-height: 1.618;
   margin: 0;
 }
 

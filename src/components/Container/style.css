@@ -1,0 +1,5 @@
+@import '../../sharedStyles/variables.css';
+
+.mainContainer {
+  margin: 0 var(--mu);
+}

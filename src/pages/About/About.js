@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from 'components/Grid/Grid.js';
-import Nav from 'components/Nav/Nav.js';
+import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
 import styles from './styles.css';
 import sharedStyles from 'sharedStyles/index.css';
@@ -16,7 +16,7 @@ const About = () => {
         <title>About – Neil Spurgeon. Designer & Developer</title>
       </Helmet>
 
-      <Nav />
+      <Header />
 
       <Grid>
 

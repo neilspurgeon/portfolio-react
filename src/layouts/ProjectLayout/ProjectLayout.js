@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from 'components/Nav/Nav.js';
+import Header from 'components/Header/Header.js';
 import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
 import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import NextProject from 'components/NextProject/NextProject.js';
@@ -35,7 +35,7 @@ class ProjectLayout extends React.Component {
           <title>{this.props.title} – Neil Spurgeon. Designer & Developer</title>
         </Helmet>
 
-        <Nav showScrolledAside={this.state.showProjectAside} asideText={this.props.title} />
+        <Header showScrolledAside={this.state.showProjectAside} asideText={this.props.title} />
 
           <ProjectHeader
             title={this.props.title}
