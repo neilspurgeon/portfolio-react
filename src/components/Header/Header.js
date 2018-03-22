@@ -4,15 +4,14 @@ import styles from './style.css';
 import { withRouter } from 'react-router-dom';
 
 const Header = (props) => {
-  let workActiveClass = (window.location.href.indexOf("work") > -1) ? styles.isActive : null;
 
   return (
 
     <header className={styles.header}>
 
-      <span className={styles.logo}>
+      <NavLink className={styles.logo} to={'/'}>
         <svg className={styles.logo} width="41px" height="24px" viewBox="0 0 41 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g stroke="none" fill="none">
             <g transform="translate(-70.000000, -69.000000)" fill="#000000">
               <g id="logo" transform="translate(70.000000, 69.000000)">
                 <path d="M22.6121406,4.55494737 L35.2478281,4.55494737 C35.9294531,4.55494737 36.2689844,5.36589474 35.7885156,5.84084211 L31.6475156,9.92210526 C31.3477031,10.2176842 30.8608281,10.2176842 30.5610156,9.92210526 C30.2612031,9.62652632 30.2612031,9.14652632 30.5610156,8.85094737 L33.3810469,6.07073684 L24.4789219,6.07073684 L35.7885156,17.2206316 C36.2689844,17.6943158 35.9294531,18.5052632 35.2478281,18.5052632 L22.6121406,18.5052632 C21.9317969,18.5052632 21.5909844,17.6943158 22.0727344,17.2206316 L26.2137344,13.1368421 C26.5135469,12.8412632 27.0004219,12.8412632 27.3002344,13.1368421 L27.3002344,13.1381053 C27.6013281,13.4336842 27.6013281,13.9136842 27.3002344,14.2092632 L24.4789219,16.9894737 L33.3810469,16.9894737 L22.0727344,5.84084211 C21.5909844,5.36589474 21.9317969,4.55494737 22.6121406,4.55494737" id="Fill-1"></path>
@@ -22,7 +21,7 @@ const Header = (props) => {
             </g>
           </g>
         </svg>
-      </span>
+      </NavLink>
 
       <nav className={styles.nav}>
         <ul className={[styles.list]}>

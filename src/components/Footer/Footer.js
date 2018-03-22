@@ -34,14 +34,14 @@ class Footer extends React.Component {
             <div className={styles.footerContainer}>
 
               <ul className={[styles.list, styles.contact].join(' ')}>
-                <li><a className={styles.footerLink} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></li>
-                <li><a className={styles.footerLink} href="tel:1-805-748-3201">805 748 3201</a></li>
+                <li><a className={globalStyles.link} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></li>
+                <li><a className={globalStyles.link} href="tel:1-805-748-3201">805 748 3201</a></li>
               </ul>
 
               <ul className={[styles.list, styles.social].join(' ')}>
-                <li><a className={styles.footerLink} target="_blank" rel='noopener noreferrer' href="https://www.linkedin.com/in/neilspurgeon/">LinkedIn</a></li>
-                <li><a className={styles.footerLink} target="_blank" rel='noopener noreferrer' href="https://github.com/neilspurgeon/">GitHub</a><br /></li>
-                <li><a className={styles.footerLink} target="_blank" rel='noopener noreferrer' href="https://dribbble.com/neilspurgeon/">Dribbble</a><br /></li>
+                <li><a className={globalStyles.link} target="_blank" rel='noopener noreferrer' href="https://www.linkedin.com/in/neilspurgeon/">LinkedIn</a></li>
+                <li><a className={globalStyles.link} target="_blank" rel='noopener noreferrer' href="https://github.com/neilspurgeon/">GitHub</a><br /></li>
+                <li><a className={globalStyles.link} target="_blank" rel='noopener noreferrer' href="https://dribbble.com/neilspurgeon/">Dribbble</a><br /></li>
               </ul>
 
               <nav className={styles.nav}>

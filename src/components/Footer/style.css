@@ -3,6 +3,7 @@
 .footer {
   padding: 50px 0;
   background: #F7F5F5;
+  line-height: 2.4;
   opacity: 0;
   transition: 1s ease opacity .2s;
 

@@ -24,6 +24,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "gt sectra";
+  src: url("../assets/fonts/gt-sectra-display-bold.eot");
+  src: url("../assets/fonts/gt-sectra-display-bold.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/gt-sectra-display-bold.woff2") format("woff2"),
+       url("../assets/fonts/gt-sectra-display-bold.woff") format("woff"),
+       url("../assets/fonts/maisonneuebold.svg#gt-sectra-display-bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * { box-sizing: border-box; }
 
 img {
@@ -45,15 +56,16 @@ body {
 
 h1,
 .h1 {
+  font-family: 'gt sectra', sans-serif;
   font-size: 3.2rem;
   color: var(--dark-text-color);
 
   @media screen and (min-width: 768px) {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
   }
 
   @media screen and (min-width: 940px) {
-    font-size: 5rem;
+    font-size: 4.4rem;
   }
 }
 
@@ -99,38 +111,25 @@ p.label {
   margin-bottom: 0;
 }
 
-.inlineLink {
+.link {
   text-decoration: none;
   color: inherit;
   position: relative;
+  transition: .2s ease opacity;
 }
 
-.inlineLink:before{
+.link:before{
   content: '';
   position: absolute;
   left: 0;
-  bottom: -.2em;
+  bottom: -.15em;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
-.inlineLink:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.2em;
-  width: 100%;
-  height: 1px;
-  transition: .5s ease transform;
-  background: rgba(0,0,0,1);
-  transform: scaleX(0);
-  transform-origin: bottom left;
-}
-
-.inlineLink:hover:after {
-  background: rgba(0,0,0,1);
-  transform: scaleX(1);
+.link:hover {
+  opacity: .6;
 }
 
 .arrowLink {

@@ -14,6 +14,11 @@
 .navLink {
   text-decoration: none;
   color: inherit;
+  transition: .2s ease opacity;
+}
+
+.navLink:hover {
+  opacity: .7;
 }
 
 .navLink.isActive {

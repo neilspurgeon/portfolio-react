@@ -15,19 +15,10 @@
 
   /* margin unit */
   --mu: 5vw;
-}
 
-@media (--viewport-xsmall-only) {
-  :root {
-    /* spacer unit */
-    --su: 25px;
-  }
-}
+  /* space unit */
+  @media (--viewport-xsmall-only) { --su: 25px; }
+  @media (--viewport-small) { --su: 50px; }
 
-@media (--viewport-small) {
-  :root {
-    /* spacer unit */
-    --su: 50px;
-  }
 }
 

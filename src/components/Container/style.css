@@ -3,3 +3,7 @@
 .mainContainer {
   margin: 0 var(--mu);
 }
+
+.insetContainer {
+  margin: 0 calc(var(--mu) * 3);
+}
