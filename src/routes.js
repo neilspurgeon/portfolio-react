@@ -6,6 +6,7 @@ import projects from 'projects';
 import ProjectLayout from 'layouts/ProjectLayout/ProjectLayout';
 import NotFound from 'pages/NotFound/NotFound.js';
 import ReactGA from 'react-ga';
+import Cursor from 'components/Cursor/Cursor.js';
 
 ReactGA.initialize('UA-45097231-1');
 
@@ -40,6 +41,8 @@ const Routes = (props) => (
   <div>
     <Route path="/" component={logPageView} />
     <Route path="/" component={ScrollToTop} />
+    <Route path="/" component={Cursor} />
+
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
