@@ -21,15 +21,20 @@ const Home = (props) => {
 
         <Container type={'inset'}>
 
-          <TextDistortion />
-
           <section className={styles.intro}>
-            <h1 className={styles.introText}>Neil is a California based designer who likes to code. He is currently looking for full-time career opportunities.</h1>
+
+            <TextDistortion className={styles.distortedText} />
+
+            <div className={styles.introText}>
+              <h1>Neil is a California based designer who likes to code. He is currently looking for full-time career opportunities.</h1>
+            </div>
+
             <div className={styles.scrollIndicator}>
               <div className={styles.mouseIcon}>
                 <span className={styles.mouseScroll}></span>
               </div>
             </div>
+
           </section>
 
           <section className={styles.projects}>

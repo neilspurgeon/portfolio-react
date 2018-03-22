@@ -1,12 +1,14 @@
 @import '../../sharedStyles/variables.css';
 
 .intro {
+  position: relative;
   min-height: 80vh;
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
 }
 
 .intro::before {
@@ -15,6 +17,17 @@
 }
 
 .introText {
+  position: relative;
+  opacity: 0;
+}
+
+.distortedText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: block;
+  margin-top: -6vh;
 }
 
 .scrollIndicator {
