@@ -1,15 +1,13 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import Container from 'components/Container/Container.js';
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
 import styles from './styles.css';
-// import sharedStyles from 'sharedStyles/index.css';
 import projects from 'projects';
 import ProjectCard from 'components/ProjectCard/ProjectCard.js';
-// import RevealText from 'components/RevealText/RevealText.js';
 import Cta from 'components/Cta/Cta.js';
 import { Helmet } from 'react-helmet';
+import TextDistortion from 'components/TextDistortion/TextDistortion.js';
 
 const Home = (props) => {
     return (
@@ -22,6 +20,9 @@ const Home = (props) => {
         <Header />
 
         <Container type={'inset'}>
+
+          <TextDistortion />
+
           <section className={styles.intro}>
             <h1 className={styles.introText}>Neil is a California based designer who likes to code. He is currently looking for full-time career opportunities.</h1>
             <div className={styles.scrollIndicator}>
