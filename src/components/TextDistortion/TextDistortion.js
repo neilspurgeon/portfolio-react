@@ -26,6 +26,14 @@ text.y = height / 2;
 
 class TextDistortion extends React.Component {
 
+  constructor(props) {
+    super(props);
+    // Set variables
+    this.sprite;
+  };
+
+
+
   componentDidMount() {
 
     //Setup PIXI Canvas in componentDidMount
@@ -56,8 +64,7 @@ class TextDistortion extends React.Component {
     });
 
 
-    // Set variables
-    let sprite;
+
 
     // Load Textures
     PIXI.loader
@@ -67,26 +74,33 @@ class TextDistortion extends React.Component {
     const setup = () => {
 
       // This code will run when the loader has finished loading the image
-      sprite = new PIXI.Sprite(
+      this.sprite = new PIXI.Sprite(
         PIXI.loader.resources['https://res.cloudinary.com/dvxikybyi/image/upload/v1486634113/2yYayZk_vqsyzx.png'].texture
       );
-      sprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
+      this.sprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
 
       // Create displament filter from sprite
-      let displacementFilter = new PIXI.filters.DisplacementFilter(sprite);
+      let displacementFilter = new PIXI.filters.DisplacementFilter(this.sprite);
 
-      this.app.stage.addChild(sprite);
+      this.app.stage.addChild(this.sprite);
       this.app.stage.filters = [displacementFilter];
 
       // Create animation
       this.app.ticker.add(delta => gameLoop(delta));
     };
 
-    function gameLoop(delta) {
-      sprite.x += .2;
-      sprite.y += .2;
-    }
-  }
+    let gameLoop = (delta) => {
+      this.sprite.x += .2;
+      this.sprite.y += .2;
+    };
+
+  };
+
+  componentWillUnmount() {
+    this.app.destroy(true);
+    this.sprite.destroy({ children: true, texture: true, baseTexture: false });
+    PIXI.loader.reset();
+  };
 
 
   render() {
