@@ -22,22 +22,13 @@ class Cursor extends React.Component {
 
   componentDidMount() {
     let this_ = this;
-    this_.cursor = this.refs.cursor;
     this_.follower = this.refs.follower;
-
 
     TweenMax.to({}, 0.016, {
       repeat: -1,
       onRepeat: function () {
         this_.posX += (this_.mouseX - this_.posX) / 9;
         this_.posY += (this_.mouseY - this_.posY) / 9;
-
-        TweenMax.set(this_.cursor, {
-          css: {
-            left: this_.mouseX,
-            top: this_.mouseY
-          }
-        });
 
         TweenMax.set(this_.follower, {
           css: {
@@ -52,9 +43,6 @@ class Cursor extends React.Component {
       this.mouseX = e.pageX;
       this.mouseY = e.pageY;
     };
-
-    // hide native cursor
-    document.body.style.cursor = 'none';
 
     // add cursor class over links
     document.querySelectorAll('a').forEach( (el) => {
@@ -72,10 +60,7 @@ class Cursor extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className={ this.state.isHovered ? [styles.cursor, styles.active].join(' ') : styles.cursor } ref="cursor"></div>
-        <div className={ this.state.isHovered ? [styles.follower, styles.active].join(' ') : styles.follower} ref="follower"></div>
-      </div>
+      <div className={ this.state.isHovered ? [styles.follower, styles.active].join(' ') : styles.follower} ref="follower"></div>
     );
   }
 };

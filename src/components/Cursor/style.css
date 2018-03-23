@@ -1,29 +1,5 @@
 @import '../../sharedStyles/variables.css';
 
-
-.cursor {
-  position: absolute;
-  background-color: #000;
-  /* border: 1px solid #000; */
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  z-index: 1;
-  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-  transform: scale(1);
-  opacity: .8;
-}
-.cursor.active {
-  opacity: 0;
-  transform: scale(0);
-}
-.cursor.hovered {
-  opacity: 0.08;
-}
-
 .follower {
   position: absolute;
   background-color: rgba(0, 0 ,0, .05);
@@ -39,11 +15,10 @@
   pointer-events: none;
   z-index: 10000;
   transform: translate(5px, 5px);
-  /* opacity: .1; */
 }
+
 .follower.active {
-  /* opacity: 0.7; */
   transform: scale(1.2);
-  background-color: rgba(0, 0 ,0, 0);
+  background-color: rgba(0, 0 , 0, 0);
   border: 1px solid  rgba(0, 0 ,0, .5);
 }
