@@ -8,7 +8,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: homeCard,
-  path: '/work/juniper-ridge'
+  path: '/projects/juniper-ridge'
 };
 
 export default data;

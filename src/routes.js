@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from 'pages/Home/Home.js';
 import About from 'pages/About/About.js';
 import projects from 'projects';
+import Projects from 'pages/Projects/Projects.js';
 import ProjectLayout from 'layouts/ProjectLayout/ProjectLayout';
 import NotFound from 'pages/NotFound/NotFound.js';
 import ReactGA from 'react-ga';
@@ -46,6 +47,7 @@ const Routes = (props) => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/projects" component={Projects} />
 
       {projects.map((project, i, arr) => {
         // if last project, start back at the begining

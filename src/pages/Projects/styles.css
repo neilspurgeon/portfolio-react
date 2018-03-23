@@ -1,0 +1,16 @@
+@import '../../sharedStyles/variables.css';
+
+.projects {
+  margin: calc(var(--su) * 2) auto;
+  padding: 0 var(--mob-edge-width);
+  display: grid;
+  grid-gap: var(--mu);
+  /* animation: projectsKeyframes .8s forwards;
+  animation-delay: .3s; */
+  /* align-items: start; */
+
+  @media (--viewport-small) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}

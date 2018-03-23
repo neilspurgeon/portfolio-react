@@ -7,7 +7,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/work/ingear'
+  path: '/projects/ingear'
 };
 
 export default data;
