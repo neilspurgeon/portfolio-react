@@ -45,7 +45,7 @@ class Cursor extends React.Component {
     };
 
     // add cursor class over links
-    document.querySelectorAll('a').forEach( (el) => {
+    document.querySelectorAll('a', 'button', 'input').forEach( (el) => {
 
       // set hover states
       el.onmouseenter = () => {
