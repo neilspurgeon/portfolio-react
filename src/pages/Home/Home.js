@@ -23,7 +23,7 @@ const Home = (props) => {
 
           <section className={styles.intro}>
 
-            <TextDistortion className={styles.distortedText} />
+            {/* <TextDistortion className={styles.distortedText} /> */}
 
             <div className={styles.introText}>
               <h1>Neil is a California based designer who likes to code. He is currently looking for full-time career opportunities.</h1>

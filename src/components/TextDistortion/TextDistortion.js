@@ -2,6 +2,7 @@ import React from 'react';
 import { Sprite, Stage, Text, Container, Texture} from 'react-pixi-fiber';
 import * as PIXI from 'pixi.js';
 import WebFont from 'webfontloader';
+import map from './images/cloudsbig.jpg';
 
 // Setup dimensions
 const width = window.innerWidth * .7;
@@ -33,7 +34,6 @@ class TextDistortion extends React.Component {
   };
 
 
-
   componentDidMount() {
 
     //Setup PIXI Canvas in componentDidMount
@@ -63,21 +63,19 @@ class TextDistortion extends React.Component {
       }
     });
 
-
-
-
     // Load Textures
     PIXI.loader
-      .add('https://res.cloudinary.com/dvxikybyi/image/upload/v1486634113/2yYayZk_vqsyzx.png')
+      .add("https://i.imgur.com/6zS3jtA.png")
       .load( () => setup() );
 
     const setup = () => {
 
       // This code will run when the loader has finished loading the image
       this.sprite = new PIXI.Sprite(
-        PIXI.loader.resources['https://res.cloudinary.com/dvxikybyi/image/upload/v1486634113/2yYayZk_vqsyzx.png'].texture
+        // PIXI.loader.resources[map.src].texture
+        PIXI.loader.resources["https://i.imgur.com/6zS3jtA.png"].texture
       );
-      this.sprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
+      this.sprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.CLAMP_TO_EDGE;
 
       // Create displament filter from sprite
       let displacementFilter = new PIXI.filters.DisplacementFilter(this.sprite);
@@ -90,15 +88,15 @@ class TextDistortion extends React.Component {
     };
 
     let gameLoop = (delta) => {
-      this.sprite.x += .2;
-      this.sprite.y += .2;
+      this.sprite.x += .5;
+      this.sprite.y += .5;
     };
 
   };
 
   componentWillUnmount() {
     this.app.destroy(true);
-    this.sprite.destroy({ children: true, texture: true, baseTexture: false });
+    this.sprite.destroy({ children: true, texture: true, baseTexture: true });
     PIXI.loader.reset();
   };
 

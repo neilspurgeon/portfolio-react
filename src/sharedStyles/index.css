@@ -161,7 +161,7 @@ p.label {
   opacity: 0;
   transition: .3s cubic-bezier(.34,.15,.31,.92);
   transition-delay: 0s;
-  background-image: url(../assets/images/link-arrow-dark.svg);
+  /* background-image: url(../assets/images/link-arrow-dark.svg); */
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 15px;

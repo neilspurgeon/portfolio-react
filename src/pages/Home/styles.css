@@ -18,7 +18,13 @@
 
 .introText {
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
+  text-align: center;
+}
+
+.introText > h1 {
+  max-width: 19em;
+  margin: .6em auto;
 }
 
 .distortedText {

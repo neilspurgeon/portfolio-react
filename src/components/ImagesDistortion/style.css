@@ -1,0 +1,12 @@
+.wrapper {
+    background: #FAF8F8;
+}
+
+.image {
+  transition: 1s ease opacity;
+  opacity: 0;
+}
+
+.image.isLoaded {
+  opacity: 1;
+}
