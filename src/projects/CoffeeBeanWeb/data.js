@@ -7,7 +7,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/work/coffee-bean-web'
+  path: '/projects/coffee-bean-web'
 };
 
 export default data;
