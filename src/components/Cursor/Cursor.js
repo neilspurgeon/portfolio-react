@@ -5,6 +5,7 @@ import { TweenMax } from 'gsap';
 class Cursor extends React.Component {
 
   constructor(props) {
+
     super(props);
 
     this.state = {
@@ -19,6 +20,7 @@ class Cursor extends React.Component {
     this.posX = 0;
     this.posY = 0;
   }
+
 
   componentDidMount() {
     let this_ = this;
@@ -44,8 +46,19 @@ class Cursor extends React.Component {
       this.mouseY = e.pageY;
     };
 
+    this.attachEvents();
+  }
+
+
+  componentDidUpdate() {
+    this.attachEvents();
+  };
+
+
+  attachEvents = () => {
+
     // add cursor class over links
-    document.querySelectorAll('a', 'button', 'input').forEach( (el) => {
+    document.querySelectorAll('a, button, input, textarea').forEach( (el) => {
 
       // set hover states
       el.onmouseenter = () => {
@@ -58,11 +71,17 @@ class Cursor extends React.Component {
     });
   }
 
+
   render() {
     return (
-      <div className={ this.state.isHovered ? [styles.follower, styles.active].join(' ') : styles.follower} ref="follower"></div>
+      <div>
+        <div className={ this.state.isHovered ? [styles.follower, styles.active].join(' ') : styles.follower} ref="follower"></div>
+        { this.props.children }
+      </div>
+
     );
   }
 };
+
 
 export default Cursor;
