@@ -1,0 +1,28 @@
+@import '../../sharedStyles/variables.css';
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--light-text-color);
+  border-radius: 2em;
+  padding: 1em 1.8em .7em 1.8em;
+  text-align: center;
+  margin: 1em 2em;
+  will-change: background-color,
+               border,
+               color;
+  transition: .4s ease background-color,
+              .4s ease border,
+              .4s ease color;
+  font-size: 1.6rem;
+  margin: 0;
+  width: fit-content;
+  font-family: 'maison neue';
+}
+
+.button:hover {
+  color: #FFF;
+  background-color: #000;
+  border: 1px solid #000;
+}

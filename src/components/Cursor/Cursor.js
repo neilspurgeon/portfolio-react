@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './style.css';
 import { TweenMax } from 'gsap';
+import classNames from 'classnames/bind';
+
+let cx = classNames.bind(styles);
 
 class Cursor extends React.Component {
 
@@ -9,7 +12,8 @@ class Cursor extends React.Component {
     super(props);
 
     this.state = {
-      isHovered: false
+      isHovered: false,
+      hasMouse: true
     };
 
     // native mouse position
@@ -47,8 +51,15 @@ class Cursor extends React.Component {
     };
 
     this.attachEvents();
-  }
 
+    window.addEventListener('touchstart', function onFirstTouch() {
+      console.log('asdasdasdasd');
+      this.setState = ({hasMouse: false});
+
+      // we only need to know once that a human touched the screen, so we can stop listening now
+      window.removeEventListener('touchstart', onFirstTouch, false);
+    }, false);
+  };
 
   componentDidUpdate() {
     this.attachEvents();
@@ -73,9 +84,15 @@ class Cursor extends React.Component {
 
 
   render() {
+
+    let classNames = cx({
+      follower: true,
+      active: this.state.isHovered
+    });
+
     return (
       <div>
-        <div className={ this.state.isHovered ? [styles.follower, styles.active].join(' ') : styles.follower} ref="follower"></div>
+        <div className={classNames} ref="follower"></div>
         { this.props.children }
       </div>
 

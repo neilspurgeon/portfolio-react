@@ -80,7 +80,8 @@
 }
 
 .projects {
-  padding: 0 var(--mob-edge-width);
+  padding: 0;
+  margin: 0;
   display: grid;
   grid-gap: var(--mu);
   opacity: 0;
@@ -90,8 +91,6 @@
 
   @media (--viewport-small) {
     grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding: 0;
   }
 }
 

@@ -7,7 +7,7 @@ import projects from 'projects';
 import ProjectCard from 'components/ProjectCard/ProjectCard.js';
 import Cta from 'components/Cta/Cta.js';
 import { Helmet } from 'react-helmet';
-import TextDistortion from 'components/TextDistortion/TextDistortion.js';
+// import TextDistortion from 'components/TextDistortion/TextDistortion.js';
 
 const Home = (props) => {
     return (

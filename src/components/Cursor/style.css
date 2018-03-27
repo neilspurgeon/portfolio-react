@@ -15,6 +15,12 @@
   pointer-events: none;
   z-index: 10000;
   transform: translate(5px, 5px);
+
+  /* hide on smaller devices until there
+  is an accurate way to detect touch screen */
+  @media screen and (width <= 1024px) {
+    display: none;
+  }
 }
 
 .follower.active {

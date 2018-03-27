@@ -5,5 +5,15 @@
 }
 
 .insetContainer {
-  margin: 0 calc(var(--mu) * 3);
+  margin: 0 var(--mu);
+
+  @media (--viewport-medium) {
+    margin: 0 calc(var(--mu) * 3);
+  }
+
+  @media (--viewport-xlarge) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 }
