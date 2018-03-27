@@ -36,17 +36,23 @@ class Contact extends React.Component {
               <h1 className={styles.pageHeader}>Get in touch</h1>
               <p>If you want to work together or just say hi.</p>
 
-              <form className={styles.contactForm}>
-                <input className={styles.input} type="text" placeholder="Name" autoComplete="name" required />
-                <input className={styles.input} type="email" placeholder="Email" autoComplete="email" required />
+              <form
+                className={styles.contactForm}
+                action="https://formspree.io/hello@neilspurgeon.com"
+                method="POST"
+                >
+                <input className={styles.input} type="text" placeholder="Name" autoComplete="name" name="name" required />
+                <input className={styles.input} type="email" placeholder="Email" autoComplete="email" name="_replyto" required />
+                <input type="hidden" name="_cc" value="neilspurgeon@gmail.com" />
 
                 <textarea
                   ref="autosize"
                   className={styles.textArea}
                   onChange={this.resize}
                   rows="1"
+                  name="message"
                   required
-                  placeholder="What's up..." />
+                  placeholder="Message" />
 
                   <Button type="submit" text="Send" className={styles.submit} />
 
