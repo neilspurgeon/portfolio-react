@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "maison neue";
+  src: url("../assets/fonts/maisonneue-light.eot");
+  src: url("../assets/fonts/maisonneue-light.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/maisonneue-light.woff2") format("woff2"),
+       url("../assets/fonts/maisonneue-light.woff") format("woff"),
+       url("../assets/fonts/maisonneue-light.ttf") format("truetype"),
+       url("../assets/fonts/maisonneue-light.svg#maison_neuelight") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "maison neue";
+  src: url("../assets/fonts/maisonneuebook.eot");
+  src: url("../assets/fonts/maisonneuebook.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/maisonneuebook.woff2") format("woff2"),
+       url("../assets/fonts/maisonneuebook.woff") format("woff"),
+       url("../assets/fonts/maisonneuebook.ttf") format("truetype"),
+       url("../assets/fonts/maisonneuebook.svg#maison_neuebook") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "maison neue";
+  src: url("../assets/fonts/maisonneuebold.eot");
+  src: url("../assets/fonts/maisonneuebold.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/maisonneuebold.woff2") format("woff2"),
+       url("../assets/fonts/maisonneuebold.woff") format("woff"),
+       url("../assets/fonts/maisonneuebold.ttf") format("truetype"),
+       url("../assets/fonts/maisonneuebold.svg#maison_neuebold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt sectra";
+  src: url("../assets/fonts/gt-sectra-display-light.eot");
+  src: url("../assets/fonts/gt-sectra-display-light.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/gt-sectra-display-light.woff2") format("woff2"),
+       url("../assets/fonts/gt-sectra-display-light.woff") format("woff"),
+       url("../assets/fonts/gt-sectra-display-light.svg#gt_sectra_displaylight") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt sectra";
+  src: url("../assets/fonts/gt-sectra-display-regular.eot");
+  src: url("../assets/fonts/gt-sectra-display-regular.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/gt-sectra-display-regular.woff2") format("woff2"),
+       url("../assets/fonts/gt-sectra-display-regular.woff") format("woff"),
+       url("../assets/fonts/gt-sectra-display-regular.svg#gt_sectra_displayregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt sectra";
+  src: url("../assets/fonts/gt-sectra-display-bold.eot");
+  src: url("../assets/fonts/gt-sectra-display-bold.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/gt-sectra-display-bold.woff2") format("woff2"),
+       url("../assets/fonts/gt-sectra-display-bold.woff") format("woff"),
+       url("../assets/fonts/gt-sectra-display-bold.svg#gt_sectra_displaybold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
