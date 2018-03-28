@@ -4,7 +4,7 @@
 .linkWrapper {
   text-align: center;
   /* padding: 200px 0; */
-  coposes: vertical-spacing;
+  /* coposes: vertical-spacing; */
 }
 
 .nextLink {
@@ -16,4 +16,5 @@
 
 .nextTitle {
   composes: h2;
+  font-weight: 400;
 }

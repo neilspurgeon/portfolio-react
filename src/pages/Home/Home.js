@@ -26,7 +26,7 @@ const Home = (props) => {
           <section className={styles.intro}>
 
             <div className={styles.introText}>
-              <h1>Neil is a California based designer who likes to code. He is currently looking for full-time career opportunities.</h1>
+              <h1>Hi, I’m Neil, a multidisciplinary designer who likes to code. I’m currently available for freelance work while seeking full-time opportunities.</h1>
             </div>
 
             <div className={styles.scrollIndicator}>
