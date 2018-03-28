@@ -1,0 +1,6 @@
+@import '../../sharedStyles/variables.css';
+
+.wrapper {
+  @apply --vertical-spacing;
+  margin: 0 auto;
+}

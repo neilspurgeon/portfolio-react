@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
 import Waypoint from 'react-waypoint';
+import Container from 'components/Container/Container.js';
 
 class ProjectHeader extends React.Component {
   constructor(props) {
@@ -19,8 +20,7 @@ class ProjectHeader extends React.Component {
 
   render() {
     return (
-      <Grid>
-        <div className={styles.wrapper}>
+        <Container className={styles.projectHeader}>
 
           <Waypoint onEnter={this.handleEnter}>
             <h1 className={[styles.title, styles.textRevealWrapper].join(' ')}>
@@ -30,14 +30,7 @@ class ProjectHeader extends React.Component {
             </h1>
           </Waypoint>
 
-          <p className={[styles.subTitle, styles.textRevealWrapper].join(' ')}>
-            <span className={this.state.revealClasses.join(' ')}>
-              {this.props.subTitle}
-            </span>
-          </p>
-
-        </div>
-      </Grid>
+        </Container>
     );
   }
 }

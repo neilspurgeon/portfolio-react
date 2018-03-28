@@ -29,7 +29,7 @@ class Footer extends React.Component {
       <Waypoint bottomOffset="10%" onEnter={this.handleEnter}>
         <footer className={this.state.footerClasses.join(' ')}>
 
-          <Container>
+          <Container type="inset">
 
             <div className={styles.footerContainer}>
 

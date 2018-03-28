@@ -30,7 +30,7 @@ class Contact extends React.Component {
 
         <div className={styles.pushFooter}>
 
-          <Container type={'inset'}>
+          <Container type={'left'}>
 
             <section className={styles.projects}>
               <h1 className={styles.pageHeader}>Get in touch</h1>

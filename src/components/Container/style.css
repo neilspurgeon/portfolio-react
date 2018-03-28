@@ -1,19 +1,32 @@
 @import '../../sharedStyles/variables.css';
 
 .mainContainer {
-  margin: 0 var(--mu);
+  width: calc(100vw - (var(--mu) * 2));
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .insetContainer {
   margin: 0 var(--mu);
 
   @media (--viewport-medium) {
-    margin: 0 calc(var(--mu) * 3);
+    width: calc(100vw - (var(--mu) * 6));
+    max-width: 1510px;
+    margin: 0 auto;
+  }
+}
+
+.leftContainer {
+  margin: 0 var(--mu);
+
+  @media (--viewport-medium) {
+    /* width:  calc(100vw - (var(--mu) * 6) ); */
+    width: calc(50vw - var(--mu));
   }
 
   @media (--viewport-xlarge) {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
 }

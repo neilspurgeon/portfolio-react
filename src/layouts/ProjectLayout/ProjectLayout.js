@@ -6,6 +6,7 @@ import NextProject from 'components/NextProject/NextProject.js';
 import Footer from 'components/Footer/Footer.js';
 import Waypoint from 'react-waypoint';
 import { Helmet } from 'react-helmet';
+import Container from 'components/Container/Container.js';
 
 class ProjectLayout extends React.Component {
   constructor(props) {
@@ -35,29 +36,25 @@ class ProjectLayout extends React.Component {
           <title>{this.props.title} – Neil Spurgeon. Designer & Developer</title>
         </Helmet>
 
-        <Header showScrolledAside={this.state.showProjectAside} asideText={this.props.title} />
+        <Header />
 
-          <ProjectHeader
-            title={this.props.title}
-            subTitle={this.props.subTitle}
-          />
+        <ProjectHeader
+          title={this.props.title}
+          subTitle={this.props.subTitle}
+        />
 
-          <ProjectHero
-            image={this.props.hero}
-            altText={this.props.altText}
-          />
+        <ProjectHero
+          image={this.props.hero}
+          altText={this.props.altText}
+        />
 
-          <Waypoint onEnter={this.handleEnter} onLeave={this.handleLeave}>
-            <div>
-            {this.props.children}
-            </div>
-          </Waypoint>
+        {this.props.children}
 
-          <NextProject
-            image={this.props.nextProjectImage}
-            title={this.props.nextProjectTitle}
-            path={this.props.nextProjectPath}
-          />
+        <NextProject
+          image={this.props.nextProjectImage}
+          title={this.props.nextProjectTitle}
+          path={this.props.nextProjectPath}
+        />
 
         <Footer />
 

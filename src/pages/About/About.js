@@ -1,5 +1,6 @@
 import React from 'react';
-import Grid from 'components/Grid/Grid.js';
+// import Grid from 'components/Grid/Grid.js';
+import Container from 'components/Container/Container.js';
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
 import styles from './styles.css';
@@ -18,22 +19,22 @@ const About = () => {
 
       <Header />
 
-      <Grid>
-
+      <Container>
           <Image
             className={styles.portrait}
             image={portrait}
             altText="portrait of me"
             sizes="(max-width: 751px) 100vw, 25vw"
           />
+      </Container>
 
-        <main className={styles.wrapper}>
+      <Container type="">
+
+        <main className={styles.text}>
 
           <section className={styles.textSection}>
-            <h1 className={[sharedStyles.p, styles.sectionLabel].join(' ')}>About</h1>
-            <p>I’m a designer and developer currently based in San Luis Obispo, CA. I have a wide range of experience but am most interested in digital product design and front end development.</p>
-            <p>I’m currently available for freelance work and interesting projects.</p>
-            <p>Please get in touch at <a className={sharedStyles.inlineLink} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></p>
+            <p className={styles.intro}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+            <p className={styles.intro}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             <h2 className={[sharedStyles.p, styles.sectionLabel].join(' ')}>Experience</h2>
             <p>Hathway — San Luis Obispo, CA<br />
@@ -58,7 +59,7 @@ const About = () => {
 
         </main>
 
-      </Grid>
+      </Container>
 
       <Footer />
     </div>

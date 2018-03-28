@@ -1,4 +1,5 @@
 @import '../../sharedStyles/variables.css';
+@import '../../sharedStyles/index.css';
 
 .card {
   text-decoration: none;
@@ -27,6 +28,7 @@
 }
 
 .title {
+  composes: p;
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;

@@ -1,51 +1,5 @@
 @import './variables.css';
 
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneue-light.eot");
-  src: url("../assets/fonts/maisonneue-light.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneue-light.woff2") format("woff2"),
-       url("../assets/fonts/maisonneue-light.woff") format("woff"),
-       url("../assets/fonts/maisonneue-light.ttf") format("truetype"),
-       url("../assets/fonts/maisonneue-light.svg#maison_neuebook") format("svg");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneuebook.eot");
-  src: url("../assets/fonts/maisonneuebook.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneuebook.woff2") format("woff2"),
-       url("../assets/fonts/maisonneuebook.woff") format("woff"),
-       url("../assets/fonts/maisonneuebook.ttf") format("truetype"),
-       url("../assets/fonts/maisonneuebook.svg#maison_neuebook") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneuebold.eot");
-  src: url("../assets/fonts/maisonneuebold.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneuebold.woff2") format("woff2"),
-       url("../assets/fonts/maisonneuebold.woff") format("woff"),
-       url("../assets/fonts/maisonneuebold.ttf") format("truetype"),
-       url("../assets/fonts/maisonneuebold.svg#maison_neuebold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "gt sectra";
-  src: url("../assets/fonts/gt-sectra-display-bold.eot");
-  src: url("../assets/fonts/gt-sectra-display-bold.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/gt-sectra-display-bold.woff2") format("woff2"),
-       url("../assets/fonts/gt-sectra-display-bold.woff") format("woff"),
-       url("../assets/fonts/maisonneuebold.svg#gt-sectra-display-bold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-}
-
 * { box-sizing: border-box; }
 
 img {
@@ -67,8 +21,10 @@ body {
 
 h1,
 .h1 {
-  font-family: 'gt sectra', sans-serif;
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
   font-size: 3.2rem;
+  line-height: 1.4;
   color: var(--dark-text-color);
 
   @media screen and (min-width: 768px) {
@@ -82,11 +38,22 @@ h1,
 
 h2,
 .h2 {
+  font-family: 'gt sectra', serif;
+  font-weight: 100;
   font-size: 2.2rem;
+  /* line-height: 1.4; */
   color: var(--dark-text-color);
 
-  @media screen and (min-width: 768px) {
-    font-size: 3.2rem;
+  @media (--viewport-medium)  {
+    font-size: 2.4rem;
+  }
+
+   @media (--viewport-medium)  {
+    font-size: 2.6rem;
+  }
+
+  @media (--viewport-xlarge) {
+    font-size: 2.8rem;
   }
 }
 
@@ -102,9 +69,10 @@ h3,
 
 p,
 .p {
-  font-size: 1.4rem;
+  font-family: "maison neue", sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0 0 1em;
   color: var(--medium-text-color);
   @media screen and (min-width: 768px) {
@@ -118,8 +86,21 @@ p.pSmall {
 
 .label,
 p.label {
+  font-family: "maison neue", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 1em;
   color: var(--light-text-color);
-  margin-bottom: 0;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    /* font-size: 1.6rem; */
+  }
+}
+
+.sectionHeader {
+  composes: label;
 }
 
 .link {
