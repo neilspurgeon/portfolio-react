@@ -4,6 +4,7 @@ import Container from 'components/Container/Container.js';
 import styles from './style.css';
 import globalStyles from 'sharedStyles/index.css';
 import Waypoint from 'react-waypoint';
+import Link from 'components/Link/Link.js';
 
 class Footer extends React.Component {
   constructor(props) {
@@ -34,14 +35,14 @@ class Footer extends React.Component {
             <div className={styles.footerContainer}>
 
               <ul className={[styles.list, styles.contact].join(' ')}>
-                <li><a className={globalStyles.link} href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></li>
-                <li><a className={globalStyles.link} href="tel:1-805-748-3201">805 748 3201</a></li>
+                <li><Link to="mailto:hello@neilspurgeon.com" text="hello@neilspurgeon.com" /></li>
+                <li><Link to="tel:1-805-748-3201" text="805 748 3201" /></li>
               </ul>
 
               <ul className={[styles.list, styles.social].join(' ')}>
-                <li><a className={globalStyles.link} target="_blank" rel='noopener noreferrer' href="https://www.linkedin.com/in/neilspurgeon/">LinkedIn</a></li>
-                <li><a className={globalStyles.link} target="_blank" rel='noopener noreferrer' href="https://github.com/neilspurgeon/">GitHub</a><br /></li>
-                <li><a className={globalStyles.link} target="_blank" rel='noopener noreferrer' href="https://dribbble.com/neilspurgeon/">Dribbble</a><br /></li>
+                <li><Link to="https://www.linkedin.com/in/neilspurgeon/" text="" /></li>
+                <li><Link to="https://github.com/neilspurgeon/" text="GitHub" /></li>
+                <li><Link to="https://dribbble.com/neilspurgeon/" text="Dribbble" /></li>
               </ul>
 
               <nav className={styles.nav}>

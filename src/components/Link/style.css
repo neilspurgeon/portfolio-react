@@ -1,24 +1,22 @@
 @import '../../sharedStyles/variables.css';
 
-.cta {
-  display: inline-block;
+.link {
   text-decoration: none;
   color: inherit;
-  border: 1px solid var(--light-text-color);
-  border-radius: 2em;
-  padding: 1em 1.8em .7em 1.8em;
-  text-align: center;
-  margin: 1em 2em;
-  will-change: background-color,
-               border,
-               color;
-  transition: .4s ease background-color,
-              .4s ease border,
-              .4s ease color;
+  position: relative;
+  transition: .2s ease opacity;
 }
 
-.cta:hover {
-  color: #FFF;
-  background-color: #000;
-  border: 1px solid #000;
+.link:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.15em;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.link:hover {
+  opacity: .6;
 }

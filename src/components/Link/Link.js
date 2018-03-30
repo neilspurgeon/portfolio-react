@@ -7,6 +7,7 @@ const Link = (props) => {
     <a
       className={styles.link}
       target="_blank"
+      rel="noopener noreferrer"
       href={props.to}>
       {props.text}
     </a>

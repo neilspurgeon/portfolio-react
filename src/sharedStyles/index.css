@@ -112,27 +112,6 @@ p.label {
   composes: label;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  transition: .2s ease opacity;
-}
-
-.link:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.15em;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid rgba(0,0,0,.2);
-}
-
-.link:hover {
-  opacity: .6;
-}
-
 .arrowLink {
   position: relative;
   display: inline-block;
