@@ -79,7 +79,21 @@ class Cursor extends React.Component {
       el.onmouseleave = () => {
         this.setState({ isHovered: false });
       };
+
     });
+
+    // set hover states for project cards
+    document.querySelectorAll('[data-projectcard]').forEach( (el) => {
+
+      el.onmouseenter = () => {
+        this.setState({ projectCardIsHovered: true });
+      };
+
+      el.onmouseleave = () => {
+        this.setState({ projectCardIsHovered: false });
+      };
+    });
+
   }
 
 
@@ -87,7 +101,9 @@ class Cursor extends React.Component {
 
     let classNames = cx({
       follower: true,
-      active: this.state.isHovered
+      active: this.state.isHovered,
+      projectCardHover: this.state.projectCardIsHovered,
+      // projectCardHover: true
     });
 
     return (
