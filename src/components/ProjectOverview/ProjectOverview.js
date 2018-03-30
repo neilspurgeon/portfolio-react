@@ -11,7 +11,7 @@ const ProjectOverview = (props) => {
   return (
     <Container type="inset" className={styles.wrapper}>
 
-      <div class={styles.main}>
+      <div className={styles.main}>
         <p className={styles.intro}>{props.intro}</p>
 
       </div>
