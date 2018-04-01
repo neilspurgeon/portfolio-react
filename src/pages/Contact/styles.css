@@ -1,5 +1,12 @@
 @import '../../sharedStyles/variables.css';
 
+
+.contactWrapper {
+    text-align: center;
+    max-width: 44em;
+    margin: 0 auto;
+}
+
 .pageHeader {
     margin-bottom: 0;
 }
@@ -28,17 +35,12 @@
     font-family: 'maison neue';
     font-weight: 100;
     font-size: 2.2rem;
-    /* height: 2em; */
     margin: 1em 0 .5em;
     border: none;
     border-bottom: 1px solid #000;
     outline: none;
     background-color: transparent;
-    line-height: 1.618
-}
-
-.input {
-     /* grid-column: 1 / 3; */
+    line-height: 1.618;
 }
 
 .textArea {
