@@ -23,7 +23,10 @@
 }
 
 .body {
-  max-width: 755px;
+   @media (--viewport-large) {
+    width: 35vw;
+    max-width: 755px;
+  }
 }
 
 .aboutHeader {
