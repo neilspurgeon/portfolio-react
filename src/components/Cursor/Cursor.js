@@ -13,7 +13,8 @@ class Cursor extends React.Component {
 
     this.state = {
       isHovered: false,
-      hasMouse: true
+      projectCardIsHovered: false
+
     };
 
     // native mouse position
@@ -51,14 +52,6 @@ class Cursor extends React.Component {
     };
 
     this.attachEvents();
-
-    window.addEventListener('touchstart', function onFirstTouch() {
-      console.log('asdasdasdasd');
-      this.setState = ({hasMouse: false});
-
-      // we only need to know once that a human touched the screen, so we can stop listening now
-      window.removeEventListener('touchstart', onFirstTouch, false);
-    }, false);
   };
 
   componentDidUpdate() {
@@ -78,6 +71,13 @@ class Cursor extends React.Component {
 
       el.onmouseleave = () => {
         this.setState({ isHovered: false });
+      };
+
+      el.onclick = (e) => {
+        this.setState({
+          isHovered: false,
+          projectCardIsHovered: false
+        });
       };
 
     });
