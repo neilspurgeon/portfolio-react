@@ -36,7 +36,7 @@ class NextProject extends React.Component {
 
         <div className={styles.linkWrapper}>
           <Link to={this.props.path} className={styles.nextLink}>
-            <h2 className={styles.nextText}><span className={styles.label}>Next Project</span> <br />
+            <h2 className={styles.nextText}><span className={styles.label}>Next Project</span><br />
             <span className={styles.nextTitle}>{this.props.title}</span></h2>
           </Link>
         </div>
