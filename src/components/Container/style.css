@@ -9,7 +9,7 @@
 .insetContainer {
   margin: 0 var(--mu);
 
-  @media (--viewport-medium) {
+  @media (--viewport-large) {
     width: calc(100vw - (var(--mu) * 6));
     max-width: 1510px;
     margin: 0 auto;
