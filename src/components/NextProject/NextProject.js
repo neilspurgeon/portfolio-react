@@ -1,11 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
 import transitions from 'sharedStyles/transitions.css';
 import Waypoint from 'react-waypoint';
-import Image from 'components/Image/Image.js';
 import Container from 'components/Container/Container.js';
 
 class NextProject extends React.Component {

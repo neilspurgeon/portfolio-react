@@ -1,9 +1,5 @@
 import React from 'react';
-import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
-import RevealImage from 'components/RevealImage/RevealImage.js';
-import transitions from 'sharedStyles/transitions.css';
-import sharedStyles from 'sharedStyles/index.css';
 import Container from 'components/Container/Container.js';
 import Link from 'components/Link/Link.js';
 
@@ -18,11 +14,11 @@ const ProjectOverview = (props) => {
 
       <div>
 
-        { props.role &&
+        { props.roles &&
           <div>
             <h2 className={styles.sectionHeader}>Role</h2>
             <ul className={styles.ul}>
-              { props.role.map( (role, i) => <li>{role}</li>) }
+              { props.roles.map( (role, i) => <li key={role}>{role}</li>) }
             </ul>
           </div>
         }
@@ -32,7 +28,7 @@ const ProjectOverview = (props) => {
           <div>
             <h2 className={styles.sectionHeader}>Technology</h2>
             <ul className={styles.ul}>
-              { props.tech.map( (tech, i) => <li>{tech}</li>) }
+              {props.tech.map((tech, i) => <li key={tech}>{tech}</li>) }
             </ul>
           </div>
         }
@@ -42,7 +38,7 @@ const ProjectOverview = (props) => {
           <div>
             <h2 className={styles.sectionHeader}>Credits</h2>
             <ul className={styles.ul}>
-              { props.credits.map( (credit, i) => <li>{credit}</li>) }
+              { props.credits.map( (credit, i) => <li key={credit}>{credit}</li>) }
             </ul>
           </div>
         }

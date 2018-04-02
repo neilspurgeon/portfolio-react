@@ -6,7 +6,6 @@ import signUpImg from './images/sign-up.jpg';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectOverview from 'components/ProjectOverview/ProjectOverview.js';
 import ProjectImage from 'components/ProjectImage/ProjectImage.js';
-import sharedStyles from 'sharedStyles/index.css';
 import Container from 'components/Container/Container.js';
 
 const Fontifi = () => {
@@ -21,7 +20,7 @@ const Fontifi = () => {
         linkUrl="https://fontifi.co/"
         linkText="fontifi.co"
         intro="This is an ongoing side project of mine that started as way learn React and to stay up to date on coding skills that weren’t being used at my full-time position. My goal was to create an interactive site that could be used by designers and developers to help find and explore different web font combinations."
-        role={["UI/UX Design", "Front End Development", "Back End Development"]}
+        roles={["UI/UX Design", "Front End Development", "Back End Development"]}
         tech={["React", "Express", "MongDB + mLab"]}
         />
 

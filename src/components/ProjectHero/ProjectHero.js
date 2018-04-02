@@ -1,5 +1,4 @@
 import React from 'react';
-import Grid from 'components/Grid/Grid.js';
 import Image from 'components/Image/Image.js';
 import styles from './style.css';
 

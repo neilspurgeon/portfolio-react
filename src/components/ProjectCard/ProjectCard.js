@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './style.css';
 import Image from 'components/Image/Image.js';
-import ImagesDistortion from 'components/ImagesDistortion/ImagesDistortion.js';
 
 const ProjectCard = (props) => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectText from 'components/ProjectText/ProjectText.js';
-import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 import Container from 'components/Container/Container.js';
 import styles from './styles.css';
 import shared from 'sharedStyles/index.css';
@@ -25,16 +24,13 @@ import checkout from './images/checkout.jpg';
 
 
 const CoffeeBean = () => {
-  const bgStyle = {
-    backgroundImage: 'linear-gradient(-135deg, #F6F4F8 0%, #F6F4F8 100%)'
-  };
 
   return (
     <div>
 
       <ProjectOverview
         intro="Born and brewed in Southern California since 1963, The Coffee Bean & Tea Leaf has become a highly popular chain with over 1,000 locations in California and Asia. Their next step was to expand their ecommerce website to reach even more costumers."
-        role={["UX/UI Design", "Website Design"]}
+        roles={["UX/UI Design", "Website Design"]}
         credits={["Creative Director: Garrett Deiter", "Digital Agency: Hathway", "Branding Agency: Pitch", "Year: 2016"]}
       />
 

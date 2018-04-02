@@ -4,9 +4,7 @@ import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
 import ProjectHero from 'components/ProjectHero/ProjectHero.js';
 import NextProject from 'components/NextProject/NextProject.js';
 import Footer from 'components/Footer/Footer.js';
-import Waypoint from 'react-waypoint';
 import { Helmet } from 'react-helmet';
-import Container from 'components/Container/Container.js';
 
 class ProjectLayout extends React.Component {
   constructor(props) {

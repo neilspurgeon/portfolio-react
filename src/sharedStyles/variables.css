@@ -19,8 +19,8 @@
   --mu: 5vw;
 
   /* space unit */
-  @media (--viewport-xsmall-only) { --su: 25px; }
-  @media (--viewport-small) { --su: 50px; }
+  --su: 25px;
+
 
   /* Keep Padding Consistent */
   --vertical-spacing: {
@@ -58,4 +58,8 @@
 
 }
 
-
+@media (--viewport-small) {
+  :root {
+    --su: 50px;
+  }
+}

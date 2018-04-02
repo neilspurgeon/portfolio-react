@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectText from 'components/ProjectText/ProjectText.js';
-import ProjectImage from 'components/ProjectImage/ProjectImage.js';
 import ProjectOverview from 'components/ProjectOverview/ProjectOverview.js';
 import Container from 'components/Container/Container.js';
 import styles from './styles.css';
@@ -32,10 +31,6 @@ import flBottles from './images/field-lab-bottles.jpg';
 
 import timberline from './images/field-lab-timberline-trail.jpg';
 
-  import image2 from './images/jr-soaps.jpg';
-  import image3 from './images/jr-trail-resin-cologne-big-sur-1.jpg';
-  import image4 from './images/jr-christmas-fur-set-1.jpg';
-
 
 const JuniperRidge = () => {
   return (
@@ -43,7 +38,7 @@ const JuniperRidge = () => {
 
       <ProjectOverview
         intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-        role={["Packaging Design", "Branding", "Print Design"]}
+        roles={["Packaging Design", "Branding", "Print Design"]}
         credits={["Studio: Indicate Design Groupe", "Year: 2013-2014"]}
         />
 
