@@ -210,10 +210,8 @@ module.exports = {
                     plugins: () => [
                       require('postcss-flexbugs-fixes'),
                       require('postcss-import'),
-                      require('postcss-cssnext'),
                       require('postcss-css-variables'),
-                      require('precss'),
-                      require('lost')
+                      require('postcss-cssnext')
                     ],
                   },
                 },
