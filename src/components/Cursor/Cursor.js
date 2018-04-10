@@ -51,6 +51,11 @@ class Cursor extends React.Component {
       this.mouseY = e.pageY;
     };
 
+    document.onmousewheel = (e) => {
+      this.mouseX = e.pageX;
+      this.mouseY = e.pageY;
+    };
+
     this.attachEvents();
   };
 
