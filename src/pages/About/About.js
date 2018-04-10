@@ -1,5 +1,4 @@
 import React from 'react';
-// import Grid from 'components/Grid/Grid.js';
 import Container from 'components/Container/Container.js';
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
