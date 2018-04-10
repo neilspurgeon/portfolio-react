@@ -10,6 +10,7 @@
 /build
 
 # misc
+/src/assets/fonts
 .DS_Store
 .env
 .env.local
