@@ -1,22 +1,19 @@
 import React from 'react';
-import ProjectImage from 'components/ProjectImage/ProjectImage.js';
+import shared from 'sharedStyles/index.css';
+import Image from 'components/Image/Image.js';
+import ProjectText from 'components/ProjectText/ProjectText.js';
+import ProjectSection from 'components/ProjectSection/ProjectSection.js';
 import Container from 'components/Container/Container.js';
 import ProjectOverview from 'components/ProjectOverview/ProjectOverview.js';
 
 // images
-import home from './images/homepage.jpg';
-import productPage1 from './images/product-page-autoxscape.jpg';
-import productPage2 from './images/product-page-autoalert.jpg';
-import mobile1 from './images/ingear-mob-1.jpg';
-import mobile2 from './images/ingear-mob-2.jpg';
-import mobile3 from './images/ingear-mob-3.jpg';
-import scrolledNav from './images/product-page-scrolled-navbar.jpg';
-import contact from './images/contact.jpg';
-import support from './images/support-faqs.jpg';
+import home from './images/home.jpg';
+import autoxscape from './images/autoxscape.jpg';
+import product from './images/product.jpg';
+import productScrolled from './images/product-scrolled.jpg';
+import mobile from './images/mobile.jpg';
+import company from './images/company.jpg';
 
-const bgStyle = {
-  backgroundImage: 'linear-gradient(-135deg, #E9ECF1 0%, #E7E9EC 100%)'
-};
 
 const Ingear = () => {
 
@@ -29,75 +26,40 @@ const Ingear = () => {
         credits={["Designed with Kyle Chuises"]}
       />
 
-      <Container>
-        <ProjectImage
-          backgroundStyle={bgStyle}
-          layout="pad"
-          images={[
-            {
-              image: home,
-              altText: "Ingear homepage design"
-            }
-          ]}
-        />
+      <ProjectSection>
+        <Image image={home} />
+      </ProjectSection>
 
-        <ProjectImage
-          backgroundStyle={bgStyle}
-          layout="twoUpLeftBleed"
-          images={[
-            {
-              image: productPage1,
-              altText: "Ingear product detail design"
-            }, {
-              image: productPage2,
-              altText: "Ingear product detail design"
-            }
-          ]}
-        />
+      <ProjectText>
+        <h3 className={shared.sectionHeader}>Problem</h3>
 
-        <ProjectImage
-          backgroundStyle={bgStyle}
-          layout="threeUpMobile"
-          images={[
-            {
-              image: mobile1,
-              altText: "Ingear mobile web design"
-            }, {
-              image: mobile2,
-              altText: "Ingear mobile web design"
-            }, {
-              image: mobile3,
-              altText: "Ingear mobile web design"
-            }
-          ]}
-        />
+        <p>While updating their brand and working through the release of a mobile ordering and rewards app,  The Coffee Bean & Tea Leaf also decided it was time update their website. While already having an ecommerce website, it posed many usability issues and also performed very low in SEO rankings mainly due to not being mobile responsive and an overall lack of content.</p>
 
-        <ProjectImage
-          backgroundStyle={bgStyle}
-          layout="bleedBottom"
-          images={[
-            {
-              image: scrolledNav,
-              altText: "Ingear website navigation design"
-            }
-          ]}
-        />
+        <h3 className={shared.sectionHeader}>Approach</h3>
+        <p>Not only were we looking to fix existing problems, but our team at Hathway also identified many additional features to better meet the user needs, and ultimatley increase sales. This included seamlessly integrating user accounts across the mobile app and website, allowing them to manage their account from either platform.</p>
+      </ProjectText>
 
-        <ProjectImage
-          backgroundStyle={bgStyle}
-          layout="twoUpBleedBottom"
-          images={[
-            {
-              image: contact,
-              altText: "Ingear contact design"
-            }, {
-              image: support,
-              altText: "Ingear support design"
-            }
-          ]}
-        />
-
+      <Container type="inset">
+        <ProjectSection>
+          <Image image={autoxscape} />
+        </ProjectSection>
       </Container>
+
+      <ProjectSection>
+        <Image image={product} />
+        <Image image={mobile} />
+        <Image image={productScrolled} />
+      </ProjectSection>
+
+      <ProjectText>
+        <h3 className={shared.sectionHeader}>Development</h3>
+
+        <p>While updating their brand and working through the release of a mobile ordering and rewards app,  The Coffee Bean & Tea Leaf also decided it was time update their website. While already having an ecommerce website, it posed many usability issues and also performed very low in SEO rankings mainly due to not being mobile responsive and an overall lack of content.</p>
+      </ProjectText>
+
+      <ProjectSection>
+        <Image image={company} />
+      </ProjectSection>
 
     </div>
   );

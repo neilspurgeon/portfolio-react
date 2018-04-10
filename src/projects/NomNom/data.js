@@ -1,13 +1,13 @@
 import heroImage from './images/hero.jpg';
-import cardImage from './images/ingear-home-card.jpg';
+import cardImage from './images/hero.jpg';
 
 const data = {
-  title: 'Ingear',
-  subTitle: 'UI Design, Web Design',
+  title: 'Nom Nom',
+  subTitle: 'UX/UI Design, Product Design',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/projects/ingear'
+  path: '/projects/nomnom'
 };
 
 export default data;

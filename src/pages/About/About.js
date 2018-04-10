@@ -28,7 +28,7 @@ const About = () => {
             className={styles.portrait}
             image={portrait}
             altText="portrait of me"
-            sizes="(max-width: 751px) 100vw, 25vw"
+            sizes="100vw, 50vw"
           />
 
           <div className={styles.text}>

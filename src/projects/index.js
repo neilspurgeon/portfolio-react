@@ -1,3 +1,5 @@
+import nomNomData from './NomNom/data.js';
+import NomNom from './NomNom/NomNom.js';
 import coffeeBeanData from './CoffeeBean/data.js';
 import CoffeeBean from './CoffeeBean/CoffeeBean.js';
 import JuniperRidgeData from './JuniperRidge/data.js';
@@ -10,6 +12,10 @@ import fontifiData from './Fontifi/data.js';
 import Fontifi from './Fontifi/Fontifi.js';
 
 const projects = [
+  {
+    data: nomNomData,
+    component: NomNom
+  },
   {
     data: fontifiData,
     component: Fontifi

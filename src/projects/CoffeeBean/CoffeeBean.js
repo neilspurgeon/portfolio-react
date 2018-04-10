@@ -71,7 +71,6 @@ const CoffeeBean = () => {
 
       <ProjectSection>
         <Image image={ux} />
-        <Image image={mobile} />
       </ProjectSection>
 
       <Container>
@@ -91,7 +90,7 @@ const CoffeeBean = () => {
 
       <ProjectSection>
         <Image image={company} />
-        <Image image={menu} />
+        <Image image={mobile} />
         <Image image={checkout} />
       </ProjectSection>
 
