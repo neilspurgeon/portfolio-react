@@ -160,7 +160,7 @@ module.exports = {
           adapter: require('responsive-loader/sharp'),
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]',
-          sizes: [300, 600, 1200, 2000],
+          sizes: [375, 750, 1200, 1600, 2000],
           placeholder: true,
           placeholderSize: 50,
           quality: 100,
