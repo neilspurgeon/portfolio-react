@@ -7,7 +7,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/work/fontifi'
+  path: '/projects/fontifi'
 };
 
 export default data;

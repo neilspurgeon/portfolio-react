@@ -1,14 +1,20 @@
 import React from 'react';
 import styles from './style.css';
 import { TweenMax } from 'gsap';
+import classNames from 'classnames/bind';
+
+let cx = classNames.bind(styles);
 
 class Cursor extends React.Component {
 
   constructor(props) {
+
     super(props);
 
     this.state = {
-      isHovered: false
+      isHovered: false,
+      projectCardIsHovered: false
+
     };
 
     // native mouse position
@@ -19,6 +25,7 @@ class Cursor extends React.Component {
     this.posX = 0;
     this.posY = 0;
   }
+
 
   componentDidMount() {
     let this_ = this;
@@ -44,8 +51,23 @@ class Cursor extends React.Component {
       this.mouseY = e.pageY;
     };
 
+    document.onmousewheel = (e) => {
+      this.mouseX = e.pageX;
+      this.mouseY = e.pageY;
+    };
+
+    this.attachEvents();
+  };
+
+  componentDidUpdate() {
+    this.attachEvents();
+  };
+
+
+  attachEvents = () => {
+
     // add cursor class over links
-    document.querySelectorAll('a', 'button', 'input').forEach( (el) => {
+    document.querySelectorAll('a, button, input, textarea').forEach( (el) => {
 
       // set hover states
       el.onmouseenter = () => {
@@ -55,14 +77,49 @@ class Cursor extends React.Component {
       el.onmouseleave = () => {
         this.setState({ isHovered: false });
       };
+
+      el.onclick = (e) => {
+        this.setState({
+          isHovered: false,
+          projectCardIsHovered: false
+        });
+      };
+
     });
+
+    // set hover states for project cards
+    document.querySelectorAll('[data-projectcard]').forEach( (el) => {
+
+      el.onmouseenter = () => {
+        this.setState({ projectCardIsHovered: true });
+      };
+
+      el.onmouseleave = () => {
+        this.setState({ projectCardIsHovered: false });
+      };
+    });
+
   }
 
+
   render() {
+
+    let classNames = cx({
+      follower: true,
+      active: this.state.isHovered,
+      projectCardHover: this.state.projectCardIsHovered,
+      // projectCardHover: true
+    });
+
     return (
-      <div className={ this.state.isHovered ? [styles.follower, styles.active].join(' ') : styles.follower} ref="follower"></div>
+      <div>
+        <div className={classNames} ref="follower"></div>
+        { this.props.children }
+      </div>
+
     );
   }
 };
+
 
 export default Cursor;

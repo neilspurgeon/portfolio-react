@@ -7,7 +7,9 @@ import projects from 'projects';
 import ProjectCard from 'components/ProjectCard/ProjectCard.js';
 import Cta from 'components/Cta/Cta.js';
 import { Helmet } from 'react-helmet';
-import TextDistortion from 'components/TextDistortion/TextDistortion.js';
+
+// Only show first 4 projects on home page
+const featuredProjects = projects.slice(0, 4);
 
 const Home = (props) => {
     return (
@@ -23,10 +25,8 @@ const Home = (props) => {
 
           <section className={styles.intro}>
 
-            <TextDistortion className={styles.distortedText} />
-
             <div className={styles.introText}>
-              <h1>Neil is a California based designer who likes to code. He is currently looking for full-time career opportunities.</h1>
+              <h1>Hi, I’m Neil, a multidisciplinary designer who likes to code. I’m currently available for freelance work while seeking full-time opportunities.</h1>
             </div>
 
             <div className={styles.scrollIndicator}>
@@ -39,7 +39,7 @@ const Home = (props) => {
 
           <section className={styles.projects}>
 
-            {projects.map((project, i) => {
+            {featuredProjects.map((project, i) => {
               return (
                 <ProjectCard
                   key={project.data.title}

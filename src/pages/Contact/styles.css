@@ -1,0 +1,65 @@
+@import '../../sharedStyles/variables.css';
+
+
+.contactWrapper {
+    text-align: center;
+    max-width: 44em;
+    margin: 0 auto;
+}
+
+.pageHeader {
+    margin-bottom: 0;
+}
+
+.pushFooter {
+  min-height: calc(100vh - (125px + 0 + 346px));
+    padding: 100px 0 200px;
+}
+
+
+.contactForm {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    font-size: 2.2rem;
+    padding: 40px 0 0;
+
+      @media (--viewport-medium) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.input,
+.textArea {
+    font-family: 'maison neue';
+    font-weight: 100;
+    font-size: 2.2rem;
+    margin: 1em 0 .5em;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background-color: transparent;
+    line-height: 1.618;
+}
+
+.textArea {
+    width: 100%;
+    resize: none;
+
+    display: block;
+    overflow: hidden;
+    resize: none;
+
+    @media (--viewport-medium) {
+        grid-column: 1 / 3;
+    }
+}
+
+.submit {
+    margin-left: auto !important;
+
+    @media (--viewport-medium) {
+        grid-column: 2/3;
+    }
+}

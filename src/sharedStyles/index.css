@@ -1,40 +1,5 @@
 @import './variables.css';
 
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneuebook.eot");
-  src: url("../assets/fonts/maisonneuebook.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneuebook.woff2") format("woff2"),
-       url("../assets/fonts/maisonneuebook.woff") format("woff"),
-       url("../assets/fonts/maisonneuebook.ttf") format("truetype"),
-       url("../assets/fonts/maisonneuebook.svg#maison_neuebook") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneuebold.eot");
-  src: url("../assets/fonts/maisonneuebold.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneuebold.woff2") format("woff2"),
-       url("../assets/fonts/maisonneuebold.woff") format("woff"),
-       url("../assets/fonts/maisonneuebold.ttf") format("truetype"),
-       url("../assets/fonts/maisonneuebold.svg#maison_neuebold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "gt sectra";
-  src: url("../assets/fonts/gt-sectra-display-bold.eot");
-  src: url("../assets/fonts/gt-sectra-display-bold.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/gt-sectra-display-bold.woff2") format("woff2"),
-       url("../assets/fonts/gt-sectra-display-bold.woff") format("woff"),
-       url("../assets/fonts/maisonneuebold.svg#gt-sectra-display-bold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-}
-
 * { box-sizing: border-box; }
 
 img {
@@ -56,26 +21,48 @@ body {
 
 h1,
 .h1 {
-  font-family: 'gt sectra', sans-serif;
-  font-size: 3.2rem;
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.4;
   color: var(--dark-text-color);
 
-  @media screen and (min-width: 768px) {
+  @media (--viewport-small)  {
+    font-size: 3.2rem;
+  }
+
+   @media (--viewport-medium)  {
     font-size: 3.8rem;
   }
 
-  @media screen and (min-width: 940px) {
+  @media (--viewport-large) {
     font-size: 4.4rem;
   }
+
+  @media (--viewport-xlarge) {
+    font-size: 4.8rem;
+  }
+
 }
 
 h2,
 .h2 {
-  font-size: 2.2rem;
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  /* line-height: 1.4; */
   color: var(--dark-text-color);
 
-  @media screen and (min-width: 768px) {
-    font-size: 3.2rem;
+  @media (--viewport-small)  {
+    font-size: 2.4rem;
+  }
+
+   @media (--viewport-medium)  {
+    font-size: 2.6rem;
+  }
+
+  @media (--viewport-large) {
+    font-size: 2.8rem;
   }
 }
 
@@ -91,9 +78,10 @@ h3,
 
 p,
 .p {
-  font-size: 1.4rem;
+  font-family: "maison neue", sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0 0 1em;
   color: var(--medium-text-color);
   @media screen and (min-width: 768px) {
@@ -107,29 +95,21 @@ p.pSmall {
 
 .label,
 p.label {
+  font-family: "maison neue", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 1em;
   color: var(--light-text-color);
-  margin-bottom: 0;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    /* font-size: 1.6rem; */
+  }
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  transition: .2s ease opacity;
-}
-
-.link:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.15em;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid rgba(0,0,0,.2);
-}
-
-.link:hover {
-  opacity: .6;
+.sectionHeader {
+  composes: label;
 }
 
 .arrowLink {
@@ -161,7 +141,7 @@ p.label {
   opacity: 0;
   transition: .3s cubic-bezier(.34,.15,.31,.92);
   transition-delay: 0s;
-  background-image: url(../assets/images/link-arrow-dark.svg);
+  /* background-image: url(../assets/images/link-arrow-dark.svg); */
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 15px;

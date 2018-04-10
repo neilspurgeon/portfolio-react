@@ -1,4 +1,5 @@
 @import '../../sharedStyles/variables.css';
+@import '../../sharedStyles/index.css';
 
 .card {
   text-decoration: none;
@@ -13,11 +14,31 @@
   }
 }
 
+.imageWrapper {
+  position: relative;
+}
 .image {
   cursor: pointer;
   pointer-events: auto;
   transition: transform 5s cubic-bezier(.2,.96,.34,1);
   background: #FAF8F8;
+}
+
+.image:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s ease opacity;
+}
+
+.image:hover:after{
+  opacity: 1;
 }
 
 .info {
@@ -27,6 +48,7 @@
 }
 
 .title {
+  composes: p;
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
@@ -37,8 +59,12 @@
 }
 
 .subTitle {
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
   color: var(--light-text-color);
   margin: 0;
+  font-size: 1.4rem;
 }
 
 /* Show hover states for touch screens */

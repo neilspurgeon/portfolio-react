@@ -1,0 +1,68 @@
+.cluster {
+    /* margin: 100px 0; */
+}
+
+/* Cluster 1 */
+.clusterMain {
+    position: relative;
+    z-index: -1;
+    margin: 0 auto;
+    width: 86%;
+}
+
+.clusterAside1 {
+    width: 50%;
+    margin: 0 0 -8% auto;
+}
+
+.clusterAside2 {
+    margin: -15% auto 0 0;
+    width: 38%;
+}
+
+.clusterAside3 {
+    margin: -20% 0 0 auto;
+    width: 42%;
+}
+
+
+
+/* Cluster 2 */
+.cluster2img1 {
+    width: 40%;
+    margin: 0 0 0 auto;
+}
+
+.cluster2img2 {
+    width: 50%;
+    margin: -17% auto 0 0;
+}
+
+
+/* Cluster 3 */
+.cluster3 {
+    margin: 100px 10%;
+}
+
+.cluster3img1 {
+    width: 60%;
+    margin: 0 auto 0 10%;
+}
+
+.cluster3img2 {
+    width: 38%;
+    margin: -25% 10% 0 auto;
+}
+
+
+/* Cluster 4 */
+.cluster4img1 {
+    width: 40%;
+    margin: 0 auto 0 0;
+}
+
+.cluster4img2 {
+    width: 50%;
+    margin: -17% 0 0 auto;
+}
+

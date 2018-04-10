@@ -1,3 +1,5 @@
+@import './variables.css';
+
 @custom-media --viewport-xsmall-only (width < 600px);
 @custom-media --viewport-small (width >= 600px);
 @custom-media --viewport-medium (width >= 900px);
@@ -9,16 +11,55 @@
 
 :root {
   --dark-text-color: #000;
-  --medium-text-color: #424242;
-  --light-text-color: #8E8E8E;
+  --medium-text-color: #444;
+  --light-text-color: #999;
   --mob-edge-width: 7.5%;
 
   /* margin unit */
   --mu: 5vw;
 
   /* space unit */
-  @media (--viewport-xsmall-only) { --su: 25px; }
-  @media (--viewport-small) { --su: 50px; }
+  --su: 25px;
+
+
+  /* Keep Padding Consistent */
+  --vertical-spacing: {
+    padding: 40px 0;
+
+    @media (--viewport-small) {
+      padding: 60px 0;
+    }
+
+    @media (--viewport-medium) {
+      padding: 80px 0;
+    }
+
+    @media (--viewport-large) {
+      padding: 100px 0;
+    }
+  }
+
+
+  --vertical-margin: {
+    margin: 40px 0;
+
+    @media (--viewport-small) {
+      margin: 60px 0;
+    }
+
+    @media (--viewport-medium) {
+      margin: 80px 0;
+    }
+
+    @media (--viewport-large) {
+      margin: 100px 0;
+    }
+  }
 
 }
 
+@media (--viewport-small) {
+  :root {
+    --su: 50px;
+  }
+}

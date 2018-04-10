@@ -7,7 +7,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/work/FreshStep'
+  path: '/projects/FreshStep'
 };
 
 export default data;

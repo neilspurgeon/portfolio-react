@@ -1,7 +1,9 @@
-import coffeeBeanWebData from './CoffeeBeanWeb/data.js';
-import CoffeeBeanWeb from './CoffeeBeanWeb/CoffeeBeanWeb.js';
-// import JuniperRidgeData from './JuniperRidge/data.js';
-// import JuniperRidge from './JuniperRidge/JuniperRidge.js';
+import nomNomData from './NomNom/data.js';
+import NomNom from './NomNom/NomNom.js';
+import coffeeBeanData from './CoffeeBean/data.js';
+import CoffeeBean from './CoffeeBean/CoffeeBean.js';
+import JuniperRidgeData from './JuniperRidge/data.js';
+import JuniperRidge from './JuniperRidge/JuniperRidge.js';
 import IngearData from './Ingear/data.js';
 import Ingear from './Ingear/Ingear.js';
 import FreshStepData from './FreshStep/data.js';
@@ -11,17 +13,21 @@ import Fontifi from './Fontifi/Fontifi.js';
 
 const projects = [
   {
+    data: nomNomData,
+    component: NomNom
+  },
+  {
     data: fontifiData,
     component: Fontifi
   },
   {
-    data: coffeeBeanWebData,
-    component: CoffeeBeanWeb
+    data: coffeeBeanData,
+    component: CoffeeBean
   },
-  // {
-  //   data: JuniperRidgeData,
-  //   component: JuniperRidge
-  // },
+  {
+    data: JuniperRidgeData,
+    component: JuniperRidge
+  },
   {
     data: FreshStepData,
     component: FreshStep

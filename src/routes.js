@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import Home from 'pages/Home/Home.js';
 import About from 'pages/About/About.js';
 import projects from 'projects';
+import Contact from 'pages/Contact/Contact.js';
+import Projects from 'pages/Projects/Projects.js';
 import ProjectLayout from 'layouts/ProjectLayout/ProjectLayout';
 import NotFound from 'pages/NotFound/NotFound.js';
 import ReactGA from 'react-ga';
@@ -38,14 +40,16 @@ const ScrollToTop = () => {
 };
 
 const Routes = (props) => (
-  <div>
+  <Cursor>
     <Route path="/" component={logPageView} />
     <Route path="/" component={ScrollToTop} />
-    <Route path="/" component={Cursor} />
+    {/* <Route path="/" component={Cursor} /> */}
 
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/contact" component={Contact} />
 
       {projects.map((project, i, arr) => {
         // if last project, start back at the begining
@@ -68,7 +72,7 @@ const Routes = (props) => (
       <Route component={NotFound} />
 
     </Switch>
-  </div>
+  </Cursor>
 );
 
 export default Routes;

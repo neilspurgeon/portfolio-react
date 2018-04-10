@@ -1,6 +1,6 @@
-import heroImage from './images/jr-hero.jpg';
+import heroImage from './images/floating-bottles.jpg';
 import cardImage from './images/jr-card.jpg';
-import homeCard from './images/jr-home-card.jpg';
+import homeCard from './images/jr-card.jpg';
 
 const data = {
   title: 'Juniper Ridge',
@@ -8,7 +8,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: homeCard,
-  path: '/work/juniper-ridge'
+  path: '/projects/juniper-ridge'
 };
 
 export default data;

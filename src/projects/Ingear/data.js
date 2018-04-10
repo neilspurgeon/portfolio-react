@@ -1,4 +1,4 @@
-import heroImage from './images/ingear-hero.jpg';
+import heroImage from './images/hero.jpg';
 import cardImage from './images/ingear-home-card.jpg';
 
 const data = {
@@ -7,7 +7,7 @@ const data = {
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/work/ingear'
+  path: '/projects/ingear'
 };
 
 export default data;

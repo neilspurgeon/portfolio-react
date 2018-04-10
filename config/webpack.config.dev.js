@@ -160,9 +160,10 @@ module.exports = {
           adapter: require('responsive-loader/sharp'),
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]',
-          sizes: [300, 600, 1200, 2000],
+          sizes: [375, 750, 1200, 1600, 2000],
           placeholder: true,
           placeholderSize: 50,
+          quality: 100,
         },
       },
       // Process JS with Babel.
@@ -204,10 +205,8 @@ module.exports = {
               plugins: () => [
                 require('postcss-flexbugs-fixes'),
                 require('postcss-import'),
-                require('postcss-cssnext'),
                 require('postcss-css-variables'),
-                require('precss'),
-                require('lost')
+                require('postcss-cssnext')
               ],
             },
           },

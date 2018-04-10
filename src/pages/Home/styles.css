@@ -8,7 +8,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
 }
 
 .intro::before {
@@ -18,7 +17,13 @@
 
 .introText {
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
+  text-align: center;
+}
+
+.introText > h1 {
+  max-width: 19em;
+  margin: .6em auto;
 }
 
 .distortedText {
@@ -45,7 +50,7 @@
   background-color: black;
 }
 
-.mouseIcon{
+.mouseIcon {
   position: absolute;
   content: ' ';
   display: block;
@@ -70,11 +75,22 @@
   background-color: black;
   border-radius: 2px;
   background: #000;
-  animation: mouseKeyframes ease-in-out 4s infinite;
+  animation: mouseKeyframes ease-in-out 3s infinite;
 }
 
+/* remove scroll indicator on small screens  */
+.scrollIndicator::before,
+.mouseIcon,
+.mouseScroll {
+  @media (width < 375px) {
+    display: none;
+  }
+}
+
+
 .projects {
-  padding: 0 var(--mob-edge-width);
+  padding: 0;
+  margin: 0;
   display: grid;
   grid-gap: var(--mu);
   opacity: 0;
@@ -84,8 +100,6 @@
 
   @media (--viewport-small) {
     grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding: 0;
   }
 }
 
