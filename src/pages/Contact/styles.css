@@ -33,20 +33,38 @@
 .input,
 .textArea {
     font-family: 'maison neue';
-    font-weight: 100;
+    font-weight: 400;
     font-size: 2.2rem;
+    color: var(--dark-text-color);
     margin: 1em 0 .5em;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0, 0 ,0 , .4);
     outline: none;
     background-color: transparent;
     line-height: 1.618;
+    transition: border-bottom .2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid rgba(0, 0 ,0 , 1);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--dark-text-color);
+    opacity: .4;
+}
+
+/* remove firefox red border */
+input:required,
+textarea:required {
+    box-shadow: none;
 }
 
 .textArea {
     width: 100%;
     resize: none;
-
     display: block;
     overflow: hidden;
     resize: none;
