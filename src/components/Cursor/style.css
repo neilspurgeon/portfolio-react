@@ -38,7 +38,7 @@
   display: inline-block;
   font-size: 1.1rem;
   margin-bottom: 1em;
-  letter-spacing: .01em;
+  letter-spacing: .05em;
   color: #FFF;
   width: 100%;
   text-align: center;
@@ -48,4 +48,14 @@
   justify-content: center;
   border: 1px solid  rgba(255, 255, 255, 0);
   border-radius: 100%;
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  },
+  100% {
+    opacity: 100%;
+  }
 }
