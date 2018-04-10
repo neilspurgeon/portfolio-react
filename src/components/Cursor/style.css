@@ -48,7 +48,7 @@
   justify-content: center;
   border: 1px solid  rgba(255, 255, 255, 0);
   border-radius: 100%;
-  animation: fade-in 1s;
+  animation: fade-in .2s;
 }
 
 @keyframes fade-in {
