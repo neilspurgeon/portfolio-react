@@ -14,7 +14,6 @@
   user-select: none;
   pointer-events: none;
   z-index: 10000;
-  transform: translate(5px, 5px);
 
   /* hide on smaller devices until there
   is an accurate way to detect touch screen */
@@ -30,6 +29,7 @@
 }
 
 .follower.projectCardHover {
+  transform: scale(1.2) translate(0, -5px);
   border: 1px solid  rgba(255, 255, 255, 1);
 }
 
@@ -46,5 +46,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  border: 1px solid  rgba(255, 255, 255, 0);
+  border-radius: 100%;
 }
