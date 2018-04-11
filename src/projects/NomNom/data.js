@@ -1,9 +1,9 @@
 import heroImage from './images/hero.jpg';
-import cardImage from './images/hero.jpg';
+import cardImage from './images/card.jpg';
 
 const data = {
   title: 'Nom Nom',
-  subTitle: 'UX/UI Design, Product Design',
+  subTitle: 'Order Ahead App',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,

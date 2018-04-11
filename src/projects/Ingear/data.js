@@ -1,9 +1,9 @@
 import heroImage from './images/hero.jpg';
-import cardImage from './images/ingear-home-card.jpg';
+import cardImage from './images/card.jpg';
 
 const data = {
   title: 'Ingear',
-  subTitle: 'UI Design, Web Design',
+  subTitle: 'E-commerce Website',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,

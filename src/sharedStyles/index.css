@@ -112,6 +112,10 @@ p.label {
   composes: label;
 }
 
+.textBreak {
+  margin-top: 40px;
+}
+
 .arrowLink {
   position: relative;
   display: inline-block;

@@ -35,7 +35,7 @@ const Ingear = () => {
 
         <p>While updating their brand and working through the release of a mobile ordering and rewards app,  The Coffee Bean & Tea Leaf also decided it was time update their website. While already having an ecommerce website, it posed many usability issues and also performed very low in SEO rankings mainly due to not being mobile responsive and an overall lack of content.</p>
 
-        <h3 className={shared.sectionHeader}>Approach</h3>
+        <h3 className={[shared.sectionHeader, shared.textBreak].join(' ')}>Approach</h3>
         <p>Not only were we looking to fix existing problems, but our team at Hathway also identified many additional features to better meet the user needs, and ultimatley increase sales. This included seamlessly integrating user accounts across the mobile app and website, allowing them to manage their account from either platform.</p>
       </ProjectText>
 

@@ -1,9 +1,9 @@
 import heroImage from './images/cbtl-web-hero.jpg';
-import cardImage from './images/coffeebean-web-home-card.jpg';
+import cardImage from './images/card.jpg';
 
 const data = {
   title: 'The Coffee Bean & Tea Leaf',
-  subTitle: 'Website Design, UX Design',
+  subTitle: 'Ecommerce Website',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,

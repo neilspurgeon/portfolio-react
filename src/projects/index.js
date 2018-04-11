@@ -17,10 +17,6 @@ const projects = [
     component: NomNom
   },
   {
-    data: fontifiData,
-    component: Fontifi
-  },
-  {
     data: coffeeBeanData,
     component: CoffeeBean
   },
@@ -29,12 +25,16 @@ const projects = [
     component: JuniperRidge
   },
   {
+    data: IngearData,
+    component: Ingear
+  },
+  {
     data: FreshStepData,
     component: FreshStep
   },
   {
-    data: IngearData,
-    component: Ingear
+    data: fontifiData,
+    component: Fontifi
   }
 ];
 

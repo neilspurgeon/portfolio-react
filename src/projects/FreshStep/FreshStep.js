@@ -1,14 +1,16 @@
 import React from 'react';
-import ProjectImage from 'components/ProjectImage/ProjectImage.js';
+import shared from 'sharedStyles/index.css';
+import Image from 'components/Image/Image.js';
 import Container from 'components/Container/Container.js';
 import ProjectOverview from 'components/ProjectOverview/ProjectOverview.js';
+import ProjectText from 'components/ProjectText/ProjectText.js';
+import ProjectSection from 'components/ProjectSection/ProjectSection.js';
 
 // images
-import image1 from './images/fresh-step-product-detail.jpg';
-import homeTop from './images/fresh-step-home-top.jpg';
-import homeBottom from './images/fresh-step-home-bottom.jpg';
-import image3 from './images/fresh-step-mmm-landing.jpg';
-import image4 from './images/fresh-step-rewards-detail.jpg';
+import home from './images/home.jpg';
+import product from './images/product.jpg';
+import shelters from './images/shelters.jpg';
+import reward from './images/reward.jpg';
 
 const FreshStep = () => {
   const bgStyle = {
@@ -23,54 +25,24 @@ const FreshStep = () => {
         credits={["Designed with Thomas Charlet", "UX Wireframes by Fluid"]}
       />
 
-    <Container>
-      <ProjectImage
-        layout="bleedBottom"
-        backgroundStyle={bgStyle}
-        images={[
-          {
-            image: image1,
-            altText: "Fresh Step product detail."
-          }
-        ]}
-      />
+      <ProjectSection>
+        <Image image={home} />
+      </ProjectSection>
 
-      <ProjectImage
-        layout="twoUpLeftBleed"
-        backgroundStyle={bgStyle}
-        images={[
-          {
-            image: homeBottom,
-            altText: "Fresh Step home page."
-          }, {
-            image: homeTop,
-            altText: "Fresh Step home page."
-          }
-        ]}
-      />
+      <ProjectText>
+        <h3 className={shared.sectionHeader}>Problem</h3>
 
-      <ProjectImage
-        layout="bleedBottom"
-        backgroundStyle={bgStyle}
-        images={[
-          {
-            image: image3,
-            altText: "Fresh Step Million Meow Mission."
-          }
-        ]}
-      />
+        <p>To correspond with the release of their new Paw Points app and updated packaging, Fresh Stepped needed to update their marketing website. They wanted to achieve a more premium, but playful, brand feel while also emphasizing their altruistic initiatives of helping animal shelters provide for cats in need. Hathway was brought in to provide visual design and take the provided UX wireframes to the next level.</p>
 
-      <ProjectImage
-        layout="bleedBottom"
-        backgroundStyle={bgStyle}
-        images={[
-          {
-            image: image4,
-            altText: "Fresh Step reward detail."
-          }
-        ]}
-      />
-    </Container>
+        <h3 className={[shared.sectionHeader, shared.textBreak].join(' ')}>Approach</h3>
+        <p>Since this was a primarily marketing focused website, it was important to truly engage the cat-loving user. With the help of the Fresh Step brand team, we began with a massive photoshoot of cats and kittens that we could edit and utilize throughout the designs. Bold use of color and playful cat images interacting with modern UI elements gave us the premium, but fun, feel we were looking for.</p>
+      </ProjectText>
+
+      <ProjectSection>
+        <Image image={product} />
+        <Image image={shelters} />
+        <Image image={reward} />
+      </ProjectSection>
 
     </div>
   );

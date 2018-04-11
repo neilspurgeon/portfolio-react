@@ -1,9 +1,9 @@
 import heroImage from './images/fontifi-hero.jpg';
-import cardImage from './images/fontifi-home-card.jpg';
+import cardImage from './images/card.jpg';
 
 const data = {
   title: 'Fontifi',
-  subTitle: 'Web Development + Design',
+  subTitle: 'Web App',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
