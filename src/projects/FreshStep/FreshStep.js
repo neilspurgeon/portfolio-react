@@ -31,7 +31,6 @@ const FreshStep = () => {
 
       <ProjectText>
         <h3 className={shared.sectionHeader}>Problem</h3>
-
         <p>To correspond with the release of their new Paw Points app and updated packaging, Fresh Stepped needed to update their marketing website. They wanted to achieve a more premium, but playful, brand feel while also emphasizing their altruistic initiatives of helping animal shelters provide for cats in need. Hathway was brought in to provide visual design and take the provided UX wireframes to the next level.</p>
 
         <h3 className={[shared.sectionHeader, shared.textBreak].join(' ')}>Approach</h3>
