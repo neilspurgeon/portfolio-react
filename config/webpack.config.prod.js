@@ -161,7 +161,7 @@ module.exports = {
           sizes: [375, 750, 1200, 1600, 2000],
           placeholder: true,
           placeholderSize: 50,
-          quality: 100,
+          quality: 85,
         },
       },
       // Process JS with Babel.
