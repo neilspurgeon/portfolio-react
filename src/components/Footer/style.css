@@ -5,7 +5,7 @@
   margin-bottom: 0;
   /* background: var(--bg-light-accent-color); */
   line-height: 2.4;
-  transition: 1s ease opacity .2s;
+  /* transition: 1s ease opacity .2s; */
   background: var(--bg-dark-accent-color);
   color: #FEFEFE;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +50,7 @@
 .navLink {
   text-decoration: none;
   color: inherit;
+  transition: .2s ease opacity;
 }
 
 .navLink:hover {
