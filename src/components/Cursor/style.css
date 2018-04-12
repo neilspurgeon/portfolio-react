@@ -2,8 +2,8 @@
 
 .follower {
   position: absolute;
-  background-color: rgba(0, 0 ,0, .05);
-  border: 1px solid  rgba(0, 0 ,0, 0);
+  background-color: rgba(0, 0 ,0, .08);
+  border: 1px solid  rgba(0, 0 , 0, 0);
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -25,17 +25,16 @@
 .follower.active {
   transform: scale(1.2);
   background-color: rgba(0, 0 , 0, 0);
-  border: 1px solid  rgba(0, 0 ,0, .5);
+  border: 1px solid  rgba(0, 0 ,0, .8);
 }
 
 .follower.projectCardHover {
   transform: scale(1.2) translate(0, -5px);
-  border: 1px solid  rgba(255, 255, 255, 1);
+  border: 1px solid  rgba(255, 255, 255, .8);
 }
 
 .follower.projectCardHover:after {
   content: 'View';
-  display: inline-block;
   font-size: 1.1rem;
   margin-bottom: 1em;
   letter-spacing: .05em;
@@ -58,4 +57,14 @@
   100% {
     opacity: 100%;
   }
+}
+
+.follower.onDark {
+  background-color: rgba(255, 255 , 255, .08);
+  border: 1px solid  rgba(255, 255 , 255, 0);
+}
+
+.follower.onDark.active {
+  background-color: rgba(255, 255 , 255, 0);
+  border: 1px solid  rgba(255, 255 , 255, .8);
 }

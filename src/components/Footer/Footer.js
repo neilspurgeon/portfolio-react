@@ -25,7 +25,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className={this.state.footerClasses.join(' ')}>
+      <footer className={this.state.footerClasses.join(' ')} data-dark>
 
         <Container type="inset">
 

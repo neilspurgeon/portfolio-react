@@ -13,8 +13,8 @@ class Cursor extends React.Component {
 
     this.state = {
       isHovered: false,
-      projectCardIsHovered: false
-
+      projectCardIsHovered: false,
+      onDark: false
     };
 
     // native mouse position
@@ -99,6 +99,18 @@ class Cursor extends React.Component {
       };
     });
 
+    // set classes for on dark sections
+    document.querySelectorAll('[data-dark]').forEach((el) => {
+
+      el.onmouseenter = () => {
+        this.setState({ onDark: true });
+      };
+
+      el.onmouseleave = () => {
+        this.setState({ onDark: false });
+      };
+    });
+
   }
 
 
@@ -108,7 +120,7 @@ class Cursor extends React.Component {
       follower: true,
       active: this.state.isHovered,
       projectCardHover: this.state.projectCardIsHovered,
-      // projectCardHover: true
+      onDark: this.state.onDark
     });
 
     return (

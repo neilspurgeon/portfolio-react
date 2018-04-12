@@ -3,9 +3,13 @@
 .footer {
   @apply --vertical-margin;
   margin-bottom: 0;
-  background: var(--bg-accent-color);
+  /* background: var(--bg-light-accent-color); */
   line-height: 2.4;
   transition: 1s ease opacity .2s;
+  background: var(--bg-dark-accent-color);
+  color: #FEFEFE;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .01em;
 }
 
 .footer.inView {
@@ -46,6 +50,10 @@
 .navLink {
   text-decoration: none;
   color: inherit;
+}
+
+.navLink:hover {
+  opacity: .6;
 }
 
 .navLink.isActive {

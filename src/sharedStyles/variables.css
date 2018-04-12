@@ -14,7 +14,8 @@
   --medium-text-color: #333;
   --light-text-color: #666;
   --mob-edge-width: 7.5%;
-  --bg-accent-color: #F7F5F5;
+  --bg-light-accent-color: #F7F5F5;
+  --bg-dark-accent-color: #111;
 
   /* margin unit */
   --mu: 5vw;
