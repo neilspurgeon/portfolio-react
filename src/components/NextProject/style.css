@@ -1,10 +1,7 @@
 @import '../../sharedStyles/variables.css';
-@import '../../sharedStyles/index.css';
 
 .linkWrapper {
   text-align: center;
-  /* padding: 200px 0; */
-  /* coposes: vertical-spacing; */
 }
 
 .nextLink {
@@ -14,7 +11,11 @@
   text-decoration: none;
 }
 
+.label {
+  composes: label from '../../sharedStyles/index.css';
+}
+
 .nextTitle {
-  composes: h2;
+  composes: h2 from '../../sharedStyles/index.css';
   font-weight: 400;
 }

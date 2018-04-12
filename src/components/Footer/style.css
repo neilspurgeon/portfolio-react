@@ -3,7 +3,7 @@
 .footer {
   @apply --vertical-margin;
   margin-bottom: 0;
-  background: #F7F5F5;
+  background: var(--bg-accent-color);
   line-height: 2.4;
   transition: 1s ease opacity .2s;
 }

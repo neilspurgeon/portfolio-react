@@ -1,7 +1,7 @@
 @import '../../sharedStyles/variables.css';
 
 .mainContainer {
-  width: calc(100vw - (var(--mu) * 2));
+  width: calc(100% - (var(--mu) * 2));
   max-width: 1800px;
   margin: 0 auto;
 }

@@ -4,6 +4,7 @@ const Playlist = (props) => {
 
   return (
     <iframe
+    className={props.className}
     title="playlist"
     src="https://open.spotify.com/embed?uri=spotify:user:1214004202:playlist:5PlBPtgwkGIDuApLJonZR2&theme=white"
     width="100%"
