@@ -29,7 +29,7 @@ const CoffeeBean = () => {
     <div>
 
       <ProjectOverview
-        intro="Born and brewed in Southern California since 1963, The Coffee Bean & Tea Leaf has become a highly popular chain with over 1,000 locations in California and Asia. Their next step was to expand their ecommerce website to reach even more costumers."
+        intro="The Coffee Bean & Tea Leaf is a highly popular chain with over 1,000 locations in southern California and Asia. They needed an e-commerce website to match their physical footprint."
         roles={["UX/UI Design", "Website Design"]}
         credits={["Creative Director: Garrett Deiter", "Digital Agency: Hathway", "Branding Agency: Pitch", "Year: 2016"]}
       />
@@ -46,9 +46,10 @@ const CoffeeBean = () => {
       <ProjectText>
         <h3 className={shared.sectionHeader}>Problem</h3>
 
-        <p>While updating their brand and working through the release of a mobile ordering and rewards app,  The Coffee Bean & Tea Leaf also decided it was time update their website. While already having an ecommerce website, it posed many usability issues and also performed very low in SEO rankings mainly due to not being mobile responsive and an overall lack of content.</p>
+        <p>While updating their brand and working through the release of a mobile ordering and rewards app, The Coffee Bean & Tea Leaf also decided it was time to update their website. They had an e-commerce website, but it posed many usability issues and also performed very low in SEO rankings. This was mainly due to not being mobile responsive and to an overall lack of content.</p>
 
-        <p>Not only were we looking to fix existing problems, but our team at Hathway also identified many additional features to better meet the user needs, and ultimatley increase sales. This included seamlessly integrating user accounts across the mobile app and website, allowing them to manage their account from either platform.</p>
+        <p>Not only were we looking to fix existing problems, but our team at Hathway also identified many additional features to better meet the user needs and ultimately increase sales. This included seamlessly integrating user accounts across the mobile app and website, allowing them to manage their account from either platform.</p>
+
       </ProjectText>
 
       <ProjectSection>
@@ -58,9 +59,10 @@ const CoffeeBean = () => {
       <ProjectText>
         <h3 className={shared.sectionHeader}>Process</h3>
 
-        <p>With only very limited analytics history, we had to base most of our deciscions on ecommerce and SEO best practices, and then learn and improve from there. This was done both by user testing in the protoype and wireframing stages, as well looking at real data once the first iteration was launched.</p>
+        <p>With only very limited analytics history, we had to base most of our decisions on e-commerce and SEO best practices, and then learn and improve from there. This was done both by user testing in the prototype and wireframing stages, as well looking at real data once the first iteration was launched.</p>
 
-        <p>We started the design process by creating a high level site map and then moving in to various degrees of detailed wireframing. This allowed us to identify and test potential problems early on, as well as getting stakeholder approval without as many visual distractions.</p>
+        <p>We started the design process by creating a high-level sitemap and then moving into various degrees of detailed wireframing. This allowed us to identify and test potential problems early on, as well as getting stakeholder approval without as many visual distractions.</p>
+
       </ProjectText>
 
       <Container>
@@ -83,7 +85,7 @@ const CoffeeBean = () => {
       <ProjectText>
         <h3 className={shared.sectionHeader}>Outcome</h3>
 
-        <p>The new website has proved successful with an average increased conversion rate of over 150% as well as an increased average revenu rate of 73% per transaction.</p>
+        <p>The new website has proved successful with an average increased conversion rate of over 150% as well as an increased average revenue rate of 73% per transaction.</p>
 
       </ProjectText>
 

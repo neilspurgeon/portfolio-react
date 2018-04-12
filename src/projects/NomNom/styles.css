@@ -1,0 +1,54 @@
+@import '../../sharedStyles/variables.css';
+
+.featuresSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 0 var(--mu);
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media (--viewport-small) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (--viewport-medium) {
+        grid-gap: 30px;
+    }
+}
+
+.featureCard {
+    background-color: var(--bg-accent-color);
+    background-color: var(--medium-text-color);
+    padding: 1.5em 1.5em 2em;
+    color: #FFF;
+
+    @media (--viewport-medium) {
+        padding: 3em 3em 3.5em;
+    }
+}
+
+.featureTitle {
+    composes: h4 from '../../sharedStyles/index.css';
+    /* font-size: 1em; */
+    margin: 0 0 1em;
+    color: #FFF !important;
+}
+
+.featureList {
+    margin: 0;
+    padding-left: 1.4em;
+    list-style-type: none;
+}
+
+.featureList li {
+    /* margin-bottom: .5em; */
+    font-size: 1.4rem;
+    letter-spacing: .01em;
+}
+
+.featureList li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -1.4em;
+}

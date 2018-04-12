@@ -1,5 +1,6 @@
 import React from 'react';
 import homeImg from './images/home.jpg';
+import shared from 'sharedStyles/index.css';
 import collectionImg from './images/collection.jpg';
 import collectionEmptyImg from './images/collection-empty.jpg';
 import signUpImg from './images/sign-up.jpg';
@@ -19,8 +20,8 @@ const Fontifi = () => {
       <ProjectOverview
         linkUrl="https://fontifi.co/"
         linkText="fontifi.co"
-        intro="This is an ongoing side project of mine that started as way learn React and to stay up to date on coding skills that weren’t being used at my full-time position. My goal was to create an interactive site that could be used by designers and developers to help find and explore different web font combinations."
-        roles={["UI/UX Design", "Front End Development", "Back End Development"]}
+        intro="Fontifi is an ongoing personal project of mine designed help designers and developers discover and pair web font combinations. It was started mainly as a way to learn React and further explore front-end development."
+        roles={["UI/UX Design", "Web Development"]}
         tech={["React", "Express", "MongDB + mLab"]}
         />
 
@@ -38,7 +39,8 @@ const Fontifi = () => {
       </Container>
 
     <ProjectText>
-      <p>I’m currently in the first stage of this project where I’ve been designing and developing a sort-of web font playground that will be used as the foundation going forward. To get things started I created a database that stores about 40 curated Google fonts and will then be added to as the project evolves. Right now, the user can then generate random font combinations from the database and then save them to their own collection for later reference. </p>
+      <h3 className={shared.sectionHeader}>Problem</h3>
+      <p>While the primary motivation of Fontifi was to focus on learning new web development skills, I also wanted to create an app that could be useful. With the vast amount of freely available web fonts, it's become overwhelming to for beginner designers and developers to pick good combinations. The goal of Fontifi is to provide a curated selection of font pairs that can be then be modified and saved to the user's liking.</p>
     </ProjectText>
 
     <Container type="inset">
@@ -58,7 +60,11 @@ const Fontifi = () => {
     </Container>
 
     <ProjectText>
-      <p>The next stage will be to create a database of curated combinations instead of randomly selected ones. I want users to be able to submit what they come up with, have it go through an approval process, and then get added to the database. It could then naturally grow from there.</p>
+      <h3 className={shared.sectionHeader}>Approach</h3>
+      <p>In the first stage of this project, I've created a database that stores about 40 curated Google fonts. The user can then generate random font combinations from the database. However, this presents some problems and is not the ultimate goal of the project. The main problem is that these randomly generated pairs, more often than not, don't go together. The next step is to add a collection of curated font pairs that can be served instead.</p>
+
+      <h3 className={shared.sectionHeader}>Technical</h3>
+      <p>The app uses React to consume the Google Fonts API with a simple Express backend that serves curated font pairs. The backend also connects to mLab to store user data and save fonts.</p>
     </ProjectText>
 
     <Container type="inset">

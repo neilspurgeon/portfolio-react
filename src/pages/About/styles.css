@@ -22,6 +22,11 @@
   }
 }
 
+.playlist {
+  font-size: 10px;
+  padding-top: 3.2em;
+}
+
 
 @media (--viewport-large) {
   .body {
@@ -31,7 +36,11 @@
 }
 
 .aboutHeader {
-  margin-top: 40px;
+  margin: 3.2em 0 0;
+
+  @media (--viewport-medium) {
+    transform: translateX(-1em);
+  }
 }
 
 .portrait {

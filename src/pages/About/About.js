@@ -9,7 +9,7 @@ import Image from 'components/Image/Image.js';
 import Playlist from 'components/Playlist/Playlist.js';
 import { Helmet } from 'react-helmet';
 
-const headingClass = [shared.sectionHeader, styles.aboutHeader].join(' ');
+const headingClass = [shared.label, styles.aboutHeader].join(' ');
 
 const About = () => {
   return (
@@ -57,7 +57,7 @@ const About = () => {
               <p>Outside of design, I love music and you can often find me at shows. I also really like spending time outdoors, whether that be surfing, camping, hiking, or anything else adventurous.<br /></p>
 
               <h2 className={headingClass}>Currently Listening To</h2>
-              <Playlist />
+              <Playlist className={styles.playlist}/>
             </div>
 
           </div>

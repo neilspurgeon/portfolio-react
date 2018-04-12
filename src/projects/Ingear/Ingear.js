@@ -21,8 +21,8 @@ const Ingear = () => {
     <div>
 
       <ProjectOverview
-        intro="Ingear specializes in high end auto safety devices. While there are many other companies that produce similar tools, none match the level of precision, quality, and design that Ingear provides. After testing their product on Amazon, Ingear was ready to invest in a full ecommerce website that matched the quality of their products."
-        roles={["UX/UI Design", "Website Design"]}
+        intro="Ingear is an auto safety device startup formed in Beijing, China after the devastating result of a massive 2012 flood in that country They provide quality products that look at home in luxury car interiors."
+        roles={["UX/UI Design", "Website Design", "Art Direction"]}
         credits={["Designed with Kyle Chuises"]}
       />
 
@@ -33,10 +33,9 @@ const Ingear = () => {
       <ProjectText>
         <h3 className={shared.sectionHeader}>Problem</h3>
 
-        <p>While updating their brand and working through the release of a mobile ordering and rewards app,  The Coffee Bean & Tea Leaf also decided it was time update their website. While already having an ecommerce website, it posed many usability issues and also performed very low in SEO rankings mainly due to not being mobile responsive and an overall lack of content.</p>
+        <p>Ingear had proved successful selling their products primarily on Amazon, but wanted to have their own website to better tell their story and sell products directly to the consumer.</p>
 
-        <h3 className={[shared.sectionHeader, shared.textBreak].join(' ')}>Approach</h3>
-        <p>Not only were we looking to fix existing problems, but our team at Hathway also identified many additional features to better meet the user needs, and ultimatley increase sales. This included seamlessly integrating user accounts across the mobile app and website, allowing them to manage their account from either platform.</p>
+        <p>In a crowded market of cheaply made auto safety tools, Ingear offers a much higher end, quality-made product. They wanted to unashamedly promote the fact they were a China-based company and help shift the stigma that Chinese-made couldn't equal quality.</p>
       </ProjectText>
 
       <Container type="inset">
@@ -45,19 +44,17 @@ const Ingear = () => {
         </ProjectSection>
       </Container>
 
+      <ProjectText>
+        <h3 className={[shared.sectionHeader, shared.textBreak].join(' ')}>Approach</h3>
+        <p>We approached the problem by first creating a hierarchy of focus for the website. The top priority was selling a quality-made product that was deserving of its price, with the company origin story secondary.</p>
+
+        <p>We created detailed product pages that emphasized the quality specifications of each product. We tried to focus the images on high-end cars to further convey the standard of quality, while also showcasing how seamlessly the product could blend into the interior of such cars.</p>
+      </ProjectText>
+
       <ProjectSection>
         <Image image={product} />
         <Image image={mobile} />
         <Image image={productScrolled} />
-      </ProjectSection>
-
-      <ProjectText>
-        <h3 className={shared.sectionHeader}>Development</h3>
-
-        <p>While updating their brand and working through the release of a mobile ordering and rewards app,  The Coffee Bean & Tea Leaf also decided it was time update their website. While already having an ecommerce website, it posed many usability issues and also performed very low in SEO rankings mainly due to not being mobile responsive and an overall lack of content.</p>
-      </ProjectText>
-
-      <ProjectSection>
         <Image image={company} />
       </ProjectSection>
 

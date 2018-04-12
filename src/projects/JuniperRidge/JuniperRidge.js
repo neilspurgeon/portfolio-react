@@ -37,7 +37,7 @@ const JuniperRidge = () => {
     <div>
 
       <ProjectOverview
-        intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+        intro="Juniper Ridge is the world's only wildcrafted fragrance company. They distill perfume products from plants and tree trimmings found while backcountry hiking. Their products are sold mainly in small boutiques, but certain lines are also available in larger stores such as Whole Foods."
         roles={["Packaging Design", "Branding", "Print Design"]}
         credits={["Studio: Indicate Design Groupe", "Year: 2013-2014"]}
         />
@@ -54,8 +54,8 @@ const JuniperRidge = () => {
 
 
           <ProjectText>
-            <h3 className={shared.sectionHeader}>Problem</h3>
-            <p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>
+            <h3 className={shared.sectionHeader}>Approach</h3>
+            <p>We started the process by trying to really get to know Juniper Ridge. Through casual meetings and workshops, we began to fully understand their process. We became fascinated and quickly identified many unique traits and rich details that to them had seemed standard. One of the most interesting discoveries we made came from reading Juniper Ridge's Chief Storyteller’s notebooks. On nearly every harvest, he had recorded the journey through watercolor paintings and poems. We immediately knew we needed to incorporate this into their brand.</p>
           </ProjectText>
 
         </Container>
@@ -73,7 +73,8 @@ const JuniperRidge = () => {
           </ProjectSection>
 
           <ProjectText>
-            <p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>
+            <h3 className={shared.sectionHeader}>Uniquely High End</h3>
+            <p>Another important part of this project was conciseness of materials. We needed to convey a high end feel to match the price while also being eco-friendly. Where possible we used glass bottles wrapped in protective craft tubes for shipping and transport. For certain items such as soaps, we opted for squeezable plastic flasks that could withstand drops. The bottles were topped off with custom caps made from fallen tree branches found on the trail.</p>
           </ProjectText>
 
         </Container>
@@ -92,7 +93,8 @@ const JuniperRidge = () => {
           </ProjectSection>
 
           <ProjectText>
-            <p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>
+          <h3 className={shared.sectionHeader}>Field Lab</h3>
+            <p>Juniper Ridge also has a much more experimental limited product line called Field Lab. These are one-off batches distilled by the Juniper Ridge while on the trail. Dues to limited supplies and remote locations these can only be produced on a much smaller scale. Because of the limited quantity and constantly changing scents, custom printed bottles and tubes were not an option. We instead used a single Field Lab printed bottle across the full line and incorporated custom hang tags and stickers to identify the scents. </p>
           </ProjectText>
 
         </Container>
