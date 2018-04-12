@@ -23,6 +23,11 @@
     padding: 1.5em 1.5em 2em;
     color: #FFF;
 
+
+    /* smooth fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+
     @media (--viewport-medium) {
         padding: 3em 3em 3.5em;
     }

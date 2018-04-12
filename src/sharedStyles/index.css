@@ -17,10 +17,6 @@ body {
   color: var(--medium-text-color);
   line-height: 1.618;
   margin: 0;
-
-  /* smooth fonts */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
 
