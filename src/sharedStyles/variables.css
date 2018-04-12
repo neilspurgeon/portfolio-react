@@ -10,10 +10,11 @@
 /* @custom-media --viewport-large (width >= 1200px); */
 
 :root {
-  --dark-text-color: #000;
-  --medium-text-color: #444;
-  --light-text-color: #999;
+  --dark-text-color: #111;
+  --medium-text-color: #333;
+  --light-text-color: #666;
   --mob-edge-width: 7.5%;
+  --bg-accent-color: #F7F5F5;
 
   /* margin unit */
   --mu: 5vw;
