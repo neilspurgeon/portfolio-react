@@ -13,7 +13,6 @@ class Image extends React.Component {
   }
 
   handleLoad = () => {
-    console.log('loaded');
     this.setState({
       isLoaded: true,
       classes: [
