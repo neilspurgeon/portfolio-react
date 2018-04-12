@@ -6,7 +6,8 @@ import Image from 'components/Image/Image.js';
 const ProjectCard = (props) => {
   return (
     <Link className={[styles.card, props.className].join(' ')} to={props.path}>
-      <div className={styles.imageWrapper}>
+      <div className={styles.imageWrapper} data-projectcard>
+        {/* <ImagesDistortion className={styles.image} image={props.image} sizes={props.sizes} altText={props.altText} /> */}
         <Image className={styles.image} image={props.image} sizes={props.sizes} altText={props.altText} />
       </div>
       <div className={styles.info}>

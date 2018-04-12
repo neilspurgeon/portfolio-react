@@ -1,99 +1,62 @@
 import React from 'react';
+import shared from 'sharedStyles/index.css';
+import Image from 'components/Image/Image.js';
 import ProjectText from 'components/ProjectText/ProjectText.js';
-import ProjectImage from 'components/ProjectImage/ProjectImage.js';
-import home from './images/homepage.jpg';
-import productPage1 from './images/product-page-autoxscape.jpg';
-import productPage2 from './images/product-page-autoalert.jpg';
-import mobile1 from './images/ingear-mob-1.jpg';
-import mobile2 from './images/ingear-mob-2.jpg';
-import mobile3 from './images/ingear-mob-3.jpg';
-import scrolledNav from './images/product-page-scrolled-navbar.jpg';
-import contact from './images/contact.jpg';
-import support from './images/support-faqs.jpg';
-import sharedStyles from 'sharedStyles/index.css';
+import ProjectSection from 'components/ProjectSection/ProjectSection.js';
+import Container from 'components/Container/Container.js';
+import ProjectOverview from 'components/ProjectOverview/ProjectOverview.js';
 
-const bgStyle = {
-  backgroundImage: 'linear-gradient(-135deg, #E9ECF1 0%, #E7E9EC 100%)'
-};
+// images
+import home from './images/home.jpg';
+import autoxscape from './images/autoxscape.jpg';
+import product from './images/product.jpg';
+import productScrolled from './images/product-scrolled.jpg';
+import mobile from './images/mobile.jpg';
+import company from './images/company.jpg';
+
 
 const Ingear = () => {
 
   return (
     <div>
 
-      <ProjectText>
-        <p>Ingear specializes in high end auto safety devices. While there are many other companies that produce similar tools, none match the level of precision, quality, and design that Ingear provides. After testing their product on Amazon, Ingear was ready to invest in a full ecommerce website that matched the quality of their products.</p>
+      <ProjectOverview
+        intro="Ingear is an auto safety device startup formed in Beijing, China after the devastating result of a massive 2012 flood in that country They provide quality products that look at home in luxury car interiors."
+        roles={["UX/UI Design", "Website Design", "Art Direction"]}
+        credits={["Designed with Kyle Chuises"]}
+      />
 
-        <p className={sharedStyles.pSmall}><span className={sharedStyles.label}>Credits</span><br />
-        Designed with Kyle Chuises</p>
+      <ProjectSection>
+        <Image image={home} />
+      </ProjectSection>
+
+      <ProjectText>
+        <h3 className={shared.sectionHeader}>Problem</h3>
+
+        <p>Ingear had proved successful selling their products primarily on Amazon, but wanted to have their own website to better tell their story and sell products directly to the consumer.</p>
+
+        <p>In a crowded market of cheaply made auto safety tools, Ingear offers a much higher end, quality-made product. They wanted to unashamedly promote the fact they were a China-based company and help shift the stigma that Chinese-made couldn't equal quality.</p>
       </ProjectText>
 
-      <ProjectImage
-        backgroundStyle={bgStyle}
-        layout="pad"
-        images={[
-          {
-            image: home,
-            altText: "Ingear homepage design"
-          }
-        ]}
-      />
+      <Container type="inset">
+        <ProjectSection>
+          <Image image={autoxscape} />
+        </ProjectSection>
+      </Container>
 
-      <ProjectImage
-        backgroundStyle={bgStyle}
-        layout="twoUpLeftBleed"
-        images={[
-          {
-            image: productPage1,
-            altText: "Ingear product detail design"
-          }, {
-            image: productPage2,
-            altText: "Ingear product detail design"
-          }
-        ]}
-      />
+      <ProjectText>
+        <h3 className={[shared.sectionHeader, shared.textBreak].join(' ')}>Approach</h3>
+        <p>We approached the problem by first creating a hierarchy of focus for the website. The top priority was selling a quality-made product that was deserving of its price, with the company origin story secondary.</p>
 
-      <ProjectImage
-        backgroundStyle={bgStyle}
-        layout="threeUpMobile"
-        images={[
-          {
-            image: mobile1,
-            altText: "Ingear mobile web design"
-          }, {
-            image: mobile2,
-            altText: "Ingear mobile web design"
-          }, {
-            image: mobile3,
-            altText: "Ingear mobile web design"
-          }
-        ]}
-      />
+        <p>We created detailed product pages that emphasized the quality specifications of each product. We tried to focus the images on high-end cars to further convey the standard of quality, while also showcasing how seamlessly the product could blend into the interior of such cars.</p>
+      </ProjectText>
 
-      <ProjectImage
-        backgroundStyle={bgStyle}
-        layout="bleedBottom"
-        images={[
-          {
-            image: scrolledNav,
-            altText: "Ingear website navigation design"
-          }
-        ]}
-      />
-
-      <ProjectImage
-        backgroundStyle={bgStyle}
-        layout="twoUpBleedBottom"
-        images={[
-          {
-            image: contact,
-            altText: "Ingear contact design"
-          }, {
-            image: support,
-            altText: "Ingear support design"
-          }
-        ]}
-      />
+      <ProjectSection>
+        <Image image={product} />
+        <Image image={mobile} />
+        <Image image={productScrolled} />
+        <Image image={company} />
+      </ProjectSection>
 
     </div>
   );

@@ -1,0 +1,61 @@
+@import '../../sharedStyles/variables.css';
+
+.follower {
+  position: absolute;
+  background-color: rgba(0, 0 ,0, .05);
+  border: 1px solid  rgba(0, 0 ,0, 0);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+              0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background-color,
+              0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) border;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+
+  /* hide on smaller devices until there
+  is an accurate way to detect touch screen */
+  @media screen and (width <= 1024px) {
+    display: none;
+  }
+}
+
+.follower.active {
+  transform: scale(1.2);
+  background-color: rgba(0, 0 , 0, 0);
+  border: 1px solid  rgba(0, 0 ,0, .5);
+}
+
+.follower.projectCardHover {
+  transform: scale(1.2) translate(0, -5px);
+  border: 1px solid  rgba(255, 255, 255, 1);
+}
+
+.follower.projectCardHover:after {
+  content: 'View';
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  letter-spacing: .05em;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid  rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  animation: fade-in .2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  },
+  100% {
+    opacity: 100%;
+  }
+}

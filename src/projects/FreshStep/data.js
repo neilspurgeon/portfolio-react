@@ -1,13 +1,13 @@
-import heroImage from './images/fresh-step-hero.jpg';
-import cardImage from './images/fresh-step-home-card.jpg';
+import heroImage from './images/hero.jpg';
+import cardImage from './images/card.jpg';
 
 const data = {
   title: 'Fresh Step',
-  subTitle: 'UI Design, Web Design',
+  subTitle: 'Marketing Website',
   hero: heroImage,
   card: cardImage,
   homeCard: cardImage,
-  path: '/work/FreshStep'
+  path: '/projects/FreshStep'
 };
 
 export default data;

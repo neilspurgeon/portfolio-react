@@ -1,14 +1,13 @@
-import heroImage from './images/jr-hero.jpg';
-import cardImage from './images/jr-card.jpg';
-import homeCard from './images/jr-home-card.jpg';
+import heroImage from './images/floating-bottles.jpg';
+import cardImage from './images/card.jpg';
 
 const data = {
   title: 'Juniper Ridge',
-  subTitle: 'Packaging, Print, Branding',
+  subTitle: 'Branding & Packaging',
   hero: heroImage,
   card: cardImage,
-  homeCard: homeCard,
-  path: '/work/juniper-ridge'
+  homeCard: cardImage,
+  path: '/projects/juniper-ridge'
 };
 
 export default data;

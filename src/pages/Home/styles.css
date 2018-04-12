@@ -1,136 +1,112 @@
 @import '../../sharedStyles/variables.css';
 
-body.isLoading {
-  overflow: hidden;
-  height: 100vh;
+.intro {
+  position: relative;
+  min-height: 80vh;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.loader .introText {
-  color: #C3C3C3;
+.intro::before {
+  content: ' ';
+  flex-grow: 1.3;
 }
 
-.loader .introLink {
-  /* keep the link for alignment but hide */
-  visibility: hidden;
+.introText {
+  position: relative;
+  /* opacity: 0; */
+  text-align: center;
 }
 
-.loader {
+.introText > h1 {
+  max-width: 19em;
+  margin: .6em auto;
+}
+
+.distortedText {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  clip-path: inset(0 0 100% 0);
-  transition: .8s cubic-bezier(.34,.15,.31,.92) clip-path;
-  overflow-y: hidden;
+  display: block;
+  margin-top: -6vh;
 }
 
-.loader.isLoading {
-  position: fixed;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  clip-path: inset(0 0 0 0);
+.scrollIndicator {
+  flex-grow: 2;
+  position: relative;
 }
 
-.intro {
-  grid-column: 1 / 3;
-  padding: 10vh var(--mob-edge-width) 0;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.scrollIndicator::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  background-color: black;
+}
 
-  @media (--viewport-large) {
-    padding: 10vh 0 0 0;
-    grid-column: 3 / 11;
+.mouseIcon {
+  position: absolute;
+  content: ' ';
+  display: block;
+  height: 40px;
+  width: 27px;
+  top: calc(50% - 35px);
+  left: calc(50% - 13px);
+  background-color: black;
+  border: 1px solid #000;
+  border-radius: 100px;
+  background: #FFF;
+}
+
+.mouseScroll {
+  position: absolute;
+  content: ' ';
+  display: block;
+  height: 3px;
+  width: 3px;
+  top: 11px;
+  left: 11px;
+  background-color: black;
+  border-radius: 2px;
+  background: #000;
+  animation: mouseKeyframes ease-in-out 3s infinite;
+}
+
+/* remove scroll indicator on small screens  */
+.scrollIndicator::before,
+.mouseIcon,
+.mouseScroll {
+  @media (width < 375px) {
+    display: none;
   }
 }
 
-.introText {
-  max-width: 15em;
-}
-
-.introLink {
-  animation: fadeIn 1s forwards;
-  animation-delay: .6s;
-  opacity: 0;
-  will-change: opacity;
-}
-
-.loaderBody .projects {
-  animation-delay: 2.1s;
-}
 
 .projects {
-  grid-column: 1 / 3;
-  padding: 0 var(--mob-edge-width);
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(1, 100%);
-  grid-gap: 30px;
+  grid-gap: var(--mu);
   opacity: 0;
   animation: projectsKeyframes .8s forwards;
   animation-delay: .3s;
+  align-items: start;
 
-  @media (--viewport-large) {
-    grid-column: 1 / 11;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(12, 1fr);
+  @media (--viewport-small) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.projectRow {
-  display: flex;
-
-  @media (--viewport-large) {
-    grid-column: 1 / 13;
-  }
+.viewAll {
+  text-align: center;
+  padding: 50px 0 200px;
 }
-
-.projectRow:nth-child(1n) > .card {
-  width: 66%;
-  margin: 0 0 50px auto;
-
-  @media (width > 750px) {
-    width: 41.67%;
-    margin: 0 0 0 auto;
-  }
-}
-
-.projectRow:nth-child(2n) > .card {
-  width: 66%;
-  margin: 50px 0 50px 0;
-
-  @media (width > 750px) {
-    width: 41.67%;
-    margin: -15% 0 100px 0;
-  }
-}
-
-.projectRow:nth-child(3n) > .card {
-  width: 66%;
-  margin: 50px 0 50px auto;
-
-  @media (width > 750px) {
-    width: 41.67%;
-    margin: 100px 8.33% 100px auto;
-  }
-}
-
-.projectRow:nth-child(4n) > .card {
-  width: 66%;
-  margin: 50px auto 50px 0;
-
-  @media (width > 750px) {
-    width: 41.67%;
-    margin: 100px auto 100px 25%;
-  }
-}
-
 
 @keyframes projectsKeyframes {
   0% {
@@ -149,5 +125,26 @@ body.isLoading {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes mouseKeyframes {
+  0% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  75% {
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(10px);
+      opacity: 0;
   }
 }

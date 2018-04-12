@@ -5,10 +5,8 @@
   color: var(--dark-text-color);
   pointer-events: none;
   cursor: pointer;
-  text-align: center;
   display: block;
   margin-bottom: 60px;
-  position: relative;
 
   @media (--viewport-large) {
     margin-bottom: 100px;
@@ -16,20 +14,8 @@
 }
 
 .imageWrapper {
-  clip-path: inset(0);
-  transition: clip-path 1s cubic-bezier(.2,.96,.34,1);
-  overflow: hidden;
-  will-change: clip-path;
+  position: relative;
 }
-
-.card:hover .imageWrapper {
-  clip-path: inset(2% 2% 4em 0);
-}
-
-.card:hover .image {
-  transform: scale(1.07);
-}
-
 .image {
   cursor: pointer;
   pointer-events: auto;
@@ -37,59 +23,31 @@
   background: #FAF8F8;
 }
 
-.info {
-  padding-top: 1em;
-  margin-top: -1em;
+.image:after {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  content: ' ';
+  display: inline-block;
   width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s ease opacity;
 }
 
-.card:hover .info {
-  visibility: visible;
-  pointer-events: auto;
+.image:hover:after{
+  opacity: 1;
 }
 
-.titleWrapper,
-.subTitleWrapper {
-  overflow: hidden;
+.info {
+  padding-top: .5em;
+  width: 100%;
+  line-height: 1;
 }
-
-.title,
-.subTitle {
-  display: block;
-  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translateY(150%);
-  will-change: transform;
-}
-
-.card:hover .title,
-.card:hover .subTitle {
-  transform: translateY(0);
-}
-
-/* animate in */
-.card:hover .title {
-  transition-delay: 0s;
-}
-
-.card:hover .subTtitle {
-  transition-delay: .2s;
-}
-
-/* animate out */
-.title {
-  /*transition-delay: .05s;*/
-  transition-duration: 1s;
-}
-
-.subTtitle {
-  transition-delay: 0s;
-  transition-duration: 1s;
-}
-
 
 .title {
+  composes: p from '../../sharedStyles/index.css';
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
@@ -97,20 +55,15 @@
   font-weight: 400;
   margin: 0;
   padding: .5em 0 0;
-
-  @media (width > 500px) {
-    font-size: 2rem;
-  }
 }
 
 .subTitle {
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
   color: var(--light-text-color);
-  font-size: 1.2rem;
   margin: 0;
-
-  @media (width > 500px) {
-    font-size: 1.4rem;
-  }
+  font-size: 1.4rem;
 }
 
 /* Show hover states for touch screens */
@@ -120,7 +73,6 @@
     padding-top: 1em;
     margin-top: -1em;
     position: inherit;
-    /*bottom: 0;*/
     width: 100%;
   }
 

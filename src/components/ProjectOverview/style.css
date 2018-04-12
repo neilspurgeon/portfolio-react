@@ -1,16 +1,37 @@
 @import '../../sharedStyles/variables.css';
 
-.wrapper {
-  grid-column: 1 / 13;
-  padding:  25px var(--mob-edge-width);
-  max-width: 44em;
-  margin: 0 auto;
-  position: relative;
+.main {
+  padding-bottom: 18px;
 
-  @media (--viewport-large) {
-    padding:  50px 0;
-    grid-column: 4 / 10;
+  @media (--viewport-medium) {
+    padding-bottom: 0;
   }
+}
+
+.wrapper {
+  font-size: 1.6rem;
+  @apply --vertical-spacing;
+
+  @media (--viewport-medium) {
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    grid-gap: 100px
+  }
+}
+
+.intro {
+  composes: h2 from '../../sharedStyles/index.css';
+  margin: 0;
+}
+
+.sectionHeader {
+  composes: label from '../../sharedStyles/index.css';
+}
+
+.ul {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
 }
 
 .projectLink {

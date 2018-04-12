@@ -1,9 +1,66 @@
+@import './variables.css';
+
+@custom-media --viewport-xsmall-only (width < 600px);
+@custom-media --viewport-small (width >= 600px);
+@custom-media --viewport-medium (width >= 900px);
+@custom-media --viewport-large (width >= 1200px);
+@custom-media --viewport-xlarge (width >= 1800px);
+
+@custom-media --viewport-mob-only (width < 600px);
+/* @custom-media --viewport-large (width >= 1200px); */
+
 :root {
-  --dark-text-color: #000;
-  --medium-text-color: #424242;
-  --light-text-color: #8E8E8E;
+  --dark-text-color: #111;
+  --medium-text-color: #333;
+  --light-text-color: #666;
   --mob-edge-width: 7.5%;
+  --bg-accent-color: #F7F5F5;
+
+  /* margin unit */
+  --mu: 5vw;
+
+  /* space unit */
+  --su: 25px;
+
+
+  /* Keep Padding Consistent */
+  --vertical-spacing: {
+    padding: 40px 0;
+
+    @media (--viewport-small) {
+      padding: 60px 0;
+    }
+
+    @media (--viewport-medium) {
+      padding: 80px 0;
+    }
+
+    @media (--viewport-large) {
+      padding: 100px 0;
+    }
+  }
+
+
+  --vertical-margin: {
+    margin: 40px 0;
+
+    @media (--viewport-small) {
+      margin: 60px 0;
+    }
+
+    @media (--viewport-medium) {
+      margin: 80px 0;
+    }
+
+    @media (--viewport-large) {
+      margin: 100px 0;
+    }
+  }
+
 }
 
-@custom-media --viewport-mob-only (width <= 440px);
-@custom-media --viewport-large (width >= 1200px);
+@media (--viewport-small) {
+  :root {
+    --su: 50px;
+  }
+}

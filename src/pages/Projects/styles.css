@@ -1,0 +1,14 @@
+@import '../../sharedStyles/variables.css';
+
+.projects {
+  margin: calc(var(--su) * 2) auto;
+  /* padding: 0 var(--mob-edge-width); */
+
+  display: grid;
+  grid-gap: var(--mu);
+
+  @media (--viewport-small) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}

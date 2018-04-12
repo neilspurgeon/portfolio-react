@@ -1,20 +1,14 @@
 import React from 'react';
-import Grid from 'components/Grid/Grid.js';
 import styles from './style.css';
-import RevealImage from 'components/RevealImage/RevealImage.js';
-import transitions from 'sharedStyles/transitions.css';
+import Container from 'components/Container/Container.js';
 
 const ProjectText = (props) => {
   return (
-    <Grid>
-      <RevealImage
-        className={styles.wrapper}
-        revealClass={transitions.fadeUpReveal}
-        inViewClass={transitions.inView}
-        >
+    <Container>
+      <div className={styles.textWrapper}>
         {props.children}
-      </RevealImage>
-    </Grid>
+      </div>
+    </Container>
   );
 };
 

@@ -1,4 +1,4 @@
-@import '../../sharedStyles/variables.css';
+/* @import '../../sharedStyles/variables.css';
 
 .grid {
   display: grid;
@@ -9,4 +9,4 @@
     grid-gap: 20px;
     grid-template-columns: repeat(12, [col-start] 1fr);
   }
-}
+} */

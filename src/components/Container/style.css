@@ -1,0 +1,39 @@
+@import '../../sharedStyles/variables.css';
+
+.mainContainer {
+  width: calc(100% - (var(--mu) * 2));
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+
+
+.insetContainer {
+  margin: 0 var(--mu);
+}
+
+@media (--viewport-large) {
+  .insetContainer {
+    width: calc(100vw - (var(--mu) * 6));
+    max-width: 1510px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.leftContainer {
+  margin: 0 var(--mu);
+}
+
+@media (--viewport-medium) {
+  .leftContainer {
+    width: calc(50vw - var(--mu) );
+  }
+}
+
+@media (--viewport-xlarge) {
+  .leftContainer {
+    max-width: 1200px;
+  }
+}

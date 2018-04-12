@@ -1,0 +1,32 @@
+@import '../../sharedStyles/variables.css';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--su) 5vw 0;
+}
+
+.nav {
+  display: inline-block;
+  text-align: right;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+  transition: .2s ease opacity;
+}
+
+.navLink:hover {
+  opacity: .7;
+}
+
+.navLink.isActive {
+  opacity: .5;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,29 +1,5 @@
 @import './variables.css';
 
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneuebook.eot");
-  src: url("../assets/fonts/maisonneuebook.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneuebook.woff2") format("woff2"),
-       url("../assets/fonts/maisonneuebook.woff") format("woff"),
-       url("../assets/fonts/maisonneuebook.ttf") format("truetype"),
-       url("../assets/fonts/maisonneuebook.svg#maison_neuebook") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "maison neue";
-  src: url("../assets/fonts/maisonneuebold.eot");
-  src: url("../assets/fonts/maisonneuebold.eot?#iefix") format("embedded-opentype"),
-       url("../assets/fonts/maisonneuebold.woff2") format("woff2"),
-       url("../assets/fonts/maisonneuebold.woff") format("woff"),
-       url("../assets/fonts/maisonneuebold.ttf") format("truetype"),
-       url("../assets/fonts/maisonneuebold.svg#maison_neuebold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-
 * { box-sizing: border-box; }
 
 img {
@@ -37,52 +13,100 @@ html { font-size: 62.5%; }
 body {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--medium-text-color);
-  line-height: 1.3;
+  line-height: 1.618;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
 .h1 {
-  font-size: 3.2rem;
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.4;
   color: var(--dark-text-color);
 
-  @media screen and (min-width: 768px) {
-    font-size: 4.2rem;
+  @media (--viewport-small)  {
+    font-size: 3.2rem;
   }
 
-  @media screen and (min-width: 940px) {
-    font-size: 5rem;
+   @media (--viewport-medium)  {
+    font-size: 3.8rem;
   }
+
+  @media (--viewport-large) {
+    font-size: 4.4rem;
+  }
+
+  @media (--viewport-xlarge) {
+    font-size: 4.8rem;
+  }
+
 }
 
 h2,
 .h2 {
-  font-size: 2.2rem;
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  /* line-height: 1.4; */
   color: var(--dark-text-color);
 
-  @media screen and (min-width: 768px) {
-    font-size: 3.2rem;
+  @media (--viewport-small)  {
+    font-size: 2.4rem;
+  }
+
+   @media (--viewport-medium)  {
+    font-size: 2.6rem;
+  }
+
+  @media (--viewport-large) {
+    font-size: 2.8rem;
   }
 }
 
 h3,
 .h3 {
-  font-size: 1.6rem;
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
   color: var(--dark-text-color);
 
-  @media screen and (min-width: 768px) {
-    font-size: 3.2rem;
+  @media (--viewport-small)  {
+    font-size: 2rem;
+  }
+
+   @media (--viewport-medium)  {
+    font-size: 2.2rem;
+  }
+
+  @media (--viewport-large) {
+    font-size: 2.4rem;
   }
 }
 
+h4,
+.h4 {
+  font-family: 'gt sectra', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--dark-text-color);
+
+  @media (--viewport-medium)  {
+    font-size: 1.8rem;
+  }
+}
+
+
 p,
 .p {
-  font-size: 1.4rem;
+  font-family: "maison neue", sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.8;
-  margin: 0 0 1em;
+  line-height: 1.6;
+  margin: 1.6em 0 0;
   color: var(--medium-text-color);
   @media screen and (min-width: 768px) {
     font-size: 1.6rem;
@@ -95,42 +119,36 @@ p.pSmall {
 
 .label,
 p.label {
+  font-family: "maison neue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 1em;
   color: var(--light-text-color);
-  margin-bottom: 0;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    /* font-size: 1.6rem; */
+  }
 }
 
-.inlineLink {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
+.sectionHeader {
+  font-family: "gt sectra", times, serif;
+  /* font-size: 1.4rem; */
+  /* font-weight: 400; */
+  /* line-height: 1.6; */
+  margin: 0 0 1em;
+  color: var(--dark-text-color);
+  margin-bottom: 8px;
 }
 
-.inlineLink:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.2em;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid rgba(0,0,0,.2);
+/* only matches headers that are after p text for consisten spacing */
+p ~ .sectionHeader {
+  margin-top: 3.2em;
 }
 
-.inlineLink:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.2em;
-  width: 100%;
-  height: 1px;
-  transition: .5s ease transform;
-  background: rgba(0,0,0,1);
-  transform: scaleX(0);
-  transform-origin: bottom left;
-}
-
-.inlineLink:hover:after {
-  background: rgba(0,0,0,1);
-  transform: scaleX(1);
+.textBreak {
+  margin-top: 40px;
 }
 
 .arrowLink {
@@ -162,7 +180,7 @@ p.label {
   opacity: 0;
   transition: .3s cubic-bezier(.34,.15,.31,.92);
   transition-delay: 0s;
-  background-image: url(../assets/images/link-arrow-dark.svg);
+  /* background-image: url(../assets/images/link-arrow-dark.svg); */
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 15px;

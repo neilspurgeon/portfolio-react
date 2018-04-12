@@ -1,52 +1,59 @@
 @import '../../sharedStyles/variables.css';
 
-.wrapper {
-  grid-column: 1 / 3;
-  padding: 0 var(--mob-edge-width);
-  margin-top: 5vh;
-  margin-bottom: 25px;
-  opacity: 0;
-  animation: fadeInUp 1.2s forwards .1s;
-  animation-timing-function: cubic-bezier(.34,.15,.31,.92);
-  will-change: transform, opacity;
+.pageWrapper {
+  @apply --vertical-spacing;
 
-  @media (--viewport-large) {
-    grid-column: 6 / 11;
-    padding: 0;
-    margin: 30vh 0 100px;
+  @media (--viewport-medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.text {
+  @apply --vertical-spacing;
+  padding-bottom: 0;
+
+  @media (--viewport-medium) {
+    padding-top: 10vw;
+  }
+
+  @media (--viewport-xlarge) {
+    padding-top: 200px;
+  }
+}
+
+.playlist {
+  font-size: 10px;
+  padding-top: 3.2em;
+}
+
+
+@media (--viewport-large) {
+  .body {
+    width: 35vw;
+    max-width: 755px;
+  }
+}
+
+.aboutHeader {
+  margin: 3.2em 0 0;
+
+  @media (--viewport-medium) {
+    transform: translateX(-1em);
   }
 }
 
 .portrait {
-  grid-column: 1 / 3;
-  padding: 0 var(--mob-edge-width);
-  margin-top: 80px;
-  background: none;
-  opacity: 0;
-  animation: fadeInUp .8s forwards .5s;
-  animation-timing-function: cubic-bezier(.34,.15,.31,.92);
+  padding: 0;
 
-  @media (width >= 550px) {
-    width: 50%;
-    margin-top: 120px;
+  @media (--viewport-medium) {
+    padding: 0 50px 0 0;
   }
 
-  @media (--viewport-large) {
-    width: 100%;
-    grid-column: 2 / 5;
-    margin-top: 120px;
+  @media (--viewport-xlarge) {
+    padding: 0 100px 0;
   }
 }
-
-.sectionLabel {
-  color: var(--light-text-color);
-  margin: 3em 0 0;
-}
-
-.sectionLabel:first-child {
-  margin-top: 0;
-}
-
 
 /* Keyframes
 ––––––––––––––––––––––––––––––––––––––––––––––––*/
