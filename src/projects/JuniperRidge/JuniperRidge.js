@@ -74,7 +74,7 @@ const JuniperRidge = () => {
 
           <ProjectText>
             <h3 className={shared.sectionHeader}>Uniquely High End</h3>
-            <p>Another important part of this project was conciseness of materials. We needed to convey a high end feel to match the price while also being eco-friendly. Where possible we used glass bottles wrapped in protective craft tubes for shipping and transport. For certain items such as soaps, we opted for squeezable plastic flasks that could withstand drops. The bottles were topped off with custom caps made from fallen tree branches found on the trail.</p>
+            <p>Another important part of this project was conciseness of materials. We needed to convey a high end feel to match the price and ile also being eco-friendly. Where possible, we used glass bottles wrapped in protective craft tubes for shipping and transport. For certain items such as soaps, we opted for squeezable plastic flasks that could withstand drops. The bottles were topped off with custom caps made from fallen tree branches found on the trail.</p>
           </ProjectText>
 
         </Container>
@@ -94,7 +94,7 @@ const JuniperRidge = () => {
 
           <ProjectText>
           <h3 className={shared.sectionHeader}>Field Lab</h3>
-            <p>Juniper Ridge also has a much more experimental limited product line called Field Lab. These are one-off batches distilled by the Juniper Ridge while on the trail. Dues to limited supplies and remote locations these can only be produced on a much smaller scale. Because of the limited quantity and constantly changing scents, custom printed bottles and tubes were not an option. We instead used a single Field Lab printed bottle across the full line and incorporated custom hang tags and stickers to identify the scents. </p>
+            <p>Juniper Ridge also has a much more experimental limited product line called Field Lab. These are one-off batches distilled by the Juniper Ridge while on the trail. Dues to limited supplies and remote locations, these can only be produced on a much smaller scale. Because of the limited quantity and constantly changing scents, custom printed bottles and tubes were not an option. We instead used a single Field Lab printed bottle across the full line and incorporated custom hang tags and stickers to identify the scents. </p>
           </ProjectText>
 
         </Container>

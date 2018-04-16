@@ -53,7 +53,7 @@ const NomNom = () => {
             <li>Order for pickup, drive through, or delivery.</li>
             <li>Modifiy and customize order items.</li>
             <li>Quickly re-order from recent and favorite orders.</li>
-            <li>Easily edit selected order options while maintaing basket items.</li>
+            <li>Easily edit selected order options while maintaining basket items.</li>
           </ul>
         </div>
 
@@ -63,7 +63,7 @@ const NomNom = () => {
             <li>Import and store gift cards for both in-store and in-app payments.</li>
             <li>Process credit/debit cards for in-app payments.</li>
             <li>Accept Apple Pay for in-app purchases.</li>
-            <li>Securely store credit/debit cards for quicker quicker checkouts.</li>
+            <li>Securely store credit/debit cards for quicker checkouts.</li>
           </ul>
         </div>
 
@@ -90,7 +90,7 @@ const NomNom = () => {
 
       <ProjectText>
         <h3 className={shared.sectionHeader}>Start Order Flow</h3>
-        <p>Throughout the design of the app, there were many whiteboarding sessions to decide on possible user flows. One particularly important and challenging flow was the start order flow.  A limitation we had from the OLO API was that there was no concept of a global menu across stores. This meant that a store, and order type, had to be selected before a basket could be created. This didn't present a technical issue, but from the user’s perspective was a barrier to starting an order.  Not only would the user have to select a store but they would first have to select an order type.</p>
+        <p>Throughout the design of the app, there were many whiteboarding sessions to decide on possible user flows. One particularly important and challenging flow was the "start order flow". A limitation we had from the OLO API was that there was no concept of a global menu across stores. This meant that a store, and order type, had to be selected before a basket could be created. This didn't present a technical issue, but from the user’s perspective was a barrier to starting an order.  Not only would the user have to select a store but they would first have to select an order type.</p>
 
         <p>This was a lot to ask from a user every time they wanted to browse the menu. We explored different ways around this and ultimately decided it was best to only go through the store and order selection steps for first-time users and to default them for returning users. This would allow us to expose options early on to new users while also streamlining for returning user. Knowing this could prove challenging in design, we then moved to wireframing and testing.</p>
       </ProjectText>

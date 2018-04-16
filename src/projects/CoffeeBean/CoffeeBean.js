@@ -29,7 +29,7 @@ const CoffeeBean = () => {
     <div>
 
       <ProjectOverview
-        intro="The Coffee Bean & Tea Leaf is a highly popular chain with over 1,000 locations in southern California and Asia. They needed an e-commerce website to match their physical footprint."
+        intro="The Coffee Bean & Tea Leaf is a highly popular chain with over 1,000 locations in Southern California and Asia. They needed an e-commerce website to match their physical footprint."
         roles={["UX/UI Design", "Website Design"]}
         credits={["Creative Director: Garrett Deiter", "Digital Agency: Hathway", "Branding Agency: Pitch", "Year: 2016"]}
       />

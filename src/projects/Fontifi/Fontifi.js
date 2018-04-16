@@ -20,7 +20,7 @@ const Fontifi = () => {
       <ProjectOverview
         linkUrl="https://fontifi.co/"
         linkText="fontifi.co"
-        intro="Fontifi is an ongoing personal project of mine designed help designers and developers discover and pair web font combinations. It was started mainly as a way to learn React and further explore front-end development."
+        intro="Fontifi is an ongoing personal project of mine to help designers and developers discover and pair web font combinations. It was started mainly as a way to learn React and further explore front-end development."
         roles={["UI/UX Design", "Web Development"]}
         tech={["React", "Express", "MongDB + mLab"]}
         />
@@ -40,7 +40,7 @@ const Fontifi = () => {
 
     <ProjectText>
       <h3 className={shared.sectionHeader}>Problem</h3>
-      <p>While the primary motivation of Fontifi was to focus on learning new web development skills, I also wanted to create an app that could be useful. With the vast amount of freely available web fonts, it's become overwhelming to for beginner designers and developers to pick good combinations. The goal of Fontifi is to provide a curated selection of font pairs that can be then be modified and saved to the user's liking.</p>
+      <p>While the primary motivation of Fontifi was to focus on learning new web development skills, I also wanted to create an app that could be useful. With the vast amount of freely available web fonts, it's become overwhelming for beginner designers and developers to pick good combinations. The goal of Fontifi is to provide a curated selection of font pairs that can be then be modified and saved to the user's liking.</p>
     </ProjectText>
 
     <Container type="inset">
