@@ -23,7 +23,7 @@ class Contact extends React.Component {
       <div>
 
         <Helmet>
-          <title>Contact – Neil Spurgeon. Designer & Developer</title>
+          <title>Contact – Neil Spurgeon. Product Designer</title>
         </Helmet>
 
         <Header />

@@ -12,7 +12,7 @@ const Projects = () => {
     <div>
 
       <Helmet>
-        <title>Projects – Neil Spurgeon. Designer & Developer</title>
+        <title>Projects – Neil Spurgeon. Product Designer</title>
       </Helmet>
 
       <Header />

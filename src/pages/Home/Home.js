@@ -16,7 +16,7 @@ const Home = (props) => {
       <div>
 
         <Helmet>
-          <title>Home – Neil Spurgeon. Designer & Developer</title>
+          <title>Home – Neil Spurgeon. Product Designer</title>
         </Helmet>
 
         <Header />

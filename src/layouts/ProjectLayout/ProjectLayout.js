@@ -31,7 +31,7 @@ class ProjectLayout extends React.Component {
       <div>
 
         <Helmet>
-          <title>{this.props.title} – Neil Spurgeon. Designer & Developer</title>
+          <title>{this.props.title} – Neil Spurgeon. Product Designer</title>
         </Helmet>
 
         <Header />

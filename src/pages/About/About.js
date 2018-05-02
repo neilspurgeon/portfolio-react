@@ -16,7 +16,7 @@ const About = () => {
     <div>
 
       <Helmet>
-        <title>About – Neil Spurgeon. Designer & Developer</title>
+        <title>About – Neil Spurgeon. Product Designer</title>
       </Helmet>
 
       <Header />
