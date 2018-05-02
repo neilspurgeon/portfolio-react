@@ -2,7 +2,6 @@
 
 .card {
   text-decoration: none;
-  color: var(--dark-text-color);
   pointer-events: none;
   cursor: pointer;
   display: block;
@@ -47,21 +46,19 @@
 }
 
 .title {
-  composes: p from '../../sharedStyles/index.css';
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
-  font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
-  padding: .5em 0 0;
+  padding: .5em 0 .1em;
 }
 
 .subTitle {
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
-  color: var(--light-text-color);
+  color: var(--color-cool-gray-l1);
   margin: 0;
   font-size: 1.4rem;
 }

@@ -13,7 +13,7 @@
 
 .navLink {
   text-decoration: none;
-  color: inherit;
+  color: var(--color-cool-gray);
   transition: .2s ease opacity;
 }
 

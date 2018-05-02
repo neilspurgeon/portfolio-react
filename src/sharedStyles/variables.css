@@ -10,12 +10,31 @@
 /* @custom-media --viewport-large (width >= 1200px); */
 
 :root {
-  --dark-text-color: #111;
-  --medium-text-color: #333;
-  --light-text-color: #666;
-  --mob-edge-width: 7.5%;
+
+
+  /* Colors  */
+
+  /* -l1, -l2, -l3 are lighter shades
+  -d1, -d2, -d3 darker shaded */
+
+  --color-cool-black: #212126;
+  --color-cool-gray:  #5C5C66;
+  --color-cool-gray-l1: #919199;
+
+  --color-white-text: #FFF;
+  --color-dark-bg: #212126;
+  --color-light-bg: #F7F5F5;
+
+  --dark-text-color: #222226;
+  --medium-text-color: #5C5C66;
+  --light-text-color: #919199;
+
   --bg-light-accent-color: #F7F5F5;
-  --bg-dark-accent-color: #111;
+  --bg-dark-accent-color: #212126;
+  --bg-accent-color: #F7F5F5;
+
+  --mob-edge-width: 7.5%;
+
 
   /* margin unit */
   --mu: 5vw;

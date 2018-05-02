@@ -3,11 +3,9 @@
 .footer {
   @apply --vertical-margin;
   margin-bottom: 0;
-  /* background: var(--bg-light-accent-color); */
   line-height: 2.4;
-  /* transition: 1s ease opacity .2s; */
-  background: var(--bg-dark-accent-color);
-  color: #FEFEFE;
+  background: var(--color-dark-bg);
+  color: var(--color-white-text);
   -webkit-font-smoothing: antialiased;
   letter-spacing: .01em;
 }

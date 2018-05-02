@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
       <div className={styles.info}>
 
         <div className={styles.titleWrapper}>
-          <h2 className={styles.title}>{props.title}</h2>
+          <h4 className={styles.title}>{props.title}</h4>
         </div>
 
         <div className={styles.subTitleWrapper}>

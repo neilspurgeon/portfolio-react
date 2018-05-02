@@ -18,10 +18,10 @@
 }
 
 .featureCard {
-    background-color: var(--bg-accent-color);
-    background-color: var(--medium-text-color);
+    background-color: var(--color-dark-bg);
+    background-color: var(--color-light-bg);
     padding: 1.5em 1.5em 2em;
-    color: #FFF;
+    color: var(--color-cool-black);
 
     /* smooth fonts */
     -webkit-font-smoothing: antialiased;
@@ -34,9 +34,7 @@
 
 .featureTitle {
     composes: h4 from '../../sharedStyles/index.css';
-    /* font-size: 1em; */
     margin: 0 0 1em;
-    color: #FFF !important;
 }
 
 .featureList {
