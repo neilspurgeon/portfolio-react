@@ -7,7 +7,7 @@
   transition: .2s ease opacity;
 }
 
-.link:before{
+.link:before {
   content: '';
   position: absolute;
   left: 0;
@@ -15,6 +15,10 @@
   width: 100%;
   height: 100%;
   border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.onDark:before {
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
 .link:hover {

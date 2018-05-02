@@ -32,14 +32,14 @@ class Footer extends React.Component {
           <div className={styles.footerContainer}>
 
             <ul className={[styles.list, styles.contact].join(' ')}>
-              <li><Link to="mailto:hello@neilspurgeon.com" text="hello@neilspurgeon.com" /></li>
-              <li><Link to="tel:1-805-748-3201" text="805 748 3201" /></li>
+              <li><Link to="mailto:hello@neilspurgeon.com" text="hello@neilspurgeon.com" onDark /></li>
+              <li><Link to="tel:1-805-748-3201" text="805 748 3201" onDark /></li>
             </ul>
 
             <ul className={[styles.list, styles.social].join(' ')}>
-              <li><Link to="https://www.linkedin.com/in/neilspurgeon/" text="" /></li>
-              <li><Link to="https://github.com/neilspurgeon/" text="GitHub" /></li>
-              <li><Link to="https://dribbble.com/neilspurgeon/" text="Dribbble" /></li>
+              <li><Link to="https://www.linkedin.com/in/neilspurgeon/" text="LinkedIn" onDark /></li>
+              <li><Link to="https://github.com/neilspurgeon/" text="GitHub" onDark /></li>
+              <li><Link to="https://dribbble.com/neilspurgeon/" text="Dribbble" onDark /></li>
             </ul>
 
             <nav className={styles.nav}>
