@@ -34,7 +34,7 @@ class Contact extends React.Component {
 
             <section className={styles.contactWrapper}>
               <h1 className={styles.pageHeader}>Get in touch</h1>
-              <p>If you want to work together or just say hi.</p>
+              <p className={styles.pageSubHeader}>If you want to work together or just say hi.</p>
 
               <form
                 className={styles.contactForm}
