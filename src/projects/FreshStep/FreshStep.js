@@ -1,7 +1,6 @@
 import React from 'react';
 import shared from 'sharedStyles/index.css';
 import Image from 'components/Image/Image.js';
-import Container from 'components/Container/Container.js';
 import ProjectOverview from 'components/ProjectOverview/ProjectOverview.js';
 import ProjectText from 'components/ProjectText/ProjectText.js';
 import ProjectSection from 'components/ProjectSection/ProjectSection.js';
@@ -13,9 +12,6 @@ import shelters from './images/shelters.jpg';
 import reward from './images/reward.jpg';
 
 const FreshStep = () => {
-  const bgStyle = {
-    backgroundImage: 'linear-gradient(-135deg, #E0EDF5 0%, #E0EBF4 100%)'
-  };
 
   return (
     <div>

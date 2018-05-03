@@ -19,7 +19,6 @@ import mobile from './images/mobile.jpg';
 import cup from './images/cup.jpg';
 import girl from './images/girl.jpg';
 import company from './images/company.jpg';
-import menu from './images/menu.jpg';
 import checkout from './images/checkout.jpg';
 
 
