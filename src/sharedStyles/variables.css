@@ -11,11 +11,11 @@
 
 :root {
 
-
-  /* Colors  */
-
-  /* -l1, -l2, -l3 are lighter shades
-  -d1, -d2, -d3 darker shaded */
+  /* Colors
+  –––––––––––––––––––––––––––––––
+  -l1, -l2, -l3 are lighter shades
+  -d1, -d2, -d3 darker shaded
+  ––––––––––––––––––––––––––––––– */
 
   --color-cool-black: #212126;
   --color-cool-gray:  #5C5C66;
@@ -25,23 +25,22 @@
   --color-dark-bg: #212126;
   --color-light-bg: #F7F5F5;
 
-  --dark-text-color: #222226;
-  --medium-text-color: #5C5C66;
-  --light-text-color: #919199;
+  --color-dark-text: #2A2A33;
+  --color-medium-text: #5C5C66;
+  --color-light-text: #919199;
 
-  --bg-light-accent-color: #F7F5F5;
-  --bg-dark-accent-color: #212126;
-  --bg-accent-color: #F7F5F5;
+
+
+  /* Margins, Padding, Spacing
+  ––––––––––––––––––––––––––––––– */
 
   --mob-edge-width: 7.5%;
-
 
   /* margin unit */
   --mu: 5vw;
 
   /* space unit */
   --su: 25px;
-
 
   /* Keep Padding Consistent */
   --vertical-spacing: {

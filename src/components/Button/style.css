@@ -4,7 +4,7 @@
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  border: 1px solid var(--light-text-color);
+  border: 1px solid var(--color-medium-text);
   border-radius: 2em;
   background: none;
   padding: 1em 1.8em .8em;

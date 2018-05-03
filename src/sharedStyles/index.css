@@ -14,7 +14,7 @@ body {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
   font-weight: 400;
-  color: var(--medium-text-color);
+  color: var(--color-medium-text);
   line-height: 1.618;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
@@ -26,7 +26,7 @@ h1,
   font-weight: 400;
   font-size: 2.6rem;
   line-height: 1.4;
-  color: var(--color-cool-black);
+  color: var(--color-dark-text);
 
   @media (--viewport-small)  {
     font-size: 3.2rem;
@@ -52,7 +52,7 @@ h2,
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.618;
-  color: var(--color-cool-black);
+  color: var(--color-dark-text);
 
   @media (--viewport-small)  {
     font-size: 2.4rem;
@@ -73,7 +73,7 @@ h3,
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.618;
-  color: var(--color-cool-black);
+  color: var(--color-dark-text);
 
   @media (--viewport-small)  {
     font-size: 2rem;
@@ -94,7 +94,7 @@ h4,
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.618;
-  color: var(--color-cool-black);
+  color: var(--color-dark-text);
 
   @media (--viewport-medium)  {
     font-size: 1.8rem;
@@ -114,7 +114,7 @@ p,
   line-height: 2;
   letter-spacing:  .01em;
   margin: 1.6em 0 0;
-  color: var(--color-cool-gray);
+  color: var(--color-medium-text);
   @media screen and (min-width: 768px) {
     font-size: 1.6rem;
   }
@@ -131,7 +131,7 @@ p.label {
   font-weight: 400;
   line-height: 1.6;
   margin: 0 0 1em;
-  color: var(--color-cool-gray-l1);
+  color: var(--color-light-text);
   margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
