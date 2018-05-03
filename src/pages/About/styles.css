@@ -1,59 +1,69 @@
 @import '../../sharedStyles/variables.css';
 
-.pageWrapper {
-  @apply --vertical-spacing;
+
+
+/* Header
+––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.header {
+  margin: 80px 0 80px;
+
+  @media (--viewport-small) {
+    display: flex;
+    flex-direction: column;
+  }
 
   @media (--viewport-medium) {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.headerImage {
+
+  @media (--viewport-small) {
+    width: 50%;
+  }
+}
+
+.headerText {
+  /* needed to prevent image transition overlapping text */
+  z-index: 9999;
+
+  @media (--viewport-medium) {
+    width: 57%;
+    margin-left: -7%;
+  }
+
+}
+
+.headerText > p:first-child {
+  @media (--viewport-medium) {
+    margin-top: 0;
+  }
+}
+
+
+/* Content
+––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--color-cool-gray-l2);
+  padding: 20px 0 80px;
+
+  @media (--viewport-small) {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.text {
-  @apply --vertical-spacing;
-  padding-bottom: 0;
-
-  @media (--viewport-medium) {
-    padding-top: 10vw;
-  }
-
-  @media (--viewport-xlarge) {
-    padding-top: 200px;
-  }
-}
-
-.playlist {
-  font-size: 10px;
-  padding-top: 3.2em;
+.aboutSectionHeader {
+  margin-bottom: 0;
 }
 
 
-@media (--viewport-large) {
-  .body {
-    width: 35vw;
-    max-width: 755px;
-  }
-}
-
-.aboutHeader {
-  margin: 3.2em 0 0;
-}
-
-.portrait {
-  padding: 0;
-
-  @media (--viewport-medium) {
-    padding: 0 50px 0 0;
-  }
-
-  @media (--viewport-medium) {
-    padding: 0 75px 0 0;
-  }
-
-  @media (--viewport-xlarge) {
-    padding: 0 100px 0;
-  }
-}
 
 /* Keyframes
 ––––––––––––––––––––––––––––––––––––––––––––––––*/
