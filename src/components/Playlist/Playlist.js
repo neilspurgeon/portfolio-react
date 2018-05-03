@@ -8,7 +8,7 @@ const Playlist = (props) => {
     title="playlist"
     src="https://open.spotify.com/embed?uri=spotify:user:1214004202:playlist:5PlBPtgwkGIDuApLJonZR2&theme=white"
     width="100%"
-    height="380"
+    height="500"
     frameBorder="0"
     allow="encrypted-media"
     allowtransparency="true">
