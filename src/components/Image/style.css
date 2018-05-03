@@ -1,5 +1,7 @@
+@import '../../sharedStyles/variables.css';
+
 .wrapper {
-    /* background: #FAF8F8; */
+    background: var(--color-light-bg);
 }
 
 .image {
